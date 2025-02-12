@@ -104,7 +104,7 @@ nav .nav-links li a:hover, nav .dropdown-content a:hover {
 /* Hero Section */
 .hero-section {
     background: url('/assets/images/sri-lanka-hero.jpg') no-repeat center center/cover;
-    height: 500px;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,8 +147,8 @@ section {
 }
 
 .destination-card {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 325px;
     background: white;
     padding: 10px;
     border-radius: 15px;
@@ -156,8 +156,8 @@ section {
 }
 
 .destination-card img {
-    width: 85%;
-    height: 75%;
+    width: 90%;
+    height: 65%;
     border-radius: 10px;
     max-width: 100%;
 }
@@ -183,7 +183,6 @@ section {
     font-weight: bold;
 }
 
-/* Contact Form */
 form {
     display: flex;
     flex-direction: column;
