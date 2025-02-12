@@ -26,38 +26,85 @@ nav {
     padding: 0 20px;
     max-width: 1200px;
     margin: auto;
+    background-color: #1abc9c;
+    position: relative;
+    
 }
 
-.logo h1 {
-    margin: 0;
+nav .logo h1 {
     color: white;
+    font-size: 24px;
+    margin: 0;
 }
 
-.nav-links {
+nav .nav-links {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    gap: 15px;
+    justify-content: space-around;
 }
 
-.nav-links li {
-    display: inline;
+nav .nav-links li {
+    position: relative;
 }
 
-.nav-links a {
+nav .nav-links a {
     text-decoration: none;
     color: white;
+    padding: 10px 15px;
+    display: block;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-.nav-links a:hover {
+nav .nav-links a:hover {
+    color: #ffffff;
+}
+
+nav .dropdown {
+    position: relative;
+}
+
+nav .dropbtn {
+    font-size: 18px;
     color: #16a085;
+    padding: 10px 15px;
+    background-color: #1abc9c;
+    border: none;
+    cursor: pointer;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(204,204,204,0.4);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav .dropdown-content a {
+    color: #222;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show Dropdown on Hover */
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hover effects for Links */
+nav .nav-links li a:hover, nav .dropdown-content a:hover {
+    background-color: #16a085;
 }
 
 /* Hero Section */
 .hero-section {
     background: url('/assets/images/sri-lanka-hero.jpg') no-repeat center center/cover;
-    height: 400px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,26 +133,31 @@ nav {
 /* Sections */
 section {
     padding: 40px 20px;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: auto;
     text-align: center;
 }
 
-.destination-list {
+.destination-container {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.destination-item {
+.destination-card {
+    width: 300px;
+    height: 300px;
     background: white;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.destination-item img {
+.destination-card img {
+    width: 85%;
+    height: 75%;
     border-radius: 10px;
     max-width: 100%;
 }
@@ -184,7 +236,6 @@ footer ul a {
     text-decoration: none;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
