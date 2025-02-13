@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore Sri Lankan Cultural Sites - CeylonXplorer</title>
+  <meta name="description" content="Discover Sri Lanka's rich cultural heritage through ancient fortresses, cave temples, and sacred sites. Explore Sigiriya, Dambulla, and the Temple of the Tooth with CeylonXplorer.">
+  <meta name="keywords" content="Sri Lanka cultural sites, Sigiriya, Dambulla, Temple of the Tooth, UNESCO, ancient ruins, CeylonXplorer">
+  <style>
+    /* Global Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1abc9c;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      color: white;
+      font-size: 2em;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    /* Destination Cards */
+    .destination-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+    .destination-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .destination-card:hover {
+      transform: translateY(-5px);
+    }
+    .destination-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-content h2 {
+      color: #1abc9c;
+      margin-bottom: 10px;
+      font-size: 1.5em;
+    }
+    .card-content p {
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .learn-more-btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #1abc9c;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .learn-more-btn:hover {
+      background-color: #16a085;
+    }
+    
+    /* Modal Styles using :target */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      overflow: auto;
+      z-index: 10;
+      padding: 40px 20px;
+    }
+    .modal:target {
+      display: block;
+    }
+    .modal-content {
+      background: #fff;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      position: relative;
+    }
+    .modal-content img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    .modal-content h2 {
+      margin-bottom: 15px;
+      color: #1abc9c;
+    }
+    .modal-content p {
+      color: #555;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      text-decoration: none;
+      font-size: 24px;
+      color: #aaa;
+    }
+    .close-btn:hover {
+      color: #000;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .destination-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>CeylonXplorer: Explore Sri Lankan Cultural Sites</h1>
+  </header>
+  
+  <!-- Main Container -->
+  <div class="container">
+    <h1>Discover Sri Lanka's Cultural Heritage</h1>
+    <div class="destination-cards">
+      <!-- Card: Sigiriya Rock Fortress -->
+      <div class="destination-card">
+        <img src="images/sigiriya.jpg" alt="Sigiriya Rock Fortress">
+        <div class="card-content">
+          <h2>Sigiriya Rock Fortress</h2>
+          <p>Explore this ancient palace and fortress complex renowned for its frescoes and panoramic views.</p>
+          <a href="#modal-sigiriya" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+      <!-- Card: Dambulla Cave Temple -->
+      <div class="destination-card">
+        <img src="images/dambulla.jpg" alt="Dambulla Cave Temple">
+        <div class="card-content">
+          <h2>Dambulla Cave Temple</h2>
+          <p>Discover stunning Buddhist murals and statues carved into rock caves at this UNESCO World Heritage site.</p>
+          <a href="#modal-dambulla" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+      <!-- Card: Temple of the Tooth -->
+      <div class="destination-card">
+        <img src="images/temple-tooth.jpg" alt="Temple of the Tooth">
+        <div class="card-content">
+          <h2>Temple of the Tooth</h2>
+          <p>Visit this sacred temple in Kandy that houses a relic of the Buddha, central to Sri Lankan culture.</p>
+          <a href="#modal-temple" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal for Sigiriya -->
+  <div id="modal-sigiriya" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h2>Sigiriya Rock Fortress</h2>
+      <img src="images/sigiriya.jpg" alt="Sigiriya Rock Fortress">
+      <p>Sigiriya, known as the Lion Rock, is an ancient palace and fortress with impressive frescoes and landscaped gardens. It stands as a testament to the ingenuity of ancient Sri Lankan civilization.</p>
+    </div>
+  </div>
+  
+  <!-- Modal for Dambulla -->
+  <div id="modal-dambulla" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h2>Dambulla Cave Temple</h2>
+      <img src="images/dambulla.jpg" alt="Dambulla Cave Temple">
+      <p>The Dambulla Cave Temple is a vast complex of rock caves adorned with ancient Buddhist murals and statues. This UNESCO World Heritage Site showcases Sri Lanka's profound cultural and religious history.</p>
+    </div>
+  </div>
+  
+  <!-- Modal for Temple of the Tooth -->
+  <div id="modal-temple" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h2>Temple of the Tooth</h2>
+      <img src="images/temple-tooth.jpg" alt="Temple of the Tooth">
+      <p>Located in Kandy, the Temple of the Tooth is a revered Buddhist temple that houses a sacred relic of the Buddha. It plays a central role in the cultural and spiritual life of Sri Lanka.</p>
+    </div>
+  </div>
+</body>
+</html>
