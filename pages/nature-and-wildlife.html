@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sri Lankan Nature & Wildlife</title>
+  <meta name="description" content="Explore the best of Sri Lanka's nature and wildlife—from lush forests to exciting national parks. Discover Yala, Sinharaja, Horton Plains, and more.">
+  <meta name="keywords" content="Sri Lanka nature, wildlife, national parks, Yala, Sinharaja, Horton Plains, CeylonXplorer">
+  <style>
+    /* Global Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1abc9c;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      color: white;
+      font-size: 2em;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    /* Destination Cards */
+    .destination-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+    .destination-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .destination-card:hover {
+      transform: translateY(-5px);
+    }
+    .destination-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-content h2 {
+      color: #1abc9c;
+      margin-bottom: 10px;
+      font-size: 1.5em;
+    }
+    .card-content p {
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .learn-more-btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #1abc9c;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .learn-more-btn:hover {
+      background-color: #16a085;
+    }
+    
+    /* Modal Styles using :target */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; 
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      overflow: auto;
+      z-index: 10;
+      padding: 40px 20px;
+    }
+    .modal:target {
+      display: block;
+    }
+    .modal-content {
+      background: #fff;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      position: relative;
+    }
+    .modal-content img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    .modal-content h2 {
+      margin-bottom: 15px;
+      color: #1abc9c;
+    }
+    .modal-content p {
+      color: #555;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      text-decoration: none;
+      font-size: 24px;
+      color: #aaa;
+    }
+    .close-btn:hover {
+      color: #000;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .destination-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>CeylonXplorer: Nature & Wildlife</h1>
+  </header>
+  
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Explore Sri Lanka's Nature & Wildlife</h1>
+    <div class="destination-cards">
+      <!-- Card: Yala National Park -->
+      <div class="destination-card">
+        <img src="images/yala.jpg" alt="Yala National Park">
+        <div class="card-content">
+          <h2>Yala National Park</h2>
+          <p>Home to diverse wildlife, including leopards and elephants, Yala offers an unforgettable safari experience.</p>
+          <a href="#modal-yala" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+      
+      <!-- Card: Sinharaja Forest Reserve -->
+      <div class="destination-card">
+        <img src="images/sinharaja.jpg" alt="Sinharaja Forest Reserve">
+        <div class="card-content">
+          <h2>Sinharaja Forest Reserve</h2>
+          <p>This UNESCO World Heritage Site is a biodiversity hotspot with lush tropical forests and rare species.</p>
+          <a href="#modal-sinharaja" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+      
+      <!-- Card: Horton Plains -->
+      <div class="destination-card">
+        <img src="images/horton_plains.jpg" alt="Horton Plains">
+        <div class="card-content">
+          <h2>Horton Plains</h2>
+          <p>Known for its scenic landscapes and the dramatic World’s End cliff, Horton Plains is perfect for hiking enthusiasts.</p>
+          <a href="#modal-horton" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal for Yala National Park -->
+  <div id="modal-yala" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h2>Yala National Park</h2>
+      <img src="images/yala.jpg" alt="Yala National Park">
+      <p>Yala National Park is one of Sri Lanka's most popular wildlife destinations. Roam the expansive park on a safari to witness a range of wildlife, from elusive leopards to herds of elephants. Enjoy guided tours and immerse yourself in nature.</p>
+    </div>
+  </div>
+  
+  <!-- Modal for Sinharaja Forest Reserve -->
+  <div id="modal-sinharaja" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h2>Sinharaja Forest Reserve</h2>
+      <img src="images/sinharaja.jpg" alt="Sinharaja Forest Reserve">
+      <p>Sinharaja is a lush, tropical rainforest and a UNESCO World Heritage Site known for its rich biodiversity. Explore winding trails, listen to the sounds of exotic birds, and discover rare plant species in this natural paradise.</p>
+    </div>
+  </div>
+  
+  <!-- Modal for Horton Plains -->
+  <div id="modal-horton" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">&times;</a>
+      <h2>Horton Plains</h2>
+      <img src="images/horton_plains.jpg" alt="Horton Plains">
+      <p>Horton Plains is famed for its rolling grasslands, cloud forests, and the breathtaking drop known as World’s End. It’s an ideal destination for trekkers and nature lovers looking to experience Sri Lanka’s rugged beauty.</p>
+    </div>
+  </div>
+</body>
+</html>
