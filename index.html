@@ -1,204 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CeylonXplorer is your ultimate guide to exploring Sri Lanka. Discover the island's hidden gems, top destinations, and travel tips for an unforgettable adventure in the Pearl of the Indian Ocean.">
-    <meta name="keywords" content="Sri Lanka travel, Ceylon, Sri Lanka destinations, explore Sri Lanka, Sri Lanka tourist spots, travel tips Sri Lanka, CeylonXplorer, vacation in Sri Lanka, island exploration">
-    <meta name="author" content="Lithira Jayanaka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CeylonXplorer is your ultimate guide to exploring Sri Lanka. Discover the island's hidden gems, top destinations, and travel tips for an unforgettable adventure in the Pearl of the Indian Ocean."
+    />
+    <meta
+      name="keywords"
+      content="Sri Lanka travel, Ceylon, Sri Lanka destinations, explore Sri Lanka, Sri Lanka tourist spots, travel tips Sri Lanka, CeylonXplorer, vacation in Sri Lanka, island exploration"
+    />
+    <meta name="author" content="Lithira Jayanaka" />
     <title>CeylonXplorer</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-<body>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="/js/index.js" defer></script>
+  </head>
+  <body>
     <!-- Header Section -->
     <header>
-        <nav>
-            <div class="logo">
-                <h1>CeylonXplorer</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li class="dropdown">
-                    <a href="#destinations" class="dropbtn">Destinations</a>
-                    <div class="dropdown-content">
-                        <a href="/pages/beaches.html" target="_blank">Beaches</a>
-                        <a href="/pages/nature-and-wildlife.html" target="_blank">Nature & Wildlife</a>
-                        <a href="/pages/cultural-sites.html" target="_blank">Cultural Sites</a>
-                        <a href="/pages/adventure-and-trekking.html" target="_blank">Adventure & Trekking</a>
-                        
-                    </div>
-                </li>
-                <li><a href="#travel-tips">Travel Tips</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="logo">
+          <h1>CeylonXplorer</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations" class="dropbtn">Destinations</a></li>
+          <li><a href="#travel-tips">Travel Tips</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
     </header>
 
-<main>
+    <main>
+      <!-- Main Section: Home -->
+      <section
+        id="home"
+        class="hero-section"
+        style="
+          background-image: url('/assets/images/nilantha-sanjeewa-u8FSEneQ-7w-unsplash.jpg');
+        "
+      >
+        <div class="hero-text">
+          <h2>Discover the Beauty of Sri Lanka</h2>
+          <p>
+            Explore hidden gems, beaches, nature, and culture with
+            CeylonXplorer!
+          </p>
+          <a href="#destinations" class="cta-btn">Start Exploring</a>
+        </div>
+      </section>
 
-    <!-- Main Section: Home -->
-    <section id="home" class="hero-section" style="background-image: url('/assets/images/nilantha-sanjeewa-u8FSEneQ-7w-unsplash.jpg');">
-            <div class="hero-text">
-                <h2>Discover the Beauty of Sri Lanka</h2>
-                <p>Explore hidden gems, beaches, nature, and culture with CeylonXplorer!</p>
-                <a href="#destinations" class="cta-btn">Start Exploring</a>
-            </div>
-    </section>
-
-    <!-- Destinations Section -->
-    <section id="destinations">
+      <!-- Destinations Section -->
+      <section id="destinations">
         <div class="destination-header">
-            <h2>Your Next Favourite<br>Place Awaits</h2>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt labore voluptates, hic dolorum non eaque.</p>
-                <button id="seemore-btn">See more</button>
-            </div>
+          <h2>Explore Top Destinations</h2>
+          <p>Discover the most breathtaking locations around the world for your next adventure.</p>
         </div>
         <div class="destination-container">
+          
+          <div class="destinations-card" id="card-1">
+            <img src="/assets/images/pexels-pok-rie-33563-2049422.jpg" alt="">
+            <a href="/pages/beaches.html" target="_blank">
+            <div class="card-description">
+              <h4>Best Beaches</h4>
+              <div>
+                <p>Relax on pristine beaches with crystal-clear waters and golden sands.</p>                
+                <img src="/assets/icons/icons8-arrow-96 (2).png" alt="arrow">
+              </div>
+            </div>
+            </a>
+          </div>
 
-            <div class="destination-card">
-                <img src="/assets/images/sigiriya-3987508_1280.jpg" alt="Sigiriya">
-                <div class="card-content">
-                    <h3>Sigiriya</h3>
-                    <p>A world-famous ancient rock fortress.</p>
-                </div>
+          <div class="destinations-card" id="card-2">
+            <img src="/assets/images/pexels-chathura-anuradha-subasinghe-599124-14041994.jpg" alt="">
+            <a href="/pages/cultural-sites.html" target="_blank">
+
+            <div class="card-description">
+              <h4>Cultural Sites</h4>
+              <div>
+                <p>Explore ancient temples, historical landmarks, and vibrant traditions.</p>
+                <img src="/assets/icons/icons8-arrow-96 (2).png" alt="arrow">
+              </div>
             </div>
 
-            <div class="destination-card">
-                <img src="/assets/images/sigiriya-3987508_1280.jpg" alt="Sigiriya">
-                <div class="card-content">
-                    <h3>Sigiriya</h3>
-                    <p>A world-famous ancient rock fortress.</p>
-                </div>
+            </a>
+          </div>
+          
+          <div class="destinations-card" id="card-3">
+            <img src="/assets/images/steptodown.com903760.jpg" alt="">
+            <a href="/pages/adventure-and-trekking.html" target="_blank">
+            <div class="card-description">
+              <h4>Adventure & Trekking</h4>
+              <div>
+                <p>Experience thrilling hikes and outdoor adventures in stunning terrains.</p>
+                <img src="/assets/icons/icons8-arrow-96 (2).png" alt="arrow">
+              </div>
             </div>
+            </a>
+          </div>
+          
+          <div class="destinations-card" id="card-4">
+            <img src="/assets/images/steptodown.com917754.jpg" alt="">
+            <a href="/pages/nature-and-wildlife.html" target="_blank">
 
-            <div class="destination-card">
-                <img src="/assets/images/sigiriya-3987508_1280.jpg" alt="Sigiriya">
-                <div class="card-content">
-                    <h3>Sigiriya</h3>
-                    <p>A world-famous ancient rock fortress.</p>
-                </div>
+            <div class="card-description">
+              <h4>Nature & Wildlife</h4>
+              <div>
+                <p>Immerse yourself in breathtaking landscapes and encounter exotic wildlife.</p>
+                <img src="/assets/icons/icons8-arrow-96 (2).png" alt="arrow">
+              </div>
             </div>
-
-            <div class="destination-card">
-                <img src="/assets/images/sigiriya-3987508_1280.jpg" alt="Sigiriya">
-                <div class="card-content">
-                    <h3>Sigiriya</h3>
-                    <p>A world-famous ancient rock fortress.</p>
-                </div>
-            </div>
-        
-        
-            <!-- Other destination items -->
+          </a>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Travel Tips Section -->
-    <section class="travel-tips" id="travel-tips">
+      <!-- Travel Tips Section -->
+      <section class="travel-tips" id="travel-tips">
         <div class="image-container">
-            <img src="/assets/images/timo-stern-iUBgeNeyVy8-unsplash.jpg" alt="Travel Tips">
+          <img
+            src="/assets/images/timo-stern-iUBgeNeyVy8-unsplash.jpg"
+            alt="Travel Tips"
+          />
         </div>
         <div class="tips-content">
-            <h4>How to travel Smart</h4>
-            <h2>One Guide for Your Perfect Trip</h2>
-            <div class="tips-list">
-
-                <div class="tip-item">
-                    <a href="/pages/best-travel-seasons.html">
-                        <div class="item-icon">
-                            <img src="/assets/icons/icons8-rain-cloud-100.png" alt="wheather">
-                        </div>
-                        <div class="tip-item-content">
-                            <h3>Best Travel Seasons </h3>
-                            <p>Discover the best times to visit various destinations for an unforgettable experience.</p>
-                        </div>
-                        
-                    </a>
+          <h4>How to travel Smart</h4>
+          <h2>One Guide for Your Perfect Trip</h2>
+          <div class="tips-list">
+            <div class="tip-item">
+              <a href="/pages/best-travel-seasons.html">
+                <div class="item-icon">
+                  <img
+                    src="/assets/icons/icons8-rain-cloud-100.png"
+                    alt="wheather"
+                  />
                 </div>
-
-                <div class="tip-item">
-                    <a href="/pages/local-transfortation.html">
-                        <div class="item-icon">
-                            <img src="/assets/icons/icons8-bus-100.png" alt="transport">
-                        </div>
-                        <div class="tip-item-content">
-                            <h3>Local Transportation </h3>
-                            <p>Find the best ways to get around, including public transport, taxis, and rentals.</p>
-                        </div>
-                       
-                    </a>
+                <div class="tip-item-content">
+                  <h3>Best Travel Seasons</h3>
+                  <p>
+                    Discover the best times to visit various destinations for an
+                    unforgettable experience.
+                  </p>
                 </div>
-
-                <div class="tip-item">
-                    <a href="/pages/budgeting-tips.html">
-                        <div class="item-icon">
-                            <img src="/assets/icons/icons8-wallet-100.png" alt="budget">
-                        </div>
-                        <div class="tip-item-content">
-                            <h3>Budgeting Tips </h3>
-                            <p>Learn how to save money on flights, accommodation, and activities while traveling.</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="tip-item" >
-                    <a href="/pages/safety-and-health-tips.html">
-                        <div class="item-icon">
-                            <img src="/assets/icons/icons8-safety-96.png" alt="wheather">
-                        </div>
-                        <div class="tip-item-content">
-                            <h3>Safety & Health </h3>
-                            <p>Essential safety precautions and health tips to keep your trip stress-free.</p>
-                        </div>
-                    </a>
-                </div>
-
+              </a>
             </div>
-        </div>
-    </section>
 
-    <!-- Blog Section -->
-    <section id="blog">
-        <h2>Latest Blog Posts</h2>
+            <div class="tip-item">
+              <a href="/pages/local-transfortation.html">
+                <div class="item-icon">
+                  <img src="/assets/icons/icons8-bus-100.png" alt="transport" />
+                </div>
+                <div class="tip-item-content">
+                  <h3>Local Transportation</h3>
+                  <p>
+                    Find the best ways to get around, including public
+                    transport, taxis, and rentals.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="tip-item">
+              <a href="/pages/budgeting-tips.html">
+                <div class="item-icon">
+                  <img src="/assets/icons/icons8-wallet-100.png" alt="budget" />
+                </div>
+                <div class="tip-item-content">
+                  <h3>Budgeting Tips</h3>
+                  <p>
+                    Learn how to save money on flights, accommodation, and
+                    activities while traveling.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="tip-item">
+              <a href="/pages/safety-and-health-tips.html">
+                <div class="item-icon">
+                  <img
+                    src="/assets/icons/icons8-safety-96.png"
+                    alt="wheather"
+                  />
+                </div>
+                <div class="tip-item-content">
+                  <h3>Safety & Health</h3>
+                  <p>
+                    Essential safety precautions and health tips to keep your
+                    trip stress-free.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========= Blog Section =========-->
+      <section id="blog">
+        <div id="blog-header">
+          <h2>Latest Blog Posts</h2>
+          <p>
+            Discover Inspiring Stories, Travel Tips, and Hidden Gems to Make
+            Every Journey Extraordinary!
+          </p>
+        </div>
         <div class="blog-posts">
-            <div class="post-item">
-                <h3>Must-See Spots in Sri Lanka</h3>
-                <p>Explore the top destinations you can't miss in Sri Lanka...</p>
-                <a href="#">Read More</a>
+          <div class="post-item-main">
+            <img
+              src="/assets/images/nilantha-sanjeewa-u8FSEneQ-7w-unsplash.jpg"
+              alt="image"
+            />
+
+            <div class="item-main-container">
+              <h3>
+                Hidden Gems of Sri Lanka: Off-the-Beaten-Path Destinations
+              </h3>
+              <p>
+                Step off the beaten path and immerse yourself in Sri Lanka’s
+                untouched beauty. From serene, secret beaches like Hiriketiya
+                and Silent Beach to breathtaking waterfalls in Belihuloya and
+                Bambarakanda, every corner offers a hidden treasure waiting to
+                be explored. Unveil the island’s rich heritage at offbeat
+                cultural gems like Ritigala Forest Monastery and Mulkirigala
+                Rock Temples. Whether you seek adventure or peace, these hidden
+                spots promise an unforgettable journey through nature and
+                history.
+              </p>
+              <div class="blog-footer">
+                <h4>March 5, 2025 • 5 min read</h4>
+                <div id="img-blog-item-arrow">
+                  <img src="/assets/icons/icons8-arrow-100.png" alt="arrow" />
+                </div>
+              </div>
             </div>
-            <!-- Other blog posts -->
+          </div>
+
+          <div class="item-other-container">
+            <div class="item-other-content">
+              <img
+                src="/assets/images/daniele-franchi-nhzzN8HIT0s-unsplash.jpg"
+                alt="image"
+              />
+              <h4>Top 10 Must-Visit Beaches in Sri Lanka</h4>
+              <div class="content-footer">
+                <h5>March 5, 2025 • 5 min read</h5>
+                <div class="img-blog-item-arrow">
+                  <img src="/assets/icons/icons8-arrow-100.png" alt="arrow" />
+                </div>
+              </div>
+            </div>
+
+            <div class="item-other-content">
+              <img
+                src="/assets/images/daniele-franchi-nhzzN8HIT0s-unsplash.jpg"
+                alt="image"
+              />
+              <h4>Top 10 Must-Visit Beaches in Sri Lanka</h4>
+              <div class="content-footer">
+                <h5>March 5, 2025 • 5 min read</h5>
+                <div class="img-blog-item-arrow">
+                  <img src="/assets/icons/icons8-arrow-100.png" alt="arrow" />
+                </div>
+              </div>
+            </div>
+
+            <div class="item-other-content">
+              <img
+                src="/assets/images/daniele-franchi-nhzzN8HIT0s-unsplash.jpg"
+                alt="image"
+              />
+              <h4>Top 10 Must-Visit Beaches in Sri Lanka</h4>
+              <div class="content-footer">
+                <h5>March 5, 2025 • 5 min read</h5>
+                <div class="img-blog-item-arrow">
+                  <img src="/assets/icons/icons8-arrow-100.png" alt="arrow" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- About Us Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are passionate about showcasing the beauty of Sri Lanka to travelers all around the world.</p>
-    </section>
+      <!-- Review Section -->
 
-    <!-- Contact Us Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-</main>
+      <section class="review-section">
+        <h2>Traveler Reviews</h2>
+        <div class="slider-container">
+          <div class="slider-track">
+            <!-- Review Card 1 -->
+            <div class="review-card">
+              <div class="reviewer-info">
+                <img
+                  src="/assets/images/christian-buehner-DItYlc26zVI-unsplash.jpg"
+                  alt="Traveler 1"
+                />
+                <div>
+                  <h3 class="reviewer-name">John Doe</h3>
+                  <p class="reviewer-country">USA</p>
+                </div>
+              </div>
+              <p class="review-text">
+                “Absolutely loved my trip to Sri Lanka! The beaches, the people,
+                the culture—everything was amazing.”
+              </p>
+              <div class="review-rating">★★★★★</div>
+            </div>
+
+            <!-- Review Card 2 -->
+            <div class="review-card">
+              <div class="reviewer-info">
+                <img
+                  src="/assets/images/ospan-ali-6xv4A1VA1rU-unsplash.jpg"
+                  alt="Traveler 2"
+                />
+                <div>
+                  <h3 class="reviewer-name">Amina Ali</h3>
+                  <p class="reviewer-country">Kenya</p>
+                </div>
+              </div>
+              <p class="review-text">
+                “The hill country was breathtaking. I loved exploring Ella and
+                the scenic train ride!”
+              </p>
+              <div class="review-rating">★★★★★</div>
+            </div>
+
+            <!-- Review Card 3 -->
+            <div class="review-card">
+              <div class="reviewer-info">
+                <img
+                  src="/assets/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+                  alt="Traveler 3"
+                />
+                <div>
+                  <h3 class="reviewer-name">Sara Smith</h3>
+                  <p class="reviewer-country">Canada</p>
+                </div>
+              </div>
+              <p class="review-text">
+                “The cultural sites in Kandy and Anuradhapura were truly
+                inspiring. Highly recommended!”
+              </p>
+              <div class="review-rating">★★★★☆</div>
+            </div>
+
+            <!-- Review Card 4 -->
+            <div class="review-card">
+              <div class="reviewer-info">
+                <img
+                  src="/assets/images/vinicius-amnx-amano-0NCjjD0zGnw-unsplash.jpg"
+                  alt="Traveler 4"
+                />
+                <div>
+                  <h3 class="reviewer-name">David Tan</h3>
+                  <p class="reviewer-country">Singapore</p>
+                </div>
+              </div>
+              <p class="review-text">
+                “Great food, wonderful people, and stunning beaches. Can’t wait
+                to go back!”
+              </p>
+              <div class="review-rating">★★★★★</div>
+            </div>
+
+            <!-- Review Card 5 -->
+            <div class="review-card">
+              <div class="reviewer-info">
+                <img
+                  src="/assets/images/albert-dera-ILip77SbmOE-unsplash.jpg"
+                  alt="Traveler 5"
+                />
+                <div>
+                  <h3 class="reviewer-name">Laura Martins</h3>
+                  <p class="reviewer-country">Brazil</p>
+                </div>
+              </div>
+              <p class="review-text">
+                “The wildlife safari at Yala National Park was unforgettable.
+                Loved seeing elephants up close!”
+              </p>
+              <div class="review-rating">★★★★☆</div>
+            </div>
+          </div>
+        </div>
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+          <button id="prevBtn" aria-label="Previous Reviews">←</button>
+          <button id="nextBtn" aria-label="Next Reviews">→</button>
+        </div>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
+      <!-- FAQ Section  -->
+      <section id="faq">
+        <div class="faq-section">
+          <h2 class="faq-title">Frequently Asked Questions</h2>
+          <div class="faq-container">
+            <div class="faq-item">
+              <button class="faq-question">
+                What is the best time to visit Sri Lanka?<span class="icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer">
+                <p>
+                  The best time to visit Sri Lanka is from December to March for
+                  the west and south coasts, and April to September for the east
+                  coast.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Do I need a visa to travel to Sri Lanka?<span class="icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, most travelers require an Electronic Travel Authorization
+                  (ETA) before arrival. You can apply online.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Is Sri Lanka safe for tourists?<span class="icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, Sri Lanka is generally safe for tourists, but it's always
+                  good to stay informed about current events and local
+                  guidelines.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                What are the must-try Sri Lankan dishes?<span class="icon"
+                  >+</span
+                >
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Don't miss out on trying Kottu Roti, Hoppers, Pol Sambol, and
+                  Fish Ambul Thiyal.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Us Section -->
+      <section id="contact"></section>
+    </main>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 CeylonXplorer. All rights reserved.</p>
-        <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-        </ul>
+      <p>&copy; 2025 CeylonXplorer. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
     </footer>
-</body>
+  </body>
 </html>
