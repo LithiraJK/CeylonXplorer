@@ -28,22 +28,6 @@ function updateDots() {
   });
 }
 
-// Next Button
-nextBtn.addEventListener('click', () => {
-  if (currentIndex < totalCards - cardsToShow) {
-    currentIndex++;
-    updateSliderPosition();
-  }
-});
-
-// Previous Button
-prevBtn.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    updateSliderPosition();
-  }
-});
-
 // Dot Indicators
 dots.forEach((dot, index) => {
   dot.addEventListener('click', () => {
