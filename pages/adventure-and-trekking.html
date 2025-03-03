@@ -6,216 +6,262 @@
   <meta name="description" content="Experience thrilling adventure and trekking in Sri Lanka. Discover challenging hikes, breathtaking views, and unforgettable outdoor experiences.">
   <meta name="keywords" content="adventure, trekking, Sri Lanka, hiking, Adam's Peak, Knuckles Range, Ella Rock, CeylonXplorer">
   <title>Adventure and Trekking</title>
-
-  <style>
-    /* Global Styles */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #1abc9c;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      color: white;
-      font-size: 2em;
-    }
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
-    }
-    h1, h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    
-    /* Cards Styles */
-    .destination-cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-around;
-    }
-    .destination-card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      width: 300px;
-      overflow: hidden;
-      text-align: center;
-      transition: transform 0.3s;
-      cursor: pointer;
-    }
-    .destination-card:hover {
-      transform: translateY(-5px);
-    }
-    .destination-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .card-content {
-      padding: 15px;
-    }
-    .card-content h2 {
-      color: #1abc9c;
-      margin-bottom: 10px;
-      font-size: 1.5em;
-    }
-    .card-content p {
-      font-size: 0.9em;
-      color: #555;
-      margin-bottom: 15px;
-    }
-    .learn-more-btn {
-      display: inline-block;
-      padding: 10px 15px;
-      background-color: #1abc9c;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-    .learn-more-btn:hover {
-      background-color: #16a085;
-    }
-    
-    /* Modal Styles using :target */
-    .modal {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.8);
-      overflow: auto;
-      z-index: 10;
-      padding: 40px 20px;
-    }
-    .modal:target {
-      display: block;
-    }
-    .modal-content {
-      background: #fff;
-      border-radius: 10px;
-      max-width: 600px;
-      margin: auto;
-      padding: 20px;
-      position: relative;
-    }
-    .modal-content img {
-      width: 100%;
-      border-radius: 5px;
-      margin-bottom: 15px;
-    }
-    .modal-content h2 {
-      margin-bottom: 15px;
-      color: #1abc9c;
-    }
-    .modal-content p {
-      color: #555;
-    }
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      text-decoration: none;
-      font-size: 24px;
-      color: #aaa;
-    }
-    .close-btn:hover {
-      color: #000;
-    }
-    
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .destination-cards {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/css/adventure-and-trekking.css">
 </head>
 <body>
-  <!-- Header -->
+
   <header>
     <h1>CeylonXplorer: Adventure & Trekking</h1>
+    <a href="#main-content">
+      <button id="btn-explore" type="button">Explore more</button>
+    </a>
   </header>
+
+  <section id="hero-section">
+    <div class="img-container">
+      <img src="/assets/images/pidurangala.jpg" alt="Adventure & Trekking" />
+    </div>
+  </section>
   
   <!-- Main Content -->
   <div class="container">
     <h1>Experience Thrilling Adventure & Trekking in Sri Lanka</h1>
     <div class="destination-cards">
+
       <!-- Card: Adam's Peak Trek -->
       <div class="destination-card">
-        <img src="images/adams_peak.jpg" alt="Adam's Peak">
+        <img src="/assets/images/kithulgala-bungee-jumping-sri-lanka.jpg" alt="Bungee Jumping in Sri Lanka">
         <div class="card-content">
-          <h2>Adam's Peak Trek</h2>
+          <h2>Bungee Jumping</h2>
           <p>Trek the sacred mountain, witness breathtaking sunrises, and explore ancient pilgrimage routes.</p>
-          <a href="#modal-adams" class="learn-more-btn">Learn More</a>
+          <a href="#modal-jumping" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+
+
+      <!-- Card: Jet Skiing -->
+      <div class="destination-card">
+        <img src="/assets/images/jet-skiing-in-sri-lanka.jpg" alt="Jet Skiing">
+        <div class="card-content">
+          <h2>Jet Skiing</h2>
+          <p>Trek the sacred mountain, witness breathtaking sunrises, and explore ancient pilgrimage routes.</p>
+          <a href="#modal-jet-ski" class="learn-more-btn">Learn More</a>
         </div>
       </div>
       
-      <!-- Card: Knuckles Mountain Range -->
+        <!-- Card: Hikking -->
       <div class="destination-card">
-        <img src="images/knuckles.jpg" alt="Knuckles Mountain Range">
+        <img src="https://www.travelmapsrilanka.com/activities/activtyimages/discover-hiking-sri-lanka.jpg" alt="Hikking Sri Lanka">
         <div class="card-content">
-          <h2>Knuckles Range</h2>
-          <p>Explore rugged trails, deep valleys, and diverse ecosystems in the Knuckles Mountain Range.</p>
-          <a href="#modal-knuckles" class="learn-more-btn">Learn More</a>
+          <h2>Hikking</h2>
+          <p>Trek the sacred mountain, witness breathtaking sunrises, and explore ancient pilgrimage routes.</p>
+          <a href="#modal-hiking" class="learn-more-btn">Learn More</a>
         </div>
       </div>
-      
-      <!-- Card: Ella Rock Climb -->
-      <div class="destination-card">
-        <img src="images/ella_rock.jpg" alt="Ella Rock Climb">
-        <div class="card-content">
-          <h2>Ella Rock Climb</h2>
-          <p>Challenge yourself with a climb to Ella Rock for panoramic views of lush tea country.</p>
-          <a href="#modal-ella" class="learn-more-btn">Learn More</a>
-        </div>
-      </div>
+     
+
     </div>
   </div>
   
-  <!-- Modal for Adam's Peak Trek -->
-  <div id="modal-adams" class="modal">
-    <div class="modal-content">
-      <a href="#" class="close-btn">&times;</a>
-      <h2>Adam's Peak Trek</h2>
-      <img src="images/adams_peak.jpg" alt="Adam's Peak">
-      <p>Adam's Peak, also known as Sri Pada, is a revered pilgrimage site and a popular trekking destination. The climb offers stunning sunrise views and a spiritual journey through ancient trails.</p>
-    </div>
+ <!-- Modal for Bungee Jumping in Sri Lanka -->
+<div id="modal-jumping" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close-btn">&times;</a>
+    <h2>Thrill Meets Paradise in Sri Lanka's Bungee Jumping Adventures</h2>
+    <img src="/assets/images/kithulgala-bungee-jumping-sri-lanka.jpg" alt="">
+    <p>Breathtaking landscapes, crystal-clear waters, and lush greenery—Sri Lanka is a paradise for many reasons. The island nation is renowned for its diverse wildlife, rich cultural heritage, and warm hospitality. But did you know it’s also a hotspot for some of the most exhilarating bungee jumping experiences? Imagine diving off a platform, heart pounding, as you take in panoramic views of mist-covered mountains and tropical forests.</p>
+    <p>Whether you're an adrenaline junkie or a curious traveler seeking your next adventure, bungee jumping in Sri Lanka offers a unique blend of thrill and beauty that’s hard to find anywhere else. The rush of free-falling combined with the serene backdrop makes for an unforgettable experience. So pack your bags and get ready to leap into excitement!</p>
+    
+    <h3>Bungee Jumping in Sri Lanka</h3>
+    <img src="/assets/images/why-sri-lanka-for-bungee-jumping.jpg" alt="adventure-with-bungee-jumping-sri-lanka">
+    <h4>Discovering Bungee Jumping in Sri Lanka</h4>
+    <p>While Sri Lanka is often celebrated for its serene beaches and rich cultural heritage, it’s also emerging as a prime destination for extreme sports. One of the standout activities is bungee jumping, which has seen a surge in popularity in recent years. Imagine the thrill of leaping off a platform, the wind rushing past you as you plunge towards the ground, only to be safely rebounded by the cord. The lush landscapes, majestic mountains, and cascading waterfalls provide a breathtaking backdrop, enhancing the adrenaline rush.</p>
+    <p>For those who love the idea of free-falling while surrounded by stunning natural beauty, Sri Lanka offers an unbeatable experience. Additionally, the country’s growing infrastructure and professional operators ensure that adventurers can enjoy this activity with the highest safety standards. Whether you're an adrenaline junkie or a curious first-timer, bungee jumping in Sri Lanka promises an unforgettable adventure.</p>
+    
+    <h4>Why Sri Lanka for Bungee Jumping?</h4>
+    <p><strong>Scenic Beauty:</strong> One of the main draws of bungee jumping in Sri Lanka is the breathtaking scenery. Imagine jumping off a high platform with lush forests, cascading waterfalls, and panoramic views of mountains and valleys all around you. The natural beauty adds an extra layer of exhilaration to the experience.</p>
+    <p><strong>Cultural Richness:</strong> Another advantage is the cultural richness that comes with the location. Sri Lanka is home to ancient temples, bustling markets, and welcoming communities. You can easily combine your adventure with cultural tours, making your trip even more fulfilling.</p>
+    <p><strong>Accessibility and Affordability:</strong> Compared to Western countries, bungee jumping in Sri Lanka is more affordable without compromising on safety standards. Plus, the country is relatively easy to get around, making it convenient for travelers to explore multiple attractions.</p>
+    
+    <img src="/assets/images/bungee-jumping-in-sri-lanka.jpg" alt="bungee-jumping-in-sri-lanka">
+    <h4>Top Bungee Jumping Spots in Sri Lanka</h4>
+    <p><strong>Kithulgala:</strong> Known primarily for its white-water rafting, Kithulgala is an adventure hub in Sri Lanka, attracting thrill-seekers and nature enthusiasts alike. Nestled amidst lush rainforests and cascading waterfalls, Kithulgala offers a picturesque setting for outdoor activities. Efforts to introduce bungee jumping in this area take advantage of its natural environment and existing adventure tourism infrastructure.</p>
+    <p><strong>Ella:</strong> Famous for its scenic beauty and hiking trails, Ella is a potential spot for bungee jumping. Nestled in lush green hills, Ella offers breathtaking views and a serene atmosphere that attracts both nature lovers and thrill-seekers.</p>
+    <p><strong>Colombo:</strong> As the capital city, Colombo occasionally hosts temporary bungee jumping setups organized by adventure sports companies during festivals or special events. Its modern infrastructure and connectivity make it easily accessible.</p>
+    <p><strong>Kandy:</strong> Located in the heart of the island, Kandy offers scenic bungee jumping spots surrounded by lush landscapes and historical significance, making it an ideal starting point for your adventure.</p>
+    
+    <h4>The Thrill of the Jump</h4>
+    <p>The sheer adrenaline rush is one of the most compelling reasons to try bungee jumping. The moment you take the plunge, you experience a mix of fear, excitement, and pure joy that’s hard to replicate with any other activity. Conquering your fear of heights and taking that leap builds a sense of accomplishment and boosts your confidence.</p>
+    <p>Whether you’re jumping alone or with friends, the experience is bound to create lasting memories. The combination of the thrill and the natural beauty of Sri Lanka makes it a story worth sharing for years to come.</p>
+    
+    <img src="/assets/images/ella-bungee-jumping-sri-lanka.jpg" alt="ella-bungee-jumping-sri-lanka">
+    <h4>Safety and Preparation</h4>
+    <p>When planning your bungee jumping adventure, make sure to choose certified operators who adhere to international safety standards and employ experienced staff. High-quality equipment is crucial for a safe jump—ensure that harnesses, cords, and other gear are regularly inspected and maintained. It’s essential to be in good health before attempting a bungee jump; consult your doctor if necessary.</p>
+    
+    <h4>Preparing for Bungee Jumping in Sri Lanka</h4>
+    <p>Mental preparation is just as important as physical readiness. Visualize your jump, practice deep breathing, and focus on positive thoughts to help calm any nerves. While you don't need to be an athlete, a basic level of fitness helps. Light stretching and moderate exercise in the days leading up to your jump can make a big difference.</p>
+    <p>Wear comfortable clothing and secure your belongings—remove loose items like jewellery and glasses to prevent them from falling during the jump.</p>
+    <p>Before the jump, you’ll undergo a detailed briefing session that includes safety instructions, equipment checks, and a walkthrough of the jump process. Listen carefully to the staff to ensure you have a safe and enjoyable experience. Then, it’s time to take the leap—the initial free-fall lasts only a few seconds but feels infinitely exhilarating.</p>
+    
+    <img src="/assets/images/preparing-for-bungee-jumping-sri-lanka.jpg" alt="preparing-for-bungee-jumping-sri-lanka">
+    <h4>Combining Adventure with Relaxation</h4>
+    <p>After your adrenaline-filled adventure, unwind on Sri Lanka’s pristine beaches. Popular spots like Mirissa and Unawatuna offer a perfect blend of relaxation and natural beauty. You can also explore cultural tours, wildlife safaris, and other attractions to round out your travel experience.</p>
+    
+    <img src="/assets/images/adventure-with-bungee-jumping-sri-lanka.jpg" alt="">
+    <h3>Conclusion</h3>
+    <p>Bungee jumping in Sri Lanka is more than just an adventure—it’s a life-changing experience set against the backdrop of one of the most beautiful places on Earth. From the awe-inspiring landscapes to the sheer thrill of the jump, every moment is designed to captivate and exhilarate.</p>
+    <p>Are you ready to take the leap? Plan your bungee jumping adventure in Sri Lanka today and create memories that will last a lifetime. For more tips and personalized guidance, don't hesitate to reach out to our team. Happy jumping!</p>
+    
   </div>
+</div>
+
+<!-- Modal for Jet Skiing in Sri Lanka -->
+<div id="modal-jet-ski" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close-btn">&times;</a>
+    <h2>Discover Jet Ski Adventures in Sri Lanka</h2>
+    <img src="/assets/images/jet-skiing-in-sri-lanka.jpg" alt="jet-skiing-in-sri-lanka">
+    <p>If you're on the hunt for an adrenaline rush combined with stunning scenery, look no further than jet skiing in Sri Lanka. This tropical paradise offers some of the most exhilarating and scenic jet ski rides you'll ever experience. Imagine zipping across crystal-clear waters, with the lush greenery of the island as your backdrop and the warm sun on your face. Whether you're a thrill-seeker craving an adventure or just looking for a unique way to explore the island, jet skiing in Sri Lanka has something for everyone.</p>
+    <p>We'll cover the best locations to hit the waters—from serene lagoons to bustling coastal areas—share essential safety tips to ensure a fun and secure experience, and discuss costs so you can plan accordingly. By the end, you'll not only be informed but also itching to hit the waters and ride the waves, making unforgettable memories in this beautiful island nation.</p>
+    
+    <img src="/assets/images/jet-ski-tours-sri-lanka.jpg" alt="jet-ski-tours-sri-lanka">
+    <h3>Jet Skiing in Sri Lanka</h3>
+    <h4>Why Jet Skiing in Sri Lanka Should Be on Your Bucket List</h4>
+    <p>Imagine zooming across crystal-clear waters with the wind in your hair and the sun on your face, feeling the thrill of freedom and adventure. Sri Lanka offers all that and more, with its stunning coastlines, vibrant marine life, and pristine beaches, making it a must-visit destination for jet ski enthusiasts. Whether you're an experienced rider or a first-timer, the diverse landscapes and welcoming locals ensure an unforgettable experience.</p>
+    
+    <h4>A Unique Blend of Thrill and Beauty</h4>
+    <p>Jet skiing in Sri Lanka isn’t just a race against the wind; it's your VIP pass to jaw-dropping views of lush landscapes, pristine beaches, and underwater wonders. Imagine gliding across crystal-clear waters, feeling the spray of the ocean on your face while surrounded by the vibrant green of tropical forests and the golden stretch of sandy shores. This island's cocktail of wow-worthy scenery, combined with the thrill of adrenaline-pumping water sports, makes it an adventure-seeker’s paradise! From exploring hidden coves to catching glimpses of marine life beneath the surface, every moment on the water is packed with excitement and breathtaking beauty.</p>
+    
+    <h4>Perfect Weather Year-Round</h4>
+    <p>Sri Lanka boasts a tropical climate, making it ideal for water sports all year. With temperatures ranging from 77°F to 88°F (25°C to 31°C) and abundant sunshine, you can enjoy jet skiing almost any time you visit. The warm waters of the Indian Ocean, coupled with the scenic coastal landscapes, create a perfect setting for both beginners and experienced enthusiasts. Additionally, the island offers numerous spots for other water activities like surfing, snorkeling, and diving, ensuring an unforgettable adventure for all.</p>
+    
+    <h4>Accessibility and Variety</h4>
+    <p>From bustling tourist hubs to secluded coastal areas, Sri Lanka offers diverse locations for jet skiing. Whether you're a beginner or an experienced rider, you'll find the perfect spot to suit your needs and skill level.</p>
+    
+    <img src="/assets/images/top-locations-for-jet-skiing-in-sri-lanka.jpg" alt="top-locations-for-jet-skiing-in-sri-lanka">
+    <h3>Top Locations for Jet Skiing in Sri Lanka</h3>
+    <p><strong>Bentota:</strong> Bentota is a hotspot for sun-seekers and thrill enthusiasts alike! Nestled on Sri Lanka’s southwestern coast, it flaunts golden sands and crystal-clear waters that lure globetrotters. The serene Bentota River is perfect for beginners and families dipping their toes into water sports.</p>
+    <p><strong>Hikkaduwa:</strong> Hikkaduwa is where coral reefs meet the dance floor, making it a hotspot for young travelers. With rental shops and experienced operators, Hikkaduwa offers both safe rides for newbies and exhilarating experiences for pros—all set against a lively cultural backdrop.</p>
+    <p><strong>Negombo:</strong> Nestled near Bandaranaike International Airport, Negombo is your go-to spot for jet skiing excitement. Its lagoon and beach provide ideal conditions for both relaxed rides and high-speed thrills, with local operators bundling rentals with activities like windsurfing and wakeboarding.</p>
+    <p><strong>Trincomalee:</strong> Situated on the northeastern coast, Trincomalee brings jet skiing adventures to life with tranquil blue waters and breathtaking scenery. Whether you’re a novice or a seasoned rider, Trincomalee’s pristine conditions and welcoming atmosphere make it a must-visit spot.</p>
+    
+    <img src="/assets/images/memorable-jet-skiing-sri-lanka.jpg" alt="memorable-jet-skiing-sri-lanka">
+    <h3>Memorable Jet Skiing Sri Lanka</h3>
+    <h4>What To Expect During Your Jet Ski Ride</h4>
+    <p>Understanding what to expect can help you prepare for your adventure and ensure a memorable experience. Research your destination to learn about the best spots, local weather, and unique attractions. Packing the right gear—including appropriate clothing, first aid supplies, and essential travel documents—can greatly enhance your comfort and safety. Familiarizing yourself with local customs and traditions will enrich your interactions and overall journey.</p>
+    
+    <h4>Equipment and Safety Gear</h4>
+    <p>Most rental providers offer state-of-the-art jet skis along with necessary safety gear, including life jackets and helmets. Always check that your equipment is in good condition and fits you properly before you set off.</p>
+    
+    <h4>Instruction and Guidance</h4>
+    <p>Operators typically provide a brief orientation session covering essential controls, safety procedures, and emergency protocols. Even experienced riders should pay attention to these instructions to familiarize themselves with local conditions and terrain, ensuring a safe and enjoyable ride.</p>
+    
+    <h4>Duration and Costs</h4>
+    <p>Jet ski rentals in Sri Lanka usually range from 15-minute to hour-long sessions. Prices vary by location and duration, generally starting around $20 for a 15-minute ride. Look for discounts on longer rentals or packages that include other water sports activities.</p>
+    
+    <h4>Know Your Limits and Follow Regulations</h4>
+    <p>While jet skiing is thrilling, safety should always come first. Start with shorter sessions if you’re new, gradually increasing your time as you gain confidence. Always adhere to local laws, speed limits, and designated riding areas to ensure the safety of yourself and others, and respect wildlife and natural habitats.</p>
+    
+    <h4>Stay Hydrated and Protected</h4>
+    <p>The tropical sun can be intense—stay hydrated by drinking plenty of water and apply sunscreen regularly. Wear lightweight, long-sleeved clothing and a wide-brimmed hat for additional protection, and seek shade during peak sunlight hours.</p>
+    
+    <img src="/assets/images/jet-skiing-with-other-activities.jpg" alt="jet-skiing-with-other-activities">
+    <h3>Jet Skiing with Other Activities</h3>
+    <p>Combining Jet Skiing with Other Activities</p>
+    <p><strong>Snorkeling and Diving:</strong> Many rental providers offer packages that combine jet skiing with underwater adventures, allowing you to explore vibrant marine life and coral reefs.</p>
+    <p><strong>Cultural Tours:</strong> Enhance your trip by combining your water sports adventure with cultural tours. Explore ancient temples, colonial forts, and bustling markets to get a fuller picture of Sri Lanka’s rich heritage.</p>
+    <p><strong>Wildlife Safaris:</strong> Sri Lanka’s diverse ecosystems make it a great destination for wildlife safaris. Add a safari experience to your itinerary to get up close with elephants, leopards, and exotic birds.</p>
+    
+    <img src="/assets/images/best-locations-for-jet-skiing-sri-lanka.jpg" alt="best-locations-for-jet-skiing-sri-lanka">
+    <h3>The Best Time to Go Jet Skiing in Sri Lanka</h3>
+    <p>While Sri Lanka's tropical climate allows for year-round jet skiing, some seasons are more favorable than others:</p>
+    <p><strong>Peak Season:</strong> December to March offer the best weather conditions, though this period can be crowded. Booking in advance is recommended.</p>
+    <p><strong>Off-Peak Season:</strong> May to September sees fewer tourists and lower prices. Weather can be unpredictable, so plan accordingly.</p>
+    <p><strong>Shoulder Season:</strong> April, and October to November provide a balance between pleasant weather and manageable crowds, ideal for a more relaxed experience.</p>
+    
+    <h3>The Environmental Impact</h3>
+    <p>Jet skiing can impact the environment, so it’s important to minimize your footprint:</p>
+    <p><strong>Respect Marine Life:</strong> Avoid riding too close to coral reefs and sensitive marine habitats to prevent disturbance.</p>
+    <p><strong>Choose Eco-Friendly Operators:</strong> Opt for providers that use eco-friendly equipment—some even offer electric jet skis that produce less noise and emissions.</p>
+    <p><strong>Dispose of Waste Properly:</strong> Always use designated waste disposal facilities and never leave trash behind to help preserve Sri Lanka's pristine waters.</p>
+    
+    <img src="/assets/images/jet-ski-tours-sri-lanka.jpg" alt="jet-ski-tours-sri-lanka">
+    <h3>Book Your Jet Ski Adventure</h3>
+    <p>How To Book Your Jet Ski Adventure</p>
+    <p><strong>Online Booking:</strong> Many operators allow you to reserve your ride in advance through their websites, often with discounts or special offers.</p>
+    <p><strong>Local Tour Operators:</strong> Consider booking through a local tour operator who can arrange jet ski rentals as part of a broader travel package, ensuring a seamless experience.</p>
+    <p><strong>Hotel and Resort Services:</strong> Many accommodations in popular tourist areas offer jet ski rentals as part of their services. Check with your hotel for package deals and rental options.</p>
+    
+    <h3>Conclusion</h3>
+    <p>Jet skiing in Sri Lanka is the ultimate combination of thrills and stunning scenery. Whether you're zooming past Bentota's pristine beaches or exploring Hikkaduwa's vibrant coral reefs, every moment on the water is designed to captivate and exhilarate.</p>
+    <p>Ready to make some waves? Start planning your trip today and dive into the excitement of jet skiing in this tropical paradise. For more tips and personalized guidance, reach out to our team and get ready for the best travel adventure.</p>
+    
+  </div>
+</div>
+
+<!-- Modal for Hiking in Sri Lanka -->
+<div id="modal-hiking" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close-btn">&times;</a>
+    
+    <h2>The Pleasure Of Hiking</h2>
+    <img src="/assets/images/discover-hikkaduwa-beach.jpg" alt="">
+    <p><strong>Hiking In Sri Lanka</strong></p>
+    <p>It is next to never that a hiker who walked the beautiful winding ways of Sri Lanka would say something bad about the experience. Instead, whoever comes here takes back a million shining fragments of glitter-coated memories. If life feels utterly miserable at one point, that would be the moment you’d consider paying a visit to Sri Lanka. Take our word for it—this place does wonders. Be it hiking, vacationing, or seeking adventure, Sri Lanka will not disappoint you.</p>
+    <p>Wait, did I say hiking? Almost felt a little excitement there, coming from all you hikers! To be on point, the Sri Lankan hiking experience can vary from an easy walk along a country road to an intense climb towards a cloudy peak. Based on your levels of endurance and passion, you can choose from a variety of hiking spots. If you are already a passionate hiker, you will find Sri Lanka exquisitely original. And if you are just a beginner, that is totally fine—the initial difficulties will soon transform into a wholesome memory! Do you know how the batter needs to be beaten for the cake to be yummy? Just like that, the joy of hiking lies not in focusing on the pains and aches, but in living and reliving the moments you spent. A hike does not kill you. Grab a pair of boots. Bite into an energy bar. Break a sweat!</p>
+    
+    <h3>Where In Sri Lanka</h3>
+    <p>To be frank, the whole island itself is a hike. But aiming for the best, we immediately have to admit that the hill-country is the premier hiking destination one can think of. You can try different places because each will be different. A list of the best-hiking destinations will lead you to choose what suits you best.</p>
+    
+    <img src="/assets/images/top-locations-for-jet-skiing-in-sri-lanka.jpg" alt="top-locations-for-jet-skiing-in-sri-lanka">
+    <h3>Ella Rock Hiking</h3>
+    <p><strong>Ella Rock</strong></p>
+    <p>Ella is situated about 1000 metres above sea level in the central highlands of Sri Lanka. After a 5-hour train ride—believed to be one of the most scenic journeys in the world—the Ella trail starts about 1.5 km from the town center, winding up through lush tea plantations and deep green foliage. As far as your eyes can see, Ella unveils a dense expanse of greenery painted on a hilly canvas. The trail is a comfortable 2.5-hour uphill trek followed by a 1.5 to 2-hour descent. Give yourself plenty of time to snap pictures, soak in the view, and feel the misty breezes across your face. Ella is perfect for a day-long hike, with many homestays available if you wish to extend your adventure.</p>
+    
+    <img src="/assets/images/sinharaja-forest.jpg" alt="sinharaja-forest">
+    <h3>Hiking Tour of Sinharaja Rain Forest</h3>
+    <p><strong>Sinharaja Rain Forest</strong></p>
+    <p>You can travel everywhere and trek through every little village in Sri Lanka, but you are not a true hiker until you try Sinharaja. This evergreen rainforest, recognized as a UNESCO World Heritage Site, a biosphere reserve, and a preservation site for future generations, is truly a big deal. Sinharaja trails are special because local guides can tailor them to your interests and endurance. The trek typically lasts around 3 hours and offers encounters with many endemic and endangered species. With 60% of the trees here unique to Sri Lanka, you’ll witness nature as it exists nowhere else on the planet—truly a small world in itself!</p>
+    
+    <img src="/assets/images/horton-plains-in-sri-lanka.jpg" alt="">
+    <h3>Hiking Horton Plains Sri Lanka</h3>
+    <p><strong>Horton Plains And World's End</strong></p>
+    <p>Horton Plains National Park is a rich plateau in Sri Lanka's central highlands, elevated 2000 metres above sea level. Icy, cold, and windy, the park teems with diverse flora and fauna. At the entrance, you might find a small shop offering a quick snack or a cup of Ceylon tea. With a little pond adorned with delicate white flowers and wild stags daring to stare, the trek begins. Short trails wind around for about an hour, while longer 2-hour circuits circle the entire plateau, offering spectacular views. You’ll jump over cold brooks, navigate rocky mounds, and pass by grasslands, ponds, and mysterious forest patches. Signs direct you to Baker’s Falls and World’s End—Baker’s Falls being a must-see, and World’s End, with its 800-metre drop, providing a virtual feeling of falling into eternity, alongside panoramic vistas brushed by gentle upcountry sunlight.</p>
+    
+    <img src="/assets/images/little-adams-peak.webp" alt="">
+    <h3>Adam's Peak Hiking Sri Lanka</h3>
+    <p><strong>Adam’s Peak</strong></p>
+    <p>Adam’s Peak is a lengthy and crowded hike that is more akin to a religious expedition—a pilgrimage. Two main trails dominate: one stretching about 9 km from Nallathanniya and another starting from Ratnapura that is 13 km long, more of a leisurely walk than a strenuous climb. Adam’s Peak is frequented by locals for its spiritual significance and by tourists for its breathtaking sunrise views (locally known as Ira Sewaya). Most climbers start at night to reach the summit in time for the sunrise—a pastel display that is said to be one of the best sights on Earth. During the peak season (from the December full moon day until the April full moon day), the climb can be crowded, so consider off-season hiking for a more tranquil experience. Note that there are no shops along the way, and the few available kiosks tend to charge high prices, so pack your own food, water, and necessary medication.</p>
+    
+    <h3>Knuckles Mountain Hiking</h3>
+    <p><strong>Knuckles Mountain Range</strong></p>
+    <p>If you plan to cover the whole area, the Knuckles hike will keep you on trail for 2–4 days. Situated between Kandy and Matale, the Knuckles Mountain Range is rich in biodiversity. Its varied ecosystem offers surprises at every turn, making it a paradise for lovers of wildlife, birds, and nature. For a shorter experience, you can choose simpler trails to ascend the lowest peak, but for the truly adventurous, a three-day trek to Meemure is an exhilarating challenge that demands extra attention and preparation.</p>
+    
+    <img src="/assets/images/meemure-hiking-sri-lanka (1).jpg" alt="meemure-hiking-sri-lanka">
+    <h3>Hiking Meemure Mountains</h3>
+    <p><strong>Meemure</strong></p>
+    <p>Meemure is synonymous with isolation—the most solitary village in Sri Lanka. The Meemure hike takes at least three days (two nights) to complete. Approaching from Hunnasgiriya Mountain in the Knuckles range, the trek spans nearly 33 km. Along the way, you'll encounter ancient clay houses, vast open grass patches perfect for camping, and refreshing dips in streams and the Heen River. The experience, punctuated by the melodious chorus of cicadas and the soothing night sounds, promises to be one of your most memorable adventures.</p>
+    
+    <img src="/assets/images/hanthana-hiking-sri-lanka.jpg" alt="Hanthana">
+    <h3>Hiking Hanthana Mountain Range</h3>
+    <p><strong>Hanthana Mountain Range</strong></p>
+    <p>Hanthana is a challenging 18-kilometre route that begins from the University of Peradeniya. The trail is adorned with tea plantations, forest patches, and expansive grasslands. With seven peaks offering heavenly vistas once climbed, Hanthana is also an excellent spot for camping. While the Sri Lankan leopard and fishing cat roam the wilderness here, spotting them requires a bit of luck.</p>
+    
+    <img src="/assets/images/pidurangala-hiking-sri-lanka.jpg" alt="pidurangala">
+    <h3>Hiking Pidurangala in Sri Lanka</h3>
+    <p><strong>Pidurangala</strong></p>
+    <p>Pidurangala, located in the Sigiriya region, provides a unique perspective of the iconic Sigiriya Rock Fortress, visible in its entirety from the top. Ideal for photography, the short hike (less than 30 minutes) delivers a picture-perfect view of the valley below. Many opt to combine a sunrise hike at Pidurangala with a sunset climb to Sigiriya, creating a day of breathtaking contrasts.</p>
+    
+    <img src="/assets/images/discover-hiking-sri-lanka.jpg" alt="discover-hiking-sri-lanka">
+    <h3>Discover Hiking in Sri Lanka</h3>
+    <p><strong>Discover Much More</strong></p>
+    <p>There are countless hiking trails across Sri Lanka, making it impossible to cover every single one without a super-long article. For those who have explored the above destinations, there are still many hidden gems to discover: the train and trek from Bandarawela to Bambarakanda, Kirigalpoththa mountain trek, Rumassala hike, a short trek to Lovers’ Leap Falls, the Dunhinda Falls trek, Ramboda Falls and Riverston trails, and more. Alternatively, plan a relaxed hike through rural villages to experience local plantations and daily life, or explore the central tea estates and factories. Hikers, prepare!</p>
+    
+  </div>
+</div>
+
+
   
-  <!-- Modal for Knuckles Mountain Range -->
-  <div id="modal-knuckles" class="modal">
-    <div class="modal-content">
-      <a href="#" class="close-btn">&times;</a>
-      <h2>Knuckles Mountain Range</h2>
-      <img src="images/knuckles.jpg" alt="Knuckles Mountain Range">
-      <p>The Knuckles Mountain Range features challenging trails, pristine forests, and breathtaking vistas. It's a haven for trekkers and nature lovers seeking an off-the-beaten-path adventure.</p>
-    </div>
-  </div>
   
-  <!-- Modal for Ella Rock Climb -->
-  <div id="modal-ella" class="modal">
-    <div class="modal-content">
-      <a href="#" class="close-btn">&times;</a>
-      <h2>Ella Rock Climb</h2>
-      <img src="images/ella_rock.jpg" alt="Ella Rock Climb">
-      <p>Ella Rock offers an exhilarating climb with rewarding panoramic views over the rolling hills and tea plantations of Ella. Perfect for adventurers seeking both challenge and beauty.</p>
-    </div>
-  </div>
 </body>
 </html>
