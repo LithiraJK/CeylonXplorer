@@ -6,159 +6,32 @@
   <title>Sri Lankan Nature & Wildlife</title>
   <meta name="description" content="Explore the best of Sri Lanka's nature and wildlife—from lush forests to exciting national parks. Discover Yala, Sinharaja, Horton Plains, and more.">
   <meta name="keywords" content="Sri Lanka nature, wildlife, national parks, Yala, Sinharaja, Horton Plains, CeylonXplorer">
-  <style>
-    /* Global Styles */
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #1abc9c;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      color: white;
-      font-size: 2em;
-    }
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
-    }
-    h1, h2 {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    
-    /* Destination Cards */
-    .destination-cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-around;
-    }
-    .destination-card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: 300px;
-      overflow: hidden;
-      text-align: center;
-      transition: transform 0.3s;
-      cursor: pointer;
-    }
-    .destination-card:hover {
-      transform: translateY(-5px);
-    }
-    .destination-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .card-content {
-      padding: 15px;
-    }
-    .card-content h2 {
-      color: #1abc9c;
-      margin-bottom: 10px;
-      font-size: 1.5em;
-    }
-    .card-content p {
-      font-size: 0.9em;
-      color: #555;
-      margin-bottom: 15px;
-    }
-    .learn-more-btn {
-      display: inline-block;
-      padding: 10px 15px;
-      background-color: #1abc9c;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-    .learn-more-btn:hover {
-      background-color: #16a085;
-    }
-    
-    /* Modal Styles using :target */
-    .modal {
-      display: none;
-      position: fixed;
-      top: 0; 
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      overflow: auto;
-      z-index: 10;
-      padding: 40px 20px;
-    }
-    .modal:target {
-      display: block;
-    }
-    .modal-content {
-      background: #fff;
-      border-radius: 10px;
-      max-width: 600px;
-      margin: auto;
-      padding: 20px;
-      position: relative;
-    }
-    .modal-content img {
-      width: 100%;
-      border-radius: 5px;
-      margin-bottom: 15px;
-    }
-    .modal-content h2 {
-      margin-bottom: 15px;
-      color: #1abc9c;
-    }
-    .modal-content p {
-      color: #555;
-    }
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      text-decoration: none;
-      font-size: 24px;
-      color: #aaa;
-    }
-    .close-btn:hover {
-      color: #000;
-    }
-    
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .destination-cards {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/css/nature-and-wildlife.css">
 </head>
 <body>
   <!-- Header -->
   <header>
     <h1>CeylonXplorer: Nature & Wildlife</h1>
+    <a href="#main-content">
+      <button id="btn-explore" type="button">Explore more</button>
+    </a>
   </header>
   
+  <!-- Hero Section -->
+  <section id="hero-section">
+    <div class="img-container">
+      <img src="/assets/images/aj-robbie-BuQ1RZckYW4-unsplash.jpg" alt="Nature and Wildlife">
+    </div>
+  </section>
+  
   <!-- Main Content -->
-  <div class="container">
+  <div id="main-content" class="container">
     <h1>Explore Sri Lanka's Nature & Wildlife</h1>
     <div class="destination-cards">
+
       <!-- Card: Yala National Park -->
       <div class="destination-card">
-        <img src="images/yala.jpg" alt="Yala National Park">
+        <img src="/assets/images/geranimo-wYy3rvvgjAU-unsplash.jpg" alt="Yala National Park">
         <div class="card-content">
           <h2>Yala National Park</h2>
           <p>Home to diverse wildlife, including leopards and elephants, Yala offers an unforgettable safari experience.</p>
@@ -168,7 +41,7 @@
       
       <!-- Card: Sinharaja Forest Reserve -->
       <div class="destination-card">
-        <img src="images/sinharaja.jpg" alt="Sinharaja Forest Reserve">
+        <img src="/assets/images/sinharaja-forest.jpg" alt="Sinharaja Forest Reserve">
         <div class="card-content">
           <h2>Sinharaja Forest Reserve</h2>
           <p>This UNESCO World Heritage Site is a biodiversity hotspot with lush tropical forests and rare species.</p>
@@ -178,13 +51,43 @@
       
       <!-- Card: Horton Plains -->
       <div class="destination-card">
-        <img src="images/horton_plains.jpg" alt="Horton Plains">
+        <img src="/assets/images/horton-plains-in-sri-lanka.jpg" alt="Horton Plains">
         <div class="card-content">
           <h2>Horton Plains</h2>
           <p>Known for its scenic landscapes and the dramatic World’s End cliff, Horton Plains is perfect for hiking enthusiasts.</p>
           <a href="#modal-horton" class="learn-more-btn">Learn More</a>
         </div>
       </div>
+
+        <!-- Card: Udawalawe National Park -->
+        <div class="destination-card">
+          <img src="/assets/images/travelling-to-udawalawe-national-park.jpg" alt="udawalawe-national-park-in-sri-lanka">
+          <div class="card-content">
+            <h2>Udawalawe National Park</h2>
+            <p>Known for its scenic landscapes and the dramatic World’s End cliff, Horton Plains is perfect for hiking enthusiasts.</p>
+            <a href="#modal-udawalawe" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
+
+          <!-- Card: Minneriya National Park -->
+      <div class="destination-card">
+        <img src="/assets/images/minneriya-national-park.jpg" alt="Minneriya">
+        <div class="card-content">
+          <h2>Minneriya National Park</h2>
+          <p>Known for its scenic landscapes and the dramatic World’s End cliff, Horton Plains is perfect for hiking enthusiasts.</p>
+          <a href="#modal-minneriya" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+
+        <!-- Card: Maduru Oya National Park -->
+        <div class="destination-card">
+          <img src="/assets/images/safari-in-maduru-oya-national-park.jpg" alt="Maduru Oya National Park">
+          <div class="card-content">
+            <h2>Maduru Oya National Park</h2>
+            <p>Known for its scenic landscapes and the dramatic World’s End cliff, Horton Plains is perfect for hiking enthusiasts.</p>
+            <a href="#modal-maduru" class="learn-more-btn">Learn More</a>
+          </div>
+        </div>
     </div>
   </div>
   
@@ -193,29 +96,589 @@
     <div class="modal-content">
       <a href="#" class="close-btn">&times;</a>
       <h2>Yala National Park</h2>
-      <img src="images/yala.jpg" alt="Yala National Park">
-      <p>Yala National Park is one of Sri Lanka's most popular wildlife destinations. Roam the expansive park on a safari to witness a range of wildlife, from elusive leopards to herds of elephants. Enjoy guided tours and immerse yourself in nature.</p>
+      <img src="/assets/images/tour-to-yala-national-park.jpg" alt="Yala National Park">
+      <p>
+        Clinging to the Indian Ocean, Yala is situated in southeastern Sri Lanka about 300 kilometers
+        away from its capital, Colombo. This park is highlighted as the second largest national park
+        in the country and as the most visited national park by the local as well as foreign visitors.
+        It owns the most extensive wildlife spectrum of Sri Lanka. Herds of elephants, sloth bears, deer,
+        monkeys, buffalos, crocodiles and endangered species of leopards dwell among the jungle plains,
+        rivers, and coastal lagoons, scrub plains and rocky outcrops. Yala National Park spread over
+        an area of 980 square kilometers (14,100 hectares) in the Southern and Uva provinces of Sri Lanka.
+      </p>
+      <p>
+        The Yala National Park has been recognized as a region with a dry semi-arid climate.
+        The annual rainfall in Yala is less than a 1000 millimeters, and it is sustained by the north-east monsoon
+        which falls during the months November and January. During the other months of the year,
+        Yala remains dry, and there are instances where there can be seen severe droughts,
+        especially from July to September.
+      </p>
+      <img src="/assets/images/yala-national-park-in-sri-lanka.jpg" alt="yala-national-park-in-sri-lanka"> 
+      <h3>Travelling To Yala National Park</h3>
+      <p>
+        The best time to visit Yala is from November and extends until April.
+        There prevails a soothing climate during these months, and it would elevate
+        your journey to a comfortable one. It would be advisable to avoid weekends and public holidays.
+        A weekday is better and will prevent you from being stuck in the traffic jam.
+      </p>
+      <p>
+        It would be wise to have a good camera to capture the astounding and breathtaking incidents
+        in your camera lens as this would drive you into a large amount of once in a lifetime moments.
+        If you do not have a camera with you, it would be great to rent one because these precious memories
+        cannot be taken for granted. Also, you must bring battery charged for your cameras and phones.
+        Make sure that you have enough space in them. Moreover, you can have a pair of binoculars
+        to have better views of animals and birds without interrupting their freedom.
+      </p>
+      <h3>Things to Do in Yala National Park</h3>
+      <img src="/assets/images/travelling-to-yala-national-park.jpg" alt="travelling-to-yala-national-park">
+      <h4>Safari</h4>
+      <p>
+        The park consists of five main blocks, and among them,
+        only two are open to the visitors. Also, these safaris are filled with a range of wildlife encounters.
+        Leopards, wild elephants, sloth bears with a large number of other animals would always
+        add more excitement and joy to your safaris.
+      </p>
+      <p>
+        Several safari companies are functioning in Yala. The amount of experience and knowledge
+        you gain entirely differ on the safari company. It would not be a smart idea to pick
+        the cheapest safari provider at Yala. Sometimes there are tour guides who are specialized
+        in their own field and know animal habitats, just like leopard sightings.
+        So it would be better to choose your safari operator considering your requirements.
+      </p>
+      <p>
+        Moreover, it would be best if you inquired them about their vehicles. Their area of expertise
+        and the areas that they specialized should be thoroughly taken into consideration to make
+        your experience an everlasting memory.
+      </p>
+      <img src="/assets/images/yala-national-park-camping.jpg" alt="yala-national-park-camping">
+      <h4>Camping</h4>
+      <p>
+        Camping within the premises is prohibited as a precautionary measure to ward off the dangers of 
+        harming the wildlife. However, once you step outside the park, the zone is filled with a large number of 
+        camps hugging the park. There are three types of camps.
+    </p>
+    <p>
+      One is a jungle camp with minimal facilities. These do not remain in the same place for a more extended 
+      period to preserve the environment. Even though they do not have electricity and other comforts, these canvas 
+      camps make you embrace nature as the experience provided is one that ties the visitors close to nature.
+    </p>
     </div>
   </div>
   
-  <!-- Modal for Sinharaja Forest Reserve -->
-  <div id="modal-sinharaja" class="modal">
-    <div class="modal-content">
-      <a href="#" class="close-btn">&times;</a>
-      <h2>Sinharaja Forest Reserve</h2>
-      <img src="images/sinharaja.jpg" alt="Sinharaja Forest Reserve">
-      <p>Sinharaja is a lush, tropical rainforest and a UNESCO World Heritage Site known for its rich biodiversity. Explore winding trails, listen to the sounds of exotic birds, and discover rare plant species in this natural paradise.</p>
+    <!-- Modal for Sinharaja Forest Reserve -->
+    <div id="modal-sinharaja" class="modal">
+      <div class="modal-content">
+        <a href="#" class="close-btn">&times;</a>
+        <h2>Sinharaja Forest Reserve</h2>
+        <img src="/assets/images/sinharaja-forest.jpg" alt="Sinharaja Forest Reserve">
+        <p>
+          The Sinharaja Forest Reserve, a UNESCO World Heritage Site, is a biodiversity hotspot in Sri Lanka.
+          This dense tropical rainforest is home to a vast array of endemic flora and fauna, making it a paradise for
+          nature lovers and researchers. The forest is characterized by towering trees, rich vegetation, and an
+          intricate network of streams and waterfalls.
+        </p>
+        <p>
+          The name "Sinharaja" translates to "Lion King," reflecting the forest’s majestic and ancient status.
+          With limited access to vehicles, visitors explore the forest primarily on foot, encountering exotic bird
+          species, rare reptiles, and a variety of butterflies along the way. The forest canopy is a haven for many
+          species, making birdwatching an unforgettable experience.
+        </p>
+        <img src="/assets/images/sinharaja.jpg" alt="sinharaja">
+        <h3>Climate and Best Time to Visit</h3>
+        <p>
+          The forest experiences a humid tropical climate with significant rainfall throughout the year.
+          However, the best time to visit is from December to early April, when the weather is relatively drier.
+          It is recommended to wear comfortable hiking gear and carry insect repellent to make the most of your adventure.
+        </p>
+        <h3>Things to Do in Sinharaja Forest Reserve</h3>
+        <img src="/assets/images/sinharaja-waterfalls.jpg" alt="sinharaja-waterfalls">
+        <h4>Hiking and Trekking</h4>
+        <p>
+          Sinharaja offers some of the best hiking trails in Sri Lanka, with paths winding through thick jungle,
+          waterfalls, and scenic viewpoints. Experienced guides can lead visitors through lesser-known trails,
+          ensuring a safe and informative journey.
+        </p>
+        <img src="/assets/images/sinharaja-birds.jpg.jpg" alt="">
+        <h4>Wildlife and Birdwatching</h4>
+        <p>
+          The forest is a sanctuary for numerous endemic species, including the Sri Lankan blue magpie, the purple-faced
+          langur, and the green pit viper. For birdwatchers, early mornings are the best time to spot rare species
+          in their natural habitat.
+        </p>
+        <h4>Exploring Waterfalls</h4>
+        <p>
+          Hidden within the forest are breathtaking waterfalls such as Doowili Ella and Brahmana Ella. These
+          cascades provide a refreshing break during hikes and are perfect for photography enthusiasts.
+        </p>
+      </div>
     </div>
-  </div>
   
-  <!-- Modal for Horton Plains -->
-  <div id="modal-horton" class="modal">
-    <div class="modal-content">
-      <a href="#" class="close-btn">&times;</a>
-      <h2>Horton Plains</h2>
-      <img src="images/horton_plains.jpg" alt="Horton Plains">
-      <p>Horton Plains is famed for its rolling grasslands, cloud forests, and the breathtaking drop known as World’s End. It’s an ideal destination for trekkers and nature lovers looking to experience Sri Lanka’s rugged beauty.</p>
-    </div>
+  
+ <!-- Modal for Horton Plains National Park -->
+<div id="modal-horton" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close-btn">&times;</a>
+    
+    <h2>Horton Plains National Park</h2>
+    <img src="/assets/images/horton-plains-in-sri-lanka.jpg" alt="horton-plains-in-sri-lanka">
+    <p>
+      Nestled in the heart of Sri Lanka's central highlands, Horton Plains National Park is a paradise waiting to be explored. This stunning landscape, often cloaked in mist and mystery, offers adventure travelers, Sri Lanka explorers, and nature enthusiasts an unforgettable experience. From its diverse flora and fauna to the breath-taking viewpoints, Horton Plains is a destination that promises both thrill and tranquility.
+    </p>
+
+    <img src="/assets/images/horton-plains-national-park.jpg" alt="horton-plains-national-park">
+    
+    <h3>Why Horton Plains is a Must-Visit for Adventure Travelers</h3>
+    <p>
+      Horton Plains National Park is not just another scenic spot—it's an adventure haven. The park's rugged terrain, interspersed with lush grasslands and cloud forests, provides the perfect backdrop for hiking and exploration. If you're someone who thrives on the thrill of discovery, Horton Plains will captivate you with its myriad trails and hidden gems.
+    </p>
+    <h3>The Unique Ecosystem of Horton Plains</h3>
+    <p>
+      What makes Horton Plains truly unique is its distinct ecosystem, which is a remarkable blend of montane grassland and cloud forest. Positioned at an impressive altitude of over 2,000 meters, the park offers a stunning landscape that changes dramatically with the weather. The combination of these two habitats creates an environment that supports a diverse variety of species, including many that are endemic to Sri Lanka, such as the elusive Sri Lankan sambar deer and the vibrant purple-faced langur.
+    </p>
+    <p>
+      The cool climate and high elevation not only enhance the park's rich biodiversity but also foster unique flora, like the rare and beautiful rhododendrons that bloom in the cooler months. This fascinating interplay of conditions makes Horton Plains an exceptional site for research and exploration, drawing nature lovers, scientists, and adventurers alike who seek to understand and appreciate the delicate balance of its ecosystem.
+    </p>
+
+    <h3>Horton Plains World's End</h3>
+    <img src="/assets/images/horton-plains-worlds-end.jpg" alt="horton-plains-worlds-end">
+
+    <h4>Exploring the Famous World's End</h4>
+    <p>
+      One of the most iconic features of Horton Plains is World's End, a sheer cliff with a drop of about 870 meters. This viewpoint offers one of the most dramatic and awe-inspiring vistas in Sri Lanka. On a clear day, you can see all the way to the southern coast of the island. The hike to World's End is relatively easy but incredibly rewarding, making it a must-do for anyone visiting the park.
+    </p>
+    
+    <h4>Baker's Falls: A Hidden Gem</h4>
+    <p>
+      Another highlight of Horton Plains is Baker's Falls, a breath-taking waterfall named after the British explorer Sir Samuel Baker, who was known for his explorations of Africa. The falls are conveniently accessible via a scenic detour from the main trail leading to World's End, which is famous for its stunning views. As you make your way to Baker's Falls, you'll find yourself surrounded by thick, lush foliage and rugged rocks that create an enchanting atmosphere.
+    </p>
+    <p>
+      This tranquil spot invites visitors to take a moment to relax and immerse themselves in the natural beauty of the area. The cascading water flows gracefully over the rocks, creating a soothing sound that adds to the serene ambiance. For photography enthusiasts, the unique play of light on the water, combined with the vibrant greenery, makes it a perfect location to capture stunning images of nature. Whether you're looking to unwind or simply appreciate the incredible landscape, Baker's Falls offers an idyllic escape.
+    </p>
+    
+    <h3>Rhododendron Arboreum Horton Plains</h3>
+    <img src="/assets/images/rhododendron-arboreum-horton-plains.jpg" alt="flower">
+    <h4>The Flora of Horton Plains</h4>
+    <p>
+      Horton Plains is a breathtaking national park that boasts a wide variety of plant species, many of which are endemic to the region, highlighting its unique biodiversity. The park's diverse flora includes sprawling grasslands that sway gently in the breeze, dense cloud forests that create a mystical atmosphere, and vibrant flower species that burst with color throughout the seasons. Among the most notable plants in Horton Plains is the Rhododendron arboreum, which captivates visitors with its stunning red flowers that bloom spectacularly in clusters.
+    </p>
+    <p>
+      This striking plant not only adds beauty but is also a significant part of the ecosystem. The incredible diversity of plant life contributes layers of color and texture to the landscape, creating a picturesque setting that is truly a visual treat for visitors. Whether you're wandering along the trails or enjoying a scenic viewpoint, the rich tapestry of plant species enhances the overall experience, making Horton Plains a must-visit destination for nature enthusiasts and photographers alike.
+    </p>
+    
+    <h3>Wildlife Encounters in Horton Plains</h3>
+    <img src="/assets/images/horton-plains-little-england.jpg" alt="horton-plains-little-england">
+
+    <p>
+      The park is teeming with a rich variety of wildlife, offering numerous opportunities for unforgettable animal sightings. As you stroll through the lush greenery, you might be fortunate enough to spot the elusive Sri Lankan leopard, known for its striking coat and stealthy demeanor, or the majestic sambar deer, which roams gracefully through the forests. Keep an eye out for the purple-faced langur, a fascinating primate native to the region, as it swings through the trees with ease.
+    </p>
+    <p>
+      For birdwatchers, Horton Plains is a true paradise, boasting an impressive array of bird species. You may be delighted by the presence of the Sri Lanka whistling thrush, whose melodious calls fill the air, or the dull-blue flycatcher, with its vivid colors and agile flight. The chance to observe these creatures in their natural habitat, interacting with their surroundings, adds an element of excitement and wonder to any trip to Horton Plains, making it an experience to cherish and remember.
+    </p>
+    
+    <h3>Planning Your Trip to Horton Plains</h3>
+    <p>
+      Planning a trip to Horton Plains involves a few key considerations. The park is accessible from several major cities, including Colombo and Kandy. You can reach the park by car, bus, or train, with the most scenic route being the train ride to Ohiya or Haputale. Once there, you can hire a local guide to enhance your experience, ensuring you don't miss any of the park's hidden treasures.
+    </p>
+    
+    <h4>Travel Tips for Horton Plains Visitors</h4>
+    <ul>
+      <li><strong>Dress in layers:</strong> The weather can be cool and unpredictable, so it's advisable to wear layers that you can adjust throughout your visit.</li>
+      <li><strong>Bring snacks and water:</strong> There are no food or water facilities in the park, so make sure to pack sufficient snacks and drinks for your adventure.</li>
+      <li><strong>Respect wildlife:</strong> Always maintain a safe distance from animals and do not disturb their natural behaviour to ensure their safety and yours.</li>
+      <li><strong>Avoid littering:</strong> Help keep the park clean by properly disposing of your trash and leaving no trace behind.</li>
+      <li><strong>Follow park rules:</strong> Stay on designated trails and adhere to the park's regulations to protect the environment and enhance your experience.</li>
+    </ul>
+    
+    <img src="/assets/images/hiking-in-horton-plains.jpg" alt="hiking-in-horton-plains">
+
+    <h4>The Best Time to Visit Horton Plains</h4>
+    <p>
+      Timing your visit to Horton Plains is crucial for the best experience. The park is open year-round, but the months from January to March offer the clearest weather conditions. During this period, the skies are usually clear, providing unobstructed views from World's End. However, the park can be equally enchanting during the rainy season, when the mist adds a mystical quality to the landscape. Regardless of when you visit, it's advisable to start your hike early in the morning to avoid the afternoon clouds that can obscure the views.
+    </p>
+    
+    <h4>Tips for Hiking in Horton Plains</h4>
+    <p>
+      Hiking in Horton Plains requires some thoughtful preparation to ensure a safe and enjoyable experience for all adventurers. First and foremost, it’s crucial to wear comfortable and sturdy footwear, as the trails can be uneven, rocky, and slippery at times, which increases the risk of slips and falls. Opt for hiking boots with good traction to provide the support you need throughout your journey.
+    </p>
+    <p>
+      Additionally, it's essential to bring plenty of water and high-energy snacks, as there are no food stalls or shops within the park. Staying hydrated is vital, especially when trekking through varying altitudes and terrains. Consider packing items like trail mix, energy bars, or fruit to keep your energy levels up.
+    </p>
+    <p>
+      Lastly, don’t forget to carry a jacket or a sweater, as the high altitude can mean temperatures drop unexpectedly, especially in the early morning or late afternoon. Layering your clothing can help you adjust to the changing weather conditions throughout the hike. Taking these precautions will help you make the most of your experience in the breathtaking landscapes of Horton Plains.
+    </p>
+
+    
+    <h4>Sustainable Tourism in Horton Plains</h4>
+    <p>
+      Horton Plains is a protected area, and sustainable tourism practices are crucial to preserving its natural beauty. Visitors are encouraged to adhere to the "leave no trace" principle, ensuring that the park remains pristine for future generations. Avoid picking flowers, disturbing wildlife, or leaving litter behind. By following these guidelines, you can help maintain the ecological balance of this unique destination.
+    </p>
+    
   </div>
+</div>
+
+<!-- Modal for Udawalawe National Park -->
+<div id="modal-udawalawe" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close-btn">&times;</a>
+    <h2>Udawalawe National Park</h2>
+    <img src="/assets/images/tour-to-udawalawe-national-park.jpg" alt="Udawalawe National Park">
+    <p>
+      Discover Udawalawe National Park: a must-visit destination in Sri Lanka for wildlife enthusiasts and nature lovers. This stunning sanctuary boasts lush landscapes, diverse wildlife, and a rich cultural heritage. Whether you're looking for an unforgettable adventure or a peaceful escape into nature, Udawalawe National Park offers it all. Experience the beauty of Udawalawe National Park and immerse yourself in the wonders of Sri Lanka's natural environment!
+    </p>
+    <img src="/assets/images/udawalawe-national-park-in-sri-lanka.jpg" alt="udawalawe-national-park-in-sri-lanka">
+    <h3>Travelling To Udawalawe National Park</h3>
+    <p>
+      Udawalawe National Park is one of Sri Lanka's most popular wildlife reserves, and it's easy to see why. Established in 1972, this stunning park covers over 300 square kilometers and boasts a diverse range of ecosystems, from vast grasslands to lush forests. Visitors are captivated by its breathtaking scenery from the moment they arrive.
+    </p>
+    <p>
+      Renowned for its large elephant population, Udawalawe is considered one of the best places in Asia to observe these magnificent animals in their natural habitat. But the park offers more than just elephants; it's also home to a rich variety of wildlife, including leopards, crocodiles, and numerous bird species.
+    </p>
+    <p>
+      Whether you're a passionate wildlife photographer or simply someone who loves the beauty of nature, Udawalawe National Park has something for everyone. Explore this incredible destination to experience the splendor of Sri Lanka's wildlife and breathtaking landscapes!
+    </p>
+    <h3>The Majestic Elephants of Udawalawe</h3>
+    <p>
+      Udawalawe National Park is renowned for its impressive elephant population, making it a top destination for wildlife enthusiasts. Unlike many other wildlife reserves, Udawalawe offers year-round sightings of these gentle giants, with over 600 elephants residing in the park. Visitors often spot elephants in large herds near reservoirs and watering holes, offering a unique glimpse into their family dynamics and majestic strength.
+    </p>
+    <p>Visitors to Udawalawe often spot elephants in large herds, especially near the park's reservoirs and watering holes. These gatherings provide a unique chance to witness captivating family dynamics, playful calves, and the majestic strength of adult elephants. For many, observing these magnificent creatures up close is a once-in-a-lifetime experience, making Udawalawe National Park a must-visit for anyone looking to connect with nature and see wildlife in action.
+    </p>
+    <img src="/assets/images/birdwatching-udawalawe-national-park.jpg" alt="birdwatching-udawalawe-national-park">
+    <h3>Birdwatching Paradise</h3>
+    <p>
+      If you're a bird enthusiast, Udawalawe National Park is a must-visit destination. Serving as a sanctuary for over 200 bird species, including both resident and migratory birds, the park offers sightings of colorful kingfishers, majestic eagles, and more. Early mornings and late afternoons are ideal for birdwatching, making your visit a true avian adventure.
+    </p>
+    <img src="/assets/images/leopards-udawalawe-national-park.jpg" alt="leopards-udawalawe-national-park">
+    <h3>The Elusive Leopards</h3>
+    <p>
+      While elephants are the main attraction, visitors may also encounter the elusive Sri Lankan leopard. Although sightings are rare, the thrill of a potential encounter enhances the safari experience. These nocturnal creatures are best spotted during dawn or dusk safaris, adding a sense of adventure to your visit.
+    </p>
+    <img src="/assets/images/reptiles-and-amphibians-udawalawe-national-park.jpg" alt="reptiles">
+    <h3>Reptiles and Amphibians</h3>
+    <p>
+      Udawalawe National Park is not only a haven for mammals and birds but also a vibrant habitat for reptiles and amphibians. The park’s water bodies are home to many crocodiles, while snakes, lizards, and frogs contribute to its rich biodiversity. This diverse array of cold-blooded creatures plays a crucial role in maintaining the park's ecological balance.
+    </p>
+    <img src="/assets/images/flora-udawalawe-national-park.jpg" alt="flora-udawalawe-national-park">
+    <h3>Flora of Udawalawe</h3>
+    <p>
+      The park features a mix of ecosystems, from grasslands to forests and scrublands, each hosting unique plant species. Towering teak trees, vibrant flowering plants, and resilient grasses not only provide essential food and shelter for wildlife but also enhance the breathtaking landscapes of Udawalawe.
+    </p>
+    
+    <h3>Best Time to Visit</h3>
+    <p>
+      Udawalawe National Park is open year-round, but the best time to visit depends on your interests. For wildlife enthusiasts, especially those keen to see elephants, the dry season from May to September is ideal as animals gather around water sources. If you're a bird lover, plan your visit between December and April when migratory birds are abundant.
+    </p>
+    <img src="/assets/images/udawalawe-national-park-safari.jpg" alt="safari">
+    <h3>Safari Tips and Etiquette</h3>
+    <p>
+      A safari in Udawalawe is an exhilarating experience. To ensure safety and minimize disturbance to wildlife, always hire a licensed guide, remain inside your vehicle, and maintain a respectful distance. Following these guidelines not only enhances your experience but also supports the conservation efforts of the park.
+    </p>
+    <img src="/assets/images/udawalawe-national-park.jpg" alt="udawalawe-national-park">
+    <h3>Photography Tips</h3>
+    <p>
+      Udawalawe National Park offers countless opportunities for capturing stunning wildlife photographs. Here are some tips to help you make the most of your photography adventure:
+    </p>
+    <ul>
+      <li><strong>Use a Telephoto Lens:</strong> A lens with a focal length of at least 300mm will allow you to capture close-up shots without disturbing the animals.</li>
+      <li><strong>Shoot During Golden Hours:</strong> Early morning and late afternoon provide the best lighting conditions for photography.</li>
+      <li><strong>Be Patient:</strong> Wildlife photography requires patience and persistence. Wait for the right moment to capture the perfect shot.</li>
+    </ul>
+
+    <h3>Conservation Efforts</h3>
+    <p>
+      Conservation is at the heart of Udawalawe National Park. The park actively engages in anti-poaching efforts, habitat restoration, and community outreach programs. Visitors can support these initiatives by following park guidelines, donating to conservation projects, and spreading awareness about wildlife preservation.
+    </p>
+    <img src="/assets/images/peacoak.jpg" alt="peacoak">
+    <h3>Nearby Attractions</h3>
+    <p>
+      While Udawalawe National Park is a destination in itself, nearby attractions such as the Udawalawe Elephant Transit Home and the Sankhapala Raja Maha Viharaya offer additional cultural and wildlife experiences. Combining these visits creates a well-rounded travel experience, connecting you with both nature and local heritage.
+    </p>
+    <p>
+      Combining a visit to Udawalawe National Park with these nearby attractions creates a well-rounded and enriching travel experience, allowing travelers to connect with both the stunning wildlife and the profound cultural history of the area. Each site enhances the adventure, making it a memorable journey for nature lovers and culture enthusiasts alike.
+    </p>
+    
+  </div>
+</div>
+
+
+<!-- Modal for Minneriya National Park -->
+<div id="modal-minneriya" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close-btn">&times;</a>
+    
+    <h2>Minneriya National Park</h2>
+    <img src="/assets/images/minneriya-national-park.jpg" alt="Minneriya">
+    <p>
+      Imagine a place where majestic elephants roam freely, exotic birds fill the skies, and ancient ruins whisper stories of a bygone era. Welcome to Minneriya National Park. Nestled in the heart of Sri Lanka, this hidden gem offers more than just a scenic escape—it provides an immersive experience into the wild wonders of nature. Whether you're an avid wildlife enthusiast or a curious traveler, Minneriya National Park promises an adventure that will captivate your senses.
+    </p>
+    <img src="/assets/images/the-elephants-of-minneriya.jpg" alt="the-elephants-of-minneriya">    
+    <h3>The Rich History of Minneriya National Park</h3>
+    <h4>Ancient Beginnings</h4>
+    <p>
+      Minneriya National Park isn't just a haven for wildlife; it's also steeped in history. The park's origins can be traced back to the 3rd century AD when King Mahasen built the Minneriya Tank. This ancient reservoir was designed to irrigate the surrounding agricultural lands, showcasing the ingenuity of early Sri Lankan civilization. The tank still plays a crucial role in the ecosystem, attracting a large number of elephants during the dry season for the famous "Gathering," where hundreds of these majestic creatures come together.
+    </p>
+    
+    <h4>The Formation of the Park</h4>
+    <p>
+      Fast forward to 1938, and Minneriya was declared a wildlife sanctuary, marking the beginning of a new era of conservation for the area. It wasn't until 1997 that it gained its status as a national park, ensuring the protection of its unique ecosystems and historical sites. This upgrade not only provided legal safeguards but also increased awareness and funding for preservation efforts. Today, visitors can explore both natural and man-made wonders within the park's boundaries, including lush forests, diverse wildlife, and ancient ruins that tell the story of civilizations past.
+    </p>
+    
+    <h4>Cultural Significance</h4>
+    <p>
+      The park holds a special place in Sri Lankan culture. Local communities have long relied on the Minneriya Tank for their water supply, and the area is considered sacred by many. Visitors can feel the deep connection between nature, history, and culture as they explore this remarkable destination.
+    </p>
+    <img src="/assets/images/wonders-of-minneriya-national-park.jpg" alt="wonders-of-minneriya-national-park">
+    <h3>The Elephants of Minneriya</h3>
+    <p>
+      One of the park's main attractions is its population of Asian elephants. These magnificent creatures roam the park's lush landscapes, creating a breathtaking view for visitors. Every year, during the dry season, hundreds of elephants congregate around the Minneriya Tank in an event known as "The Gathering." This spectacular sight is one of the largest gatherings of wild elephants in the world.
+    </p>
+    <p>
+      Watching these gentle giants interact in their natural habitat is an unforgettable experience.
+    </p>
+    
+    <h4>What Makes The Gathering Special</h4>
+    <p>
+      During the dry season, up to 300 elephants converge near the Minneriya Tank, creating a spectacle that draws visitors from around the world. This event offers an unparalleled opportunity to witness and capture the beauty and majesty of these incredible animals.
+    </p>
+    <img src="/assets/images/visit-kaudulla-national-park.jpg" alt="best-view">
+    <h4>Best Viewing Spots</h4>
+    <p>
+      For the best views of The Gathering, head to the northern and eastern edges of the Minneriya Tank. These areas offer unobstructed views and excellent photo opportunities. Arriving early in the morning or late in the afternoon increases your chances of seeing the elephants at their most active.
+    </p>
+    
+    <h4>Insider Tips</h4>
+    <p>
+      To fully appreciate The Gathering, consider booking a guided tour. Experienced guides can provide valuable insights into elephant behavior and help you spot other wildlife. Additionally, staying at a nearby eco-lodge can enhance your experience, allowing you to enjoy the park's tranquility even after the sun sets.
+    </p>
+    <img src="/assets/images/birdwatching-in-minneriya.jpg" alt="birdwatching-in-minneriya">
+    <h3>Birdwatching in Minneriya</h3>
+    <p>
+      Minneriya is a birdwatcher's dream come true. The park is home to over 160 species of birds, including the Sri Lankan Junglefowl—the national bird of Sri Lanka. With its lush landscapes and tranquil waters, Minneriya provides a perfect habitat for these birds to thrive.
+    </p>
+    
+    <h4>Top Bird Species to Look For</h4>
+    <ul>
+      <li>Sri Lankan Junglefowl</li>
+      <li>Painted Stork</li>
+      <li>Grey Heron</li>
+    </ul>
+    
+    <h4>Best Birdwatching Locations</h4>
+    <p>
+      The Minneriya Tank and its surrounding wetlands are prime birdwatching spots. The park's forested areas also offer excellent opportunities for spotting woodland birds. Early mornings and late afternoons are the best times for birdwatching.
+    </p>
+    
+    <h4>Birdwatching Gear</h4>
+    <ul>
+      <li><strong>Binoculars:</strong> Essential for spotting birds from a distance.</li>
+      <li><strong>Bird Identification Guide:</strong> Helps in identifying various species.</li>
+      <li><strong>Camera with Zoom Lens:</strong> For capturing close-up shots of the avian residents.</li>
+    </ul>
+    
+    <p>
+      Beyond elephants and birds, Minneriya boasts a variety of other wildlife. The park is home to leopards, sloth bears, and a plethora of reptiles and amphibians, ensuring every visit promises new and exciting sightings.
+    </p>
+    <img src="/assets/images/kaudulla-national-park-in-sri-lanka.jpg" alt="">
+    <h3>Exploring the Flora of Minneriya</h3>
+    <h4>Types of Vegetation</h4>
+    <p>
+      The park's diverse ecosystems support a wide range of plant life. From dense forests teeming with towering trees and lush undergrowth to open grasslands dotted with wildflowers, Minneriya's vegetation is as varied as its wildlife. This diversity creates different habitats, each supporting unique species of flora and fauna.
+    </p>
+    <p>
+      In the dense forests, you might find rare orchids and tropical vines, while the grasslands are home to hardy shrubs and seasonal blooms.
+    </p>
+    
+    <h4>The Significance of the Minneriya Tank</h4>
+    <p>
+      Constructed by King Mahasen in the 3rd century AD, the Minneriya Tank is not only an engineering marvel but also a lifeline for the region. During the dry season, it acts as a vital water source for both animals and plants, drawing various species from miles around. The lush greenery surrounding the tank is a testament to its importance in maintaining the park's biodiversity.
+    </p>
+    
+    <h3>Minneriya in Conservation</h3>
+    <h4>The Role of Minneriya in Conservation</h4>
+    <p>
+      Minneriya National Park plays a crucial role in the conservation of Sri Lanka's wildlife. Efforts are underway to protect endangered species such as the Sri Lankan elephant and leopard. Conservation programs focus on habitat preservation, anti-poaching measures, and community engagement.
+    </p>
+    
+    <h4>Joining Conservation Efforts</h4>
+    <p>
+      Visitors can contribute to conservation efforts in several ways: supporting eco-friendly businesses, participating in conservation programs, and donating to wildlife protection organizations all help preserve Minneriya's natural beauty for future generations. Volunteering opportunities, from wildlife monitoring to community education, also allow for a more hands-on experience.
+    </p>
+    
+    <h3>Best Time to Visit Minneriya National Park</h3>
+    <h4>Seasonal Highlights</h4>
+    <p>
+      The best time to visit Minneriya depends on what you want to see. For elephant enthusiasts, the dry season (June to September) is ideal, as it coincides with The Gathering. Birdwatchers may prefer the wetter months (November to February) when migratory birds are abundant.
+    </p>
+    
+    <h4>Weather Considerations</h4>
+    <p>
+      Sri Lanka's tropical climate means that Minneriya experiences warm temperatures year-round. The dry season can be quite hot, so be prepared with plenty of water and sun protection. In contrast, the rainy season may render some areas muddy and challenging to navigate.
+    </p>
+    
+    <h4>Planning Your Visit</h4>
+    <p>
+      To make the most of your trip, plan ahead by checking weather forecasts, booking accommodations early, and considering a guided tour to maximize wildlife sightings.
+    </p>
+    
+    <h3>Practical Tips for Visiting Minneriya</h3>
+    <h4>What to Pack</h4>
+    <ul>
+      <li>Comfortable walking shoes for navigating varied terrains</li>
+      <li>Insect repellent to ward off bugs</li>
+      <li>A good camera and binoculars for wildlife spotting</li>
+      <li>Plenty of water and snacks to stay hydrated and energized</li>
+      <li>A hat and sunscreen for protection from the tropical sun</li>
+      <li>A lightweight backpack to carry your essentials</li>
+      <li>A map of the park to help navigate its highlights</li>
+    </ul>
+    <img src="/assets/images/flora-of-minneriya.jpg" alt="flora-of-minneriya">
+    <h4>Navigating the Park</h4>
+    <p>
+      Minneriya is accessible by both jeep safaris and guided walking tours. Jeep safaris are ideal for covering large areas and spotting wildlife from a safe distance, while walking tours offer a more intimate experience with nature.
+    </p>
+    
+    <h4>Safety Precautions</h4>
+    <p>
+      Although Minneriya is generally safe, always follow park rules and guidelines. Maintain a safe distance from wildlife, never attempt to feed or touch the animals, and stick to designated paths.
+    </p>
+    <img src="/assets/images/ruins-within-minneriya.jpg" alt="ruins-within-minneriya">
+    <h3>Exploring the Ruins Within Minneriya</h3>
+    <h4>Historical Sites</h4>
+    <p>
+      Minneriya is home to several ancient ruins that offer a glimpse into Sri Lanka's rich history. The remnants of ancient irrigation systems and stone structures scattered throughout the park provide a fascinating contrast to its natural beauty.
+    </p>
+    
+    <h4>The Minneriya Tank</h4>
+    <p>
+      The Minneriya Tank itself is a historic marvel. Built over a thousand years ago, this ancient reservoir continues to play a vital role in the park's ecosystem, sustaining both wildlife and plant life.
+    </p>
+    
+    <h4>Guided Tours</h4>
+    <p>
+      To truly appreciate the historical significance of Minneriya, consider joining a guided tour. Knowledgeable guides provide context and share the stories behind the ruins, enriching your understanding of the park's cultural heritage.
+    </p>
+    
+  </div>
+</div>
+
+<!-- Modal for Maduru Oya National Park -->
+<div id="modal-maduru" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close-btn">&times;</a>
+    
+    <h2>Maduru Oya National Park</h2>
+    <img src="/assets/images/safari-in-maduru-oya-national-park.jpg" alt="Maduru Oya National Park">
+    <p>
+      Are you a wildlife photographer or an adventure seeker in search of your next great escape? Look no further than Maduru Oya National Park in Sri Lanka, which might just be your ultimate destination. This expansive park spans over 58,800 hectares and serves as a sanctuary of incredible biodiversity, boasting a variety of ecosystems—from lush forests to expansive grasslands and shimmering reservoirs.
+    </p>
+    <p>
+      With breathtaking landscapes that change with the seasons, Maduru Oya is a haven for photographers, offering endless opportunities to capture stunning images of wildlife in their natural habitat. The park is home to a diverse array of wildlife, including elephants, leopards, and numerous bird species, making it a dream location for nature lovers and photographers alike. Beyond its natural beauty, Maduru Oya also features a rich cultural heritage, with ancient archaeological sites and traditional villages nearby, providing a glimpse into the history and lifestyle of the local communities.
+    </p>
+    <p>
+      In this blog post, we will take you through the wonders of Maduru Oya, offering valuable insights into the best times to visit, practical tips for navigating the park, and inspiring examples of the incredible experiences you can have while exploring this hidden gem. Whether you’re aiming to capture the perfect shot or simply seeking adventure, Maduru Oya promises an unforgettable journey into the heart of Sri Lanka’s natural beauty.
+    </p>
+    
+    <img src="/assets/images/maduru-oya-national-park.jpg" alt="maduru-oya-national-park">
+    <h3>The Allure of Maduru Oya National Park</h3>
+    <p>
+      Maduru Oya National Park is more than just a wildlife haven; it's a testament to the harmony between nature and history. Established in 1983, the park spans over 58,850 hectares and is part of the Mahaweli Development Project. Its unique ecosystems, ranging from dense forests to open grasslands, are home to a remarkable variety of flora and fauna.
+    </p>
+    
+    <h4>A Rich Tapestry of Ecosystems</h4>
+    <p>
+      One of the most captivating aspects of Maduru Oya National Park is its diverse ecosystems. The park features tropical dry mixed evergreen forests, riverine forests, and savannas. Each ecosystem supports a different array of species, making it a paradise for wildlife photographers and nature enthusiasts.
+    </p>
+    <p>
+      The tropical dry mixed evergreen forests are characterized by towering trees like the Palu (Manilkara hexandra) and Weera (Drypetes sepiaria), which provide a lush canopy sheltering numerous bird species and smaller mammals. The riverine forests along the banks of the Maduru Oya Reservoir are rich in biodiversity and offer a unique setting for photography.
+    </p>
+    
+    <h4>Wildlife Wonders Await</h4>
+    <p>
+      Maduru Oya is home to an impressive variety of wildlife, including some of Sri Lanka's most iconic species. Elephants are undoubtedly the stars of the park—with a population of around 200 individuals, these majestic creatures can often be spotted near water sources during the dry season.
+    </p>
+    <p>
+      Leopards, though elusive, also reside in the park, and their stealthy nature makes sightings a rare but rewarding experience. Birdwatchers will be delighted to know that Maduru Oya boasts over 100 bird species—from the vibrant Indian peafowl to the elusive Ceylon junglefowl. Remember to bring your telephoto lens to capture these feathered wonders in all their glory.
+    </p>
+    
+    <h4>Exploring the Maduru Oya Reservoir</h4>
+    <p>
+      The Maduru Oya Reservoir is truly the lifeblood of the park, serving as a vital water source for both the diverse wildlife and the surrounding communities. Its tranquil waters reflect the vibrant greens of the lush foliage that encircles it, creating a picturesque scene that invites exploration and admiration.
+    </p>
+    <p>
+      Taking boat safaris on the reservoir offers a unique, immersive perspective of the park. As you glide through the calm waters, listen to the gentle sounds of nature while keeping an eye out for crocodiles basking lazily on sun-drenched banks and water birds skillfully fishing in the shallows. The reservoir is not only a habitat for fascinating wildlife but also a popular spot for fishing enthusiasts—if you're an angler, be sure to pack your gear!
+    </p>
+    <img src="/assets/images/wonder-of-maduru-oya-national-park.jpg" alt="maduru-oya-national-park">
+    <h3>Visit Maduru Oya National Park</h3>
+    
+    <h4>Capturing the Perfect Shot</h4>
+    <p>
+      For wildlife photographers, Maduru Oya National Park is a treasure trove of photographic opportunities. However, capturing the perfect shot requires preparation, patience, and a keen eye for detail.
+    </p>
+    
+    <h4>Timing is Everything</h4>
+    <p>
+      The best time to visit Maduru Oya for photography is during the early morning or late afternoon when the light is soft and golden—the so-called golden hours. These times offer ideal lighting conditions that can transform ordinary scenes into breathtaking images, while wildlife is typically more active.
+    </p>
+    
+    <h4>Essential Photography Gear</h4>
+    <ul>
+      <li><strong>Camera:</strong> A high-quality DSLR or mirrorless camera.</li>
+      <li><strong>Telephoto Lens:</strong> At least 300mm to capture distant wildlife in detail.</li>
+      <li><strong>Sturdy Tripod:</strong> Enhances stability in low light or for slow shutter speeds.</li>
+      <li><strong>Remote Shutter Release:</strong> Helps eliminate camera shake during long exposures.</li>
+      <li><strong>Extra Batteries & Memory Cards:</strong> To ensure you’re ready for a full day of shooting.</li>
+    </ul>
+    
+    <h4>Ethical Wildlife Photography</h4>
+    <p>
+      While capturing breathtaking images is incredibly rewarding, it’s essential to prioritize the well-being of the animals. Always maintain a respectful distance, use your telephoto lens to capture close-up shots without intruding on their space, and choose the best times of day—early mornings or late afternoons—to avoid disturbing the natural behavior of wildlife.
+    </p>
+    <img src="/assets/images/future-of-kaudulla-national-park.jpg" alt="future-of-kaudulla-national-park">
+    <h3>Wonder of Maduru Oya National Park</h3>
+    <p>
+      Maduru Oya National Park isn't just a paradise for photographers; it's also an exhilarating playground for adventure seekers. Whether you enjoy hiking scenic trails, camping under a blanket of stars, or exploring ancient ruins, Maduru Oya offers something for everyone.
+    </p>
+    
+    <h4>Hiking Trails and Nature Walks</h4>
+    <p>
+      Explore the park on foot by embarking on one of its many hiking trails. The trails vary in difficulty—from easy family walks to challenging hikes for experienced trekkers—offering diverse landscapes and ample opportunities for wildlife sightings.
+    </p>
+    
+    <h4>Camping Under the Stars</h4>
+    <p>
+      For a truly immersive experience, consider camping within the park. Designated camping areas allow you to set up your tent and fall asleep to the sounds of the wilderness, giving you a chance to observe nocturnal wildlife such as owls and civets.
+    </p>
+    
+    <h4>Exploring Ancient Ruins</h4>
+    <p>
+      Maduru Oya is steeped in history, with several ancient ruins scattered throughout the park. The Henanigala Ruins, dating back to the pre-Christian era, offer a glimpse into Sri Lanka's rich cultural heritage—imagine the lives of those who once inhabited these ancient sites.
+    </p>
+    
+    <h4>Safari in Maduru Oya National Park</h4>
+    
+    <h3>Practical Tips For Your Visit</h3>
+    <ul>
+      <li>
+        <strong>Best Time to Visit:</strong> The ideal time to visit is during the dry season (May to September) when wildlife congregates around water sources and roads and trails remain accessible.
+      </li>
+      <li>
+        <strong>What to Pack:</strong> Pack light yet include essentials—comfortable clothing for outdoor activities, a hat and sunglasses for sun protection, insect repellent, and a reusable water bottle to stay hydrated.
+      </li>
+      <li>
+        <strong>Guided Tours:</strong> Consider joining a guided tour to enhance your experience. Knowledgeable guides provide valuable insights into the park's flora, fauna, and history while helping you spot wildlife you might otherwise miss.
+      </li>
+    </ul>
+
+    <p>
+      Maduru Oya National Park plays a vital role in the conservation of Sri Lanka's biodiversity. 
+      The park's efforts to protect endangered species and their habitats are crucial for maintaining the 
+      delicate balance of the ecosystem.
+  </p>
+    
+  </div>
+</div>
+
+
+
+
 </body>
 </html>
