@@ -42,24 +42,24 @@
 
     <main>
       <!-- Main Section: Home -->
-      <section
-        id="home"
-        class="hero-section"
-        style="
-          background-image: url('/assets/images/nilantha-sanjeewa-u8FSEneQ-7w-unsplash.jpg');
-        "
-      >
+      <section id="home" class="hero-section">
+        <video autoplay loop muted playsinline class="hero-video">
+          <source src="assets/images/travel1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
         <div class="hero-text">
           <h2>Discover the Beauty of Sri Lanka</h2>
           <p>
             Explore hidden gems, beaches, nature, and culture with
             CeylonXplorer!
           </p>
-          <a href="#destinations" class="cta-btn">Start Exploring</a>
+          <a href="#destinations">
+            <button class="explore-btn">Start Exploring</button>
+          </a>
         </div>
       </section>
 
-      <!-- Destinations Section -->
       <section id="destinations">
         <div class="destination-header">
           <h2>Explore Top Destinations</h2>
@@ -412,6 +412,7 @@
 
       <!-- FAQ Section  -->
       <section id="faq">
+       
         <div class="faq-section">
           <h2 class="faq-title">Frequently Asked Questions</h2>
           <div class="faq-container">
@@ -469,11 +470,11 @@
             </div>
           </div>
         </div>
+        <div id="travelmap-srilanka">
+          <img src="/assets/images/sri-lankan-travel-map.png" alt="travelmapsrilanka">
+        </div>
       </section>
 
-      <!-- Contact Us Section -->
-      <section id="contact"></section>
-    </main>
 
     <!-- Footer Section -->
     <footer>
