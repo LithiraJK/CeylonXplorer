@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #f5f5f5;
+}
+
+#hero-section{
+    width: 100%;
+    height: 100vh;
+}
+
+#hero-section > .title{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+
+#hero-section > .title > h1{
+    font-size: 4em;
+}
+
+#hero-section img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.beaches-sec-header{
+    background-color: #fff;
+    width: 50%;
+    padding: 30px 10px;
+    text-align: center;
+    border: 1px solid white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    z-index: 2;
+
+}
+
+.beaches-sec-header > h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.beaches-info{
+    font-size: 1em;
+    color: #555;
+}
+
+.beaches-content{
+    display: flex;
+    padding: 16px;
+    align-items:center;
+    justify-content: space-between;
+
+}
+.beaches-description{
+    padding: 16px;
+}
+.beaches-description > h3{
+  font-size: 1.5em;
+  margin-bottom: 16px;
+}
+
+.beaches-description > p{
+    margin-bottom: 16px;
+  }
+
+.beaches-content .img-container{
+    width: 75vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.img-container > img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+
+
+.beaches-container{
+    margin: 20px 50px;
+    padding: 16px;
+    position: relative;
+    transform: translateY(-80px);
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.beaches-content .beaches-description{
+    width: 50%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.beaches-content .beaches-description ul{
+    padding: 0px 16px;
+}
+.beaches-content .beaches-description ul > li{
+    margin-bottom: 10px;
+}
+
+
+img[alt="main-img"]{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+  }
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  footer ul a {
+    color: white;
+    text-decoration: none;
+  }
