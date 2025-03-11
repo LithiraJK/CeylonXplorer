@@ -83,6 +83,7 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 40px;
   }
 
   .container-header{
@@ -243,11 +244,3 @@
   .close-btn:hover {
     color: #000;
   }
-  
-  footer{
-    text-align: center;
-    background-color: #000;
-    color: #fff;
-    height: 50px;
-  }
-  
