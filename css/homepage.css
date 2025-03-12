@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-h1, h2, h3 {
+h1 {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -18,10 +18,13 @@ body {
   line-height: 1.6;
 }
 
-section {
-  padding: 60px 0;
+.sec-container {
+  padding: 60px 30px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px auto;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -97,8 +100,12 @@ section {
 /* =====================Destionation Section========================== */
 
 .destination-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 50px 20px;
+  padding: 0 20px;
 }
 
 .destination-header h2 {
@@ -111,9 +118,9 @@ section {
 .destination-header p {
   font-size: 1.2rem;
   color: #555;
-  max-width: 600px;
-  margin: 0 auto;
+  margin-bottom: 10px;
   line-height: 1.6;
+  max-width: 600px;
 }
 
 .card-description {
@@ -122,10 +129,10 @@ section {
   align-items: flex-start;
   justify-content: flex-start;
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 25px;
+  border-radius: 20px;
   padding: 20px;
   height: 80%;
   width: 100%;
@@ -141,7 +148,7 @@ section {
 .destinations-card {
   width: 100%;
   height: 32vw;
-  border-radius: 25px;
+  border-radius: 20px;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
@@ -198,7 +205,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 #card-1 {
@@ -214,18 +221,16 @@ section {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 36px;
-  pad: 10px;
 }
 
 /* =======Travel tips====== */
 
 
-.travel-tips {
+#travel-tips {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
-  background: white;
+  
 
 }
 
@@ -316,6 +321,10 @@ section {
 
 /* Blog Section */
 
+#blog {
+  background-color: #fff;
+}
+
 #blog-header {
   text-align: left;
   margin: 20px;
@@ -349,7 +358,6 @@ a{
   justify-content: space-between;
   background-color: #fff;
   border-radius: 20px;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   padding: 15px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
@@ -410,7 +418,6 @@ a{
   padding: 16px;
   background-color: #fff;
   border-radius: 20px;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -418,9 +425,7 @@ a{
   transform: translateY(-2%);
 }
 
-#blog{
-  background-color: #fff;
-}
+
 
 .item-other-container {
   display: grid;
@@ -462,15 +467,17 @@ a{
 
 /*============ Reveiw Section =========== */
 
-.review-section {
+#review-section {
   background-color: #fdfdfd;
   max-width: 1200px;
   margin: 50px auto;
   padding: 20px;
   text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-.review-section h2 {
+#review-section h2 {
   font-size: 2rem;
   margin-bottom: 30px;
   color: #333;
@@ -482,23 +489,39 @@ a{
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
+  padding: 20px 0;
 }
 
 /* Slider Track */
 .slider-track {
   display: flex;
-  transition: transform 0.5s ease;
+  justify-content: space-between;
+  animation: slider 20s linear infinite ;
+  
 }
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-95%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 
 /* Review Card */
 .review-card {
   background-color: #fff;
-  width: 25%;
+  width: calc(100% / 3 - 20px);
   margin: 0 10px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
-  padding: 20px;
+  padding: 36px 28px;
   text-align: left;
 }
 
@@ -574,19 +597,50 @@ a{
   margin: 0 5px;
   background-color: #ddd;
   border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.slider-dots .dot.active {
-  background-color: #1abc9c;
+/* Apply individual keyframe animations */
+.slider-dots .dot:nth-child(1) {
+  animation: dot1-sequence 20s infinite;
 }
+
+.slider-dots .dot:nth-child(2) {
+  animation: dot2-sequence 20s infinite;
+}
+
+.slider-dots .dot:nth-child(3) {
+  animation: dot3-sequence 20s infinite;
+}
+
+/* Keyframes for each dot based on a 6-part cycle */
+/* Dot 1: active in segments 1 (0%-16.67%) and 6 (83.33%-100%) */
+@keyframes dot1-sequence {
+  0%, 16.67% { background-color: #0d0d0d; }
+  16.68%, 83.33% { background-color: #ddd; }
+  83.34%, 100% { background-color: #0d0d0d; }
+}
+
+/* Dot 2: active in segments 2 (16.67%-33.33%) and 5 (66.67%-83.33%) */
+@keyframes dot2-sequence {
+  0%, 16.67% { background-color: #ddd; }
+  16.68%, 33.33% { background-color: #0d0d0d; }
+  33.34%, 66.67% { background-color: #ddd; }
+  66.68%, 83.33% { background-color: #0d0d0d; }
+  83.34%, 100% { background-color: #ddd; }
+}
+
+/* Dot 3: active in segments 3 & 4 (33.33%-66.67%) */
+@keyframes dot3-sequence {
+  0%, 33.33% { background-color: #ddd; }
+  33.34%, 66.67% { background-color: #0d0d0d; }
+  66.68%, 100% { background-color: #ddd; }
+}
+
 
 
 /* =========== FAQ Section ========= */
 
 #faq {
-  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
