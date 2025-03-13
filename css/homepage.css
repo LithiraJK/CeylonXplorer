@@ -102,9 +102,9 @@ body {
 .destination-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   padding: 0 20px;
 }
 
@@ -718,9 +718,9 @@ a{
 }
 
 #slider-video {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 20px auto;
-  width: 80vw;
+  width: 90vw;
   position: relative;
   border-radius: 30px;  
 }
