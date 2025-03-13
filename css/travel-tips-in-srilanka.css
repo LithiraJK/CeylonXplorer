@@ -284,3 +284,27 @@
     margin-right: 0.5rem;
   }
   
+
+  @media screen and (max-width: 374px) {
+    /* CSS rules for Mobile Small Devices */
+    }
+    
+    @media screen and (min-width: 375px) and (max-width: 424px) {
+        /* CSS rules for Mobile Medium Devices */
+    }
+    
+    @media screen and (min-width: 425px) and (max-width: 767px) {
+        /* CSS rules for Mobile Large Devices */
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        /* CSS rules for Tablet Devices */
+    }
+    
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+        /* CSS rules for Laptop Devices */
+    }
+    
+    @media screen and (max-width: 1440px) {
+        /* CSS rules for Laptop Large Devices */
+    }

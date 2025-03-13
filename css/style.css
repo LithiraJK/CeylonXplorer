@@ -50,12 +50,12 @@ footer {
 
 footer .content{
     max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    padding: 10px 0;
-    margin: 20px auto;
+    padding: 20px 25px;
 }
 
 footer ul{
@@ -89,3 +89,47 @@ footer a{
 .footer-nav-link h4{
     margin-bottom: 10px;
 }
+
+
+@media screen and (max-width: 374px) {
+  /* CSS rules for Mobile Small Devices */
+  }
+  
+  @media screen and (min-width: 375px) and (max-width: 424px) {
+      /* CSS rules for Mobile Medium Devices */
+  }
+  
+  @media screen and (min-width: 425px) and (max-width: 767px) {
+      /* CSS rules for Mobile Large Devices */
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+      /* CSS rules for Tablet Devices */
+      header nav{
+        max-width: 700px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+      }
+      
+      footer .content {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+      /* CSS rules for Laptop Devices */
+      header nav{
+        max-width: 1000px;
+      }
+      
+      footer .content {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+    }
+  @media screen and (max-width: 1440px) {
+      /* CSS rules for Laptop Large Devices */
+  }
