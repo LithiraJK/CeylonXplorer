@@ -1,70 +1,69 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-  body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-  }
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+}
 
-  .main-header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-  }
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
 
-  .main-header h1{
-    color: white;
-    text-align: center;
-    line-height: normal;
-    z-index: 2;
-  }
+.main-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .main-header p{
-    color: white;
-    text-align: center;
-    z-index: 2;
-  }
+.main-header h1 {
+  color: white;
+  text-align: center;
+  line-height: normal;
+  z-index: 2;
+}
 
-  .main-header button {
-    padding: 10px 15px;
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.8);
-    background-color: rgba(0,0,0,0.3);
-    color: #f5f5f5;
-    font-size: 1em;
-    font-weight: 600;
-    margin-top: 20px;
-    position: relative;
-  
-  }
+.main-header p {
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
 
-  .img-container{
-    width: 100vw;
-    height: 100vh;
-  }
+.main-header button {
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #f5f5f5;
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 20px;
+  position: relative;
+}
 
-  .img-container  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.img-container {
+  width: 100vw;
+  height: 100vh;
+}
 
-  }
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .img-slide-container {
   margin: 60px auto;
@@ -81,7 +80,6 @@
   gap: 20px;
   height: 100%;
   border-radius: 15px;
-  
 }
 
 .img-slider li {
@@ -100,13 +98,13 @@
 }
 
 @keyframes slideAnimation {
-  0% { 
+  0% {
     transform: translateX(0);
   }
-  50% { 
+  50% {
     transform: translateX(-200%);
   }
-  100% { 
+  100% {
     transform: translateX(0);
   }
 }
@@ -124,187 +122,353 @@
   }
 } */
 
+.section-header {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .tips-section{
-    max-width: 1200px;
-    margin: 50px auto;
+.section-header > h2 {
+  color: #333;
+  font-size: 2em;
+}
+
+.section-header > p {
+  color: #333;
+  font-size: 1em;
+  text-align: center;
+}
+
+.tips-section {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2vw;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  max-width: 1300px;
+  margin: 50px auto;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 24px;
+  margin: 20px 0px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.card-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card-img {
+  width: 50%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.card-content h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.card-content h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.card-content p {
+  color: black;
+  padding-right: 60px;
+}
+
+#other-tips img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.tips-section.modern-ui {
+  background: #fff;
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+.tips-section.modern-ui h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.accordion details {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.accordion details[open] {
+  background: #eaf7fa;
+}
+
+.accordion summary {
+  padding: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+  outline: none;
+}
+
+.accordion summary::after {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1rem;
+  position: absolute;
+  right: 1rem;
+  transition: transform 0.3s ease-in;
+}
+
+.accordion details[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+.accordion details p {
+  padding: 0 1rem 1rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.tip-number {
+  display: inline-block;
+  width: 30px;
+  font-size: 1.2rem;
+  color: #333;
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 374px) {
+  /* CSS rules for Mobile Small Devices */
+  h1{
+    font-size: 2.2rem;
   }
 
-  .section-header{
-    position: static;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+  .section-header > h2 {
+    font-size: 1.8rem;
   }
-
-  .section-header > h2{
-    color: #333;
-    font-size: 2em;
-    
-  }
-
-  .section-header > p{
-    color: #333;
-    font-size: 1em;
-    text-align: center;
-
-  }
-
   .tips-section {
-    background-color: #fff;
-    border-radius: 15px;
-    padding: 2vw;
-    box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
-
+    max-width: 400px;
+    width: 90vw;
+    margin: 30px auto;
   }
 
-  .card{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    padding: 24px;
-    margin: 20px 0px;
-    background-color: #fff;
-    border-radius: 15px;
+  .card-content p {
+    padding-right: 40px;
+  }
+  .card-content h3 {
+    font-size: 1.4rem;
   }
 
-  .card:nth-child(even){
-    flex-direction: row-reverse;
+  .img-slide-container {
+    height: 20vh;
   }
 
-  .card-img img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px;
+  .card {
+    flex-direction: column-reverse;
+  }
+  .card:nth-child(even) {
+    flex-direction: column-reverse;
   }
 
   .card-img {
-    width: 50%;
-  }
-
-  .card-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 50%;
-  }
-
-  .card-content h3{
-    font-size: 1.5em;
-    font-weight: 700;
-  }
-  .card-content h4{
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-
-  }
-  .card-content p{
-    color: black;
-    padding-right: 60px;
-
-  }
-
-  #other-tips img{
     width: 100%;
-    border-radius: 15px;
   }
 
-.tips-section.modern-ui {
-    background: #fff;
-    padding: 2rem;
-    font-family: 'Roboto', sans-serif;
-    color: #333;
+  .card-content {
+    width: 100%;
   }
-  
+
+  .card:nth-child(even) .card-content {
+    align-items: flex-end;
+  }
+  .card:nth-child(even) .card-content p {
+    padding-right: 0;
+    padding-left: 40px;
+    text-align: right;
+  }
+
+  .card:nth-child(even) .card-content h3{
+    text-align: right;
+  }
+
   .tips-section.modern-ui h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
-  
-  .accordion {
-    max-width: 800px;
-    margin: 20px auto;
-  }
-  
-  .accordion details {
-    background: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
-    transition: background 0.3s ease;
-  }
-  
-  .accordion details[open] {
-    background: #eaf7fa;
-  }
-  
-  .accordion summary {
-    padding: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    position: relative;
-    list-style: none;
-    outline: none;
-  }
-  
-  
-  .accordion summary::after {
-    content: '\f107';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900; 
-    font-size: 1rem;
-    position: absolute;
-    right: 1rem;
-    transition: transform 0.3s ease-in;
-  }
-  
-  
-  .accordion details[open] summary::after {
-    transform: rotate(-180deg);
-  }
-  
-  .accordion details p {
-    padding: 0 1rem 1rem;
-    margin: 0;
-    line-height: 1.6;
-  }
-  
-  .tip-number {
-    display: inline-block;
-    width: 30px;
-    font-size: 1.2rem;
-    color: #333;
-    margin-right: 0.5rem;
-  }
-  
 
-  @media screen and (max-width: 374px) {
-    /* CSS rules for Mobile Small Devices */
-    }
-    
-    @media screen and (min-width: 375px) and (max-width: 424px) {
-        /* CSS rules for Mobile Medium Devices */
-    }
-    
-    @media screen and (min-width: 425px) and (max-width: 767px) {
-        /* CSS rules for Mobile Large Devices */
-    }
-    
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-        /* CSS rules for Tablet Devices */
-    }
-    
-    @media screen and (min-width: 1024px) and (max-width: 1439px) {
-        /* CSS rules for Laptop Devices */
-    }
-    
-    @media screen and (max-width: 1440px) {
-        /* CSS rules for Laptop Large Devices */
-    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  /* CSS rules for Mobile Medium Devices */
+  h1{
+    font-size: 2.2rem;
+  }
+
+  .section-header > h2 {
+    font-size: 1.8rem;
+  }
+  .tips-section {
+    max-width: 400px;
+    width: 90vw;
+    margin: 30px auto;
+  }
+
+  .card-content p {
+    padding-right: 40px;
+  }
+  .card-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .img-slide-container {
+    height: 20vh;
+  }
+
+  .card {
+    flex-direction: column-reverse;
+  }
+  .card:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  .card-content {
+    width: 100%;
+  }
+
+  .card:nth-child(even) .card-content {
+    align-items: flex-end;
+  }
+  .card:nth-child(even) .card-content p {
+    padding-right: 0;
+    padding-left: 40px;
+    text-align: right;
+  }
+
+  .card:nth-child(even) .card-content h3{
+    text-align: right;
+  }
+
+  .tips-section.modern-ui h2 {
+    font-size: 1.8rem;
+  }
+
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  /* CSS rules for Mobile Large Devices */
+  h1{
+    font-size: 2.2rem;
+  }
+  .section-header > h2 {
+    font-size: 1.8rem;
+  }
+  .tips-section {
+    max-width: 640px;
+    width: 90vw;
+    margin: 30px auto;
+  }
+
+  .card-content p {
+    padding-right: 40px;
+  }
+  .card-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .img-slide-container {
+    height: 20vh;
+  }
+
+  .card {
+    flex-direction: column-reverse;
+  }
+  .card:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  .card-content {
+    width: 100%;
+  }
+
+  .card:nth-child(even) .card-content {
+    align-items: flex-end;
+  }
+  .card:nth-child(even) .card-content p {
+    padding-right: 0;
+    padding-left: 40px;
+    text-align: right;
+  }
+  .card:nth-child(even) .card-content h3{
+    text-align: right;
+  }
+  .accordion summary {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* CSS rules for Tablet Devices */
+  .tips-section {
+    max-width: 900px;
+    width: 95vw;
+  }
+
+  .card-content p {
+    padding-right: 40px;
+  }
+  .card-content h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  /* CSS rules for Laptop Devices */
+  .tips-section {
+    max-width: 1200px;
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  /* CSS rules for Laptop Large Devices */
+}
