@@ -40,7 +40,6 @@ body {
   color: white;
   text-align: center;
   padding: 0;
-  max-width: 100%;
 }
 
 .hero-section::before{
@@ -72,17 +71,16 @@ body {
 
 .hero-text h1 {
   font-size: 3em;
-  margin-bottom: 10px;
 }
 
 .explore-btn {
-  background-color:#0d0d0d;
+  background-color:rgba(0, 0, 0, 0.5);
   color: #fff ;
   padding: 10px 20px;
   text-decoration: none;
-  border-radius: 30px ;
+  border-radius: 20px ;
   top: 10%;
-  border: 2px solid #0d0d0d;
+  border: none;
   margin-top: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -816,20 +814,583 @@ a{
 
   @media screen and (max-width: 374px) {
     /* CSS rules for Mobile Small Devices */
+
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+
+    
+    .sec-container {
+      max-width: 400px;
+      width: 80vw;
+      margin: 30px auto;
+      padding: 40px 20px;
+    }
+   
+    .destination-header h2 {
+      font-size: 1.5rem;
+    }
+    .destination-header p {
+      font-size: 1rem;
+    }
+
+  .destination-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .destinations-card {
+    height: 50vw;
+  }
+
+  .card-description {
+    height: 100%;
+  }
+
+
+  .destinations-card:hover .card-description {
+    cursor: pointer;
+    top: 0;
+  }
+
+  .card-description > h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .card-description > div{
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .card-description > div > p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .item-icon > img {
+    width: auto;
+  }
+  .tips-content {
+    margin-left: 0;
+  }
+
+  .tips-content h2 {
+    font-size: 2rem;
+  }
+
+  #travel-tips {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image-container img {
+    width: 80vw;
+    height: 350px;
+    
+  }
+  .image-container{
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  #blog-header > h2 {
+    font-size: 2rem;
+  }
+
+  .post-item-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-item-main > img {
+    width: 80vw;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+  .img-blog-item-arrow {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+  }
+
+  #blog-header {
+    margin: 0 0 20px 0;
+  }
+
+  .item-main-container {
+    padding: 0;
+  }
+
+
+  .item-other-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px 24px;
+  }
+
+
+  .review-card {
+    width: calc(100%/2);
+  }
+
+  .reviewer-info img {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .slider-track {
+    display: flex;
+    justify-content: space-between;
+    animation: slider 20s linear infinite ;
+    
+  }
+  @keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-250%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  #faq {
+    flex-direction: column-reverse;
+  }
+  #travelmap-srilanka > img{
+    width: 80vw;
+  }
+
+  .faq-title {
+    font-size: 1.5rem;
+  }
+
+  .faq-section {
+    width: 80vw;
+    padding: 10px;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  #slider-video {
+    max-width:400px;
+    width: 80vw;
+  }
+
+  #play-btn {
+    width: 10vw;
+    height: 10vw;
+    top: 145px;
+    left: 16px;
+  }
+
+  #video-play h1 {
+    font-size: 2rem;
+  }
+
+  #play-btn::before {
+    font-size: 16px;
+  }
+
     }
     
     @media screen and (min-width: 375px) and (max-width: 424px) {
         /* CSS rules for Mobile Medium Devices */
+
+        .hero-text h1 {
+          font-size: 2rem;
+        }
+    
+        
+        .sec-container {
+          max-width: 400px;
+          width: 80vw;
+          margin: 30px auto;
+          padding: 40px 20px;
+        }
+       
+        .destination-header h2 {
+          font-size: 1.5rem;
+        }
+        .destination-header p {
+          font-size: 1rem;
+        }
+
+      .destination-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .destinations-card {
+        height: 50vw;
+      }
+
+      .card-description {
+        height: 100%;
+      }
+
+
+      .destinations-card:hover .card-description {
+        cursor: pointer;
+        top: 0;
+      }
+
+      .card-description > h3 {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+
+      .card-description > div{
+        flex-direction: row;
+        gap: 5px;
+      }
+
+      .card-description > div > p {
+        font-size: 0.8rem;
+        margin: 0;
+      }
+
+      .item-icon > img {
+        width: auto;
+      }
+      .tips-content {
+        margin-left: 0;
+      }
+
+      .tips-content h2 {
+        font-size: 2rem;
+      }
+
+      #travel-tips {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .image-container img {
+        width: 80vw;
+        height: 350px;
+        
+      }
+      .image-container{
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
+      #blog-header > h2 {
+        font-size: 2rem;
+      }
+
+      .post-item-main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .post-item-main > img {
+        width: 80vw;
+        height: 350px;
+        object-fit: cover;
+        margin-bottom: 16px;
+      }
+      .img-blog-item-arrow {
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+      }
+
+      #blog-header {
+        margin: 0 0 20px 0;
+      }
+
+      .item-main-container {
+        padding: 0;
+      }
+
+
+      .item-other-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px 24px;
+      }
+
+
+      .review-card {
+        width: calc(100%/2);
+      }
+
+      .reviewer-info img {
+        width: 10vw;
+        height: 10vw;
+      }
+
+      .slider-track {
+        display: flex;
+        justify-content: space-between;
+        animation: slider 20s linear infinite ;
+        
+      }
+      @keyframes slider {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(-250%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      #faq {
+        flex-direction: column-reverse;
+      }
+      #travelmap-srilanka > img{
+        width: 80vw;
+      }
+
+      .faq-title {
+        font-size: 1.5rem;
+      }
+
+      .faq-section {
+        width: 80vw;
+        padding: 10px;
+      }
+  
+      .faq-question {
+        font-size: 1rem;
+      }
+
+      #slider-video {
+        max-width:400px;
+        width: 80vw;
+      }
+
+      #play-btn {
+        width: 10vw;
+        height: 10vw;
+        top: 145px;
+        left: 16px;
+      }
+
+      #video-play h1 {
+        font-size: 2rem;
+      }
+
+      #play-btn::before {
+        font-size: 16px;
+      }
+
+    
     }
     
     @media screen and (min-width: 425px) and (max-width: 767px) {
         /* CSS rules for Mobile Large Devices */
+
+        .hero-text h1 {
+          font-size: 2.4rem;
+        }
+    
+        .sec-container {
+          max-width: 640px;
+          width: 85vw;
+          margin: 40px auto;
+          padding: 50px 20px;
+        }
+       
+        .destination-header h2 {
+          font-size: 1.5rem;
+        }
+        .destination-header p {
+          font-size: 1rem;
+        }
+
+      .destination-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .destinations-card {
+        height: 50vw;
+      }
+
+      .card-description {
+        height: 100%;
+      }
+
+
+      .destinations-card:hover .card-description {
+        cursor: pointer;
+        top: 0;
+      }
+
+      .card-description > h3 {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+
+      .card-description > div{
+        flex-direction: row;
+        gap: 5px;
+      }
+
+      .card-description > div > p {
+        font-size: 0.8rem;
+        margin: 0;
+      }
+
+      .item-icon > img {
+        width: auto;
+      }
+      .tips-content {
+        margin-left: 0;
+      }
+
+      .tips-content h2 {
+        font-size: 2rem;
+      }
+
+      #travel-tips {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .image-container img {
+        width: 85vw;
+        height: 350px;
+        
+      }
+      .image-container{
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
+      #blog-header > h2 {
+        font-size: 2rem;
+      }
+
+      .post-item-main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .post-item-main > img {
+        width: 85vw;
+        height: 350px;
+        object-fit: cover;
+        margin-bottom: 16px;
+      }
+      .img-blog-item-arrow {
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+      }
+
+      #blog-header {
+        margin: 0 0 20px 0;
+      }
+
+      .item-main-container {
+        padding: 0;
+      }
+
+
+      .item-other-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px 24px;
+      }
+
+
+      .review-card {
+        width: calc(100%/2);
+      }
+
+      .reviewer-info img {
+        width: 10vw;
+        height: 10vw;
+      }
+
+      .slider-track {
+        display: flex;
+        justify-content: space-between;
+        animation: slider 20s linear infinite ;
+        
+      }
+      @keyframes slider {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(-250%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      #faq {
+        flex-direction: column-reverse;
+      }
+      #travelmap-srilanka > img{
+        width: 80vw;
+      }
+
+      .faq-title {
+        font-size: 1.5rem;
+      }
+
+      .faq-section {
+        width: 80vw;
+      }
+  
+      .faq-question {
+        font-size: 1rem;
+      }
+
+      #slider-video {
+        max-width:640px;
+        width: 85vw;
+      }
+
+      #play-btn {
+        width: 10vw;
+        height: 10vw;
+        top: 145px;
+        left: 16px;
+      }
+
+      #video-play h1 {
+        font-size: 2rem;
+      }
+
+      #play-btn::before {
+        font-size: 16px;
+      }
+
     }
     
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         /* CSS rules for Tablet Devices */
+
+        .hero-text h1 {
+          font-size: 2.5rem;
+        }
+    
         .sec-container {
-          max-width: 700px;
+          max-width: 960px;
+          width: 90vw;
           margin: 40px auto;
           padding: 50px 20px;
         }
@@ -865,7 +1426,7 @@ a{
       }
 
       .image-container img {
-        width: 700px;
+        width: 90vw;
         height: 350px;
         
       }
@@ -884,7 +1445,7 @@ a{
       }
 
       .post-item-main > img {
-        width: 700px;
+        width: 90vw;
         height: 350px;
         object-fit: cover;
         margin-bottom: 16px;
@@ -901,6 +1462,18 @@ a{
 
       .item-main-container {
         padding: 0;
+      }
+
+      .faq-title {
+        font-size: 1.5rem;
+      }
+  
+      .faq-question {
+        font-size: 1rem;
+      }
+
+      #slider-video {
+        max-width: 90vw;
       }
 
 
