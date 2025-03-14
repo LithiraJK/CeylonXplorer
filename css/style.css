@@ -33,6 +33,7 @@ header nav {
   gap: 20px;
 }
 
+
 .nav-links a {
   text-decoration: none;
   color: white;
@@ -40,6 +41,11 @@ header nav {
   display: block;
   font-size: 18px;
   font-weight: bold;
+}
+
+.nav-links a:hover{
+  color: rgb(89, 203, 241);
+  cursor: pointer;
 }
 
 /*Menu Panel*/
@@ -127,6 +133,11 @@ footer li{
 footer a{
     color: #fff;
     text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(89, 203, 241);
+  cursor: pointer;
 }
 
 .footer-top {
