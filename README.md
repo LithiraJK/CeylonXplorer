@@ -7,10 +7,5 @@ CeylonXplorer is my ultimate travel guide to Sri Lanka, offering the best insigh
 - Get essential travel tips.
 - Learn about local culture and traditions.
 
-## How to Contribute
-Feel free to fork the repository, submit pull requests, or open issues if you encounter bugs or have suggestions for improvement.
-
-## License
-MIT License.
-
-https://youtu.be/5AD5NEPlz5g
+## Hosted Link
+https://ceylonxplorer-dabb5.web.app
