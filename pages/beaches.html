@@ -1,1071 +1,999 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Explore the most beautiful beaches in Sri Lanka including Unawatuna, Mirissa, and Arugam Bay with our interactive guide." />
-    <meta
-      name="keywords"
-      content="Sri Lanka beaches, Unawatuna, Mirissa, Arugam Bay, beach travel, CeylonXplorer" />
-    <title>Sri Lankan Beautiful Beaches</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="/css/destinations.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header>
-      <nav>
-        <div class="logo">
-          <h1>CeylonXplorer</h1>
-        </div>
-        <ul class="nav-links">
-          <li><a href="/index.html#home">Home</a></li>
-          <li><a href="/index.html#destinations">Destinations</a></li>
-          <li><a href="/index.html#travel-tips">Travel Tips</a></li>
-          <li><a href="/index.html#blog">Blog</a></li>
-          <li><a href="/index.html#faq">FAQ</a></li>
-        </ul>
-        <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
-      </nav>
-      <nav class="menu-panel" id="menu-panel-id">
-        <button class="close-btn" id="btn-close">&times;</button>
-        <ul>
-          <li><a href="/index.html#home">Home</a></li>
-          <li><a href="/index.html#destinations">Destinations</a></li>
-          <li><a href="/index.html#travel-tips">Travel Tips</a></li>
-          <li><a href="/index.html#blog">Blog</a></li>
-          <li><a href="/index.html#faq">FAQ</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Explore the most beautiful beaches in Sri Lanka including Unawatuna, Mirissa, and Arugam Bay with our interactive guide." />
+  <meta name="keywords" content="Sri Lanka beaches, Unawatuna, Mirissa, Arugam Bay, beach travel, CeylonXplorer" />
+  <title>Sri Lankan Beautiful Beaches</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/css/destinations.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
 
-    <section id="hero-section">
-      <div class="img-container">
-        <img src="/assets/images/pexels-beach.jpg" alt="beaches" />
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>CeylonXplorer</h1>
       </div>
-      <div class="main-header">
-        <h1>Sri Lankan Beautiful Beaches</h1>
-        <a href="#beaches-container">
-          <button id="btn-explore" type="button">Explore more</button>
-        </a>
-      </div>
-    </section>
+      <ul class="nav-links">
+        <li><a href="/index.html#home">Home</a></li>
+        <li><a href="/index.html#destinations">Destinations</a></li>
+        <li><a href="/index.html#travel-tips">Travel Tips</a></li>
+        <li><a href="/index.html#blog">Blog</a></li>
+        <li><a href="/index.html#faq">FAQ</a></li>
+      </ul>
+      <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+    </nav>
+    <nav class="menu-panel" id="menu-panel-id">
+      <button class="close-btn" id="btn-close">&times;</button>
+      <ul>
+        <li><a href="/index.html#home">Home</a></li>
+        <li><a href="/index.html#destinations">Destinations</a></li>
+        <li><a href="/index.html#travel-tips">Travel Tips</a></li>
+        <li><a href="/index.html#blog">Blog</a></li>
+        <li><a href="/index.html#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div id="beaches-container" class="container">
-      <div class="container-header">
-        <h2>Explore the Best Beaches in Sri Lanka</h2>
-        <p>
-          Discover the stunning coastlines, golden sands, and crystal-clear
-          waters of Sri Lanka’s best beaches.
-        </p>
-      </div>
-      <div class="destination-cards">
-        <!-- Unawatuna Beach Card -->
-        <div class="destination-card">
-          <img
-            src="/assets/images/unawatuna-beach-sri-lanka.jpg"
-            alt="Unawatuna Beach" />
-          <div class="card-content">
-            <h2>Unawatuna Beach</h2>
-            <p>
-              Famous for its golden sands and clear turquoise waters, perfect
-              for swimming and snorkeling.
-            </p>
-            <a href="#modal-unawatuna" class="learn-more-btn">See More</a>
-          </div>
-        </div>
-        <!-- Mirissa Beach Card -->
-        <div class="destination-card">
-          <img
-            src="/assets/images/mirissa-beach-in-sri-lanka.jpg"
-            alt="Mirissa Beach" />
-          <div class="card-content">
-            <h2>Mirissa Beach</h2>
-            <p>
-              A tropical paradise with vibrant nightlife and whale-watching
-              tours.
-            </p>
-            <a href="#modal-mirissa" class="learn-more-btn">See More</a>
-          </div>
-        </div>
-        <!-- Arugam Bay Card -->
-        <div class="destination-card">
-          <img src="/assets/images/arugam-bay.webp" alt="Arugam Bay" />
-          <div class="card-content">
-            <h2>Arugam Bay</h2>
-            <p>
-              A surfer's haven known for its world-class waves and laid-back
-              atmosphere.
-            </p>
-            <a href="#modal-arugam" class="learn-more-btn">See More</a>
-          </div>
-        </div>
-
-        <!-- Hikkaduwa Beach Card -->
-        <div class="destination-card">
-          <img
-            src="/assets/images/coral-reef_658691-326.jpg"
-            alt="Hikkaduwa Beach" />
-          <div class="card-content">
-            <h2>Hikkaduwa Beach</h2>
-            <p>
-              Famous for its golden sands and clear turquoise waters, perfect
-              for swimming and snorkeling.
-            </p>
-            <a href="#modal-hikkaduwa" class="learn-more-btn">See More</a>
-          </div>
-        </div>
-
-        <!-- Nilaveli Beach Card -->
-        <div class="destination-card">
-          <img
-            src="/assets/images/discover-nilaveli-beach (1).jpg"
-            alt="Nilaveli Beach" />
-          <div class="card-content">
-            <h2>Nilaveli Beach</h2>
-            <p>
-              Pristine shores, calm turquoise waters, and a gateway to stunning
-              marine life at Pigeon Island.
-            </p>
-            <a href="#modal-nilaveli" class="learn-more-btn">See More</a>
-          </div>
-        </div>
-
-        <!-- Bentota Beach Card -->
-        <div class="destination-card">
-          <img
-            src="/assets/images/bentota-beach.jpg.webp"
-            alt="Bentota Beach" />
-          <div class="card-content">
-            <h2>Bentota Beach</h2>
-            <p>
-              Golden sands, tranquil waters, and a perfect blend of relaxation
-              and water sports adventures.
-            </p>
-            <a href="#modal-bentota" class="learn-more-btn">See More</a>
-          </div>
-        </div>
-      </div>
+  <section id="hero-section">
+    <div class="img-container">
+      <img src="/assets/images/pexels-beach.jpg" alt="beaches" />
     </div>
-
-    <!-- Modal for Unawatuna Beach -->
-    <div id="modal-unawatuna" class="modal">
-      <div class="modal-content">
-        <a href="#beaches-container" class="close-btn">&times;</a>
-        <h2>Unawatuna Beach</h2>
-        <img
-          src="/assets/images/unawatuna-beach-sri-lanka.jpg"
-          alt="Unawatuna Beach" />
-        <h3>Discover Paradise at Unawatuna Beach Your Ultimate Guide</h3>
-        <p>
-          If you're dreaming of a tropical escape, look no further than
-          Unawatuna Beach. Nestled on the southern coast of Sri Lanka, this
-          hidden gem offers everything a traveler could desire—a blend of
-          relaxation, adventure, and stunning natural beauty. Whether you're a
-          beach lover yearning for soft sands, a travel enthusiast seeking new
-          destinations, or an adventure seeker looking for your next thrill,
-          Unawatuna Beach is the perfect spot for you. In this blog post, we'll
-          take you on a journey through the wonders of Unawatuna, providing all
-          the information you need to plan the ultimate beach getaway.
-        </p>
-        <img
-          src="/assets/images/unawatuna-beach-in-sri-lanka.jpg"
-          alt="unawatuna" />
-        <h3>A Glimpse into Unawatuna Beach</h3>
-        <p>
-          Unawatuna Beach is a stunning crescent-shaped haven, renowned for its
-          soft golden sands and crystal-clear turquoise waters that shimmer
-          under the sun. Nestled just 5 kilometers south of the historic city of
-          Galle, this picturesque destination is easily accessible, making it an
-          ideal spot for a relaxing day trip or a longer, rejuvenating holiday
-        </p>
-
-        <p>
-          The beach offers more than just a place to lounge in the sun; it’s a
-          vibrant locale brimming with activities that cater to every type of
-          traveler. From thrilling water sports like snorkeling and diving to
-          exploring the nearby coral reefs, visitors can immerse themselves in
-          the natural beauty of the area. Additionally, beachside cafes and
-          restaurants serve delicious local cuisine, ensuring that you can savor
-          the flavors of Sri Lanka while enjoying the breathtaking views.
-          Whether you seek adventure or relaxation, Unawatuna Beach promises an
-          unforgettable experience.
-        </p>
-
-        <h4>Why Unawatuna Beach is a Must-Visit</h4>
-
-        <p>
-          One of the top reasons to visit Unawatuna Beach is its diverse appeal,
-          making it an ideal destination for all types of travelers. Picture
-          serene mornings spent soaking up the sun on soft golden sands, where
-          the gentle sound of waves creates a tranquil atmosphere perfect for
-          relaxation and meditation. As the day unfolds, adventure seekers can
-          dive into <a href="#">exhilarating water sports</a>, ranging from
-          snorkeling and scuba diving to thrilling jet skiing and surfing,
-          ensuring that there's something to get the adrenaline pumping for
-          everyone.
-        </p>
-
-        <p>
-          The beach's natural beauty, with its lush palm trees swaying in the
-          breeze and stunning turquoise waters, is complemented by a lively town
-          just a stone's throw away. Here, visitors can indulge in fantastic
-          local cuisine at charming seaside cafés and restaurants, explore
-          unique shops filled with handmade crafts, and immerse themselves in
-          cultural experiences that showcase the rich heritage of the area.
-          Whether you’re seeking relaxation or adventure, Unawatuna Beach offers
-          an unforgettable experience for all.
-        </p>
-
-        <img
-          src="/assets/images/visit-unawatuna-beach.jpg"
-          alt="unawatuna-beach" />
-        <h4>Best Time to Visit Unawatuna Beach</h4>
-        <p>
-          To make the most of your trip, plan your visit between November and
-          April. During these months, the weather is ideal—warm and dry, with
-          calm seas perfect for swimming and other activities. Avoid the monsoon
-          season from May to October when heavy rains can disrupt your plans.
-        </p>
-
-        <img
-          src="/assets/images/water-sports-unawatuna-beach.jpg"
-          alt="water-sports" />
-
-        <h4>Water Sports and Activities</h4>
-
-        <p>
-          For those craving adventure, Unawatuna Beach offers plenty of water
-          sports. Try your hand at jet skiing, windsurfing, or paddleboarding.
-          If you prefer a more relaxed experience, opt for a guided snorkeling
-          or scuba diving tour to explore the underwater world. The Jungle Beach
-          and Wijaya Beach are nearby spots perfect for these activities.
-        </p>
-
-        <p>
-          Unawatuna Beach is a paradise for thrill-seekers eager to engage in
-          various water sports. You can rent equipment and take lessons for
-          exhilarating activities like jet skiing, kayaking, and stand-up
-          paddleboarding. The beach is lined with several operators who are
-          ready to help you get started, ensuring a fun and safe experience.
-          Whether you're a novice keen to learn the basics or an experienced
-          water sports enthusiast looking for a new challenge, you're sure to
-          find the perfect adventure awaiting you in the waves of Unawatuna.
-        </p>
-
-        <img
-          src="/assets/images/visit-jungle-beach-unawatuna.jpg"
-          alt="sama-chaitthya" />
-        <h4>Visit Jungle Beach</h4>
-        <p>
-          A short hike from Unawatuna takes you to Jungle Beach, a secluded and
-          serene spot surrounded by lush greenery. This hidden gem is perfect
-          for those looking to escape the crowds and enjoy a tranquil beach
-          experience. The calm waters are ideal for swimming and snorkeling,
-          allowing visitors to immerse themselves in the vibrant marine life
-          without the hustle and bustle typically found at busier beaches. With
-          its stunning natural surroundings and peaceful atmospheres, Jungle
-          Beach is a fantastic destination for relaxation and exploration. Don't
-          forget to bring along your camera to capture the breathtaking views
-          and unique landscape!
-        </p>
-
-        <h4>Explore the Japanese Peace Pagoda</h4>
-        <p>
-          Nestled on a hill overlooking Unawatuna, the Japanese Peace Pagoda is
-          a serene retreat that offers breathtaking panoramic views of the
-          coastline and the vast ocean beyond. This impressive structure, built
-          as a symbol of peace and harmony, beckons visitors for moments of
-          reflection and meditation. The tranquil atmosphere makes it an ideal
-          spot to unwind, particularly during sunset when the sky transforms
-          into a canvas of vibrant hues. As you take in the scenery, the gentle
-          sounds of nature provide a harmonious backdrop, enhancing the overall
-          sense of serenity. Whether you're seeking a place for quiet
-          contemplation or simply wish to enjoy the incredible views, the
-          Japanese Peace Pagoda is a must-visit destination while in Unawatuna.
-        </p>
-      </div>
+    <div class="main-header">
+      <h1>Sri Lankan Beautiful Beaches</h1>
+      <a href="#beaches-container">
+        <button id="btn-explore" type="button">Explore more</button>
+      </a>
     </div>
+  </section>
 
-    <!-- Modal for Mirissa Beach -->
-    <div id="modal-mirissa" class="modal">
-      <div class="modal-content">
-        <a href="#beaches-container" class="close-btn">&times;</a>
-        <h2>Mirissa Beach</h2>
-        <img
-          src="/assets/images/mirissa-beach-in-sri-lanka.jpg"
-          alt="Mirissa Beach" />
-        <h3>Discover the Magic of Mirissa Beach</h3>
-        <p>
-          Nestled on the southern coast of Sri Lanka, Mirissa Beach is an
-          enchanting paradise that calls out to beach lovers and travel
-          enthusiasts alike. With its golden sands, azure waves, and vibrant
-          marine life, it’s no wonder this tropical haven has captured the
-          hearts of travelers from around the world.
-        </p>
-        <p>
-          We’ll explore the many facets of Mirissa Beach and why it should be at
-          the top of your travel bucket list. From must-see attractions to
-          hidden gems, this guide will help you uncover the magic of Mirissa
-          Beach.
-        </p>
-
-        <img src="/assets/images/visit-mirissa-beach.jpg" alt="coconut-hill" />
-        <h3>Best Time to Visit Mirissa Beach</h3>
-        <p>
-          Timing your visit to Mirissa Beach can make all the difference in your
-          experience. The best time to visit is during the dry season, which
-          runs from November to April. During these months, you can expect warm
-          temperatures, clear skies, and calm seas.
-        </p>
-        <p>
-          The monsoon season, which occurs from May to October, brings heavy
-          rainfall and rough seas. While the beach is still beautiful during
-          this time, activities such as swimming and snorkeling may be limited
-          due to weather conditions.
-        </p>
-        <p>
-          If you’re looking to avoid the crowds, consider visiting Mirissa Beach
-          during the shoulder seasons of November and April. These months offer
-          pleasant weather and fewer tourists, allowing you to enjoy the beach’s
-          beauty in a more peaceful setting.
-        </p>
-
-        <img
-          src="/assets/images/whale-watching-mirissa-beach.jpg"
-          alt="whale-watching" />
-        <h3>Activities and Attractions</h3>
-        <p>
-          Mirissa Beach offers a wide range of activities and attractions that
-          cater to all types of travelers. Whether you’re seeking adventure or
-          relaxation, there’s something for everyone.
-        </p>
-
-        <h4>Whale Watching</h4>
-        <p>
-          One of the most popular activities in Mirissa Beach is
-          <a href="#whale-watching">whale watching</a>, which attracts nature
-          enthusiasts from around the globe. The crystal-clear waters off the
-          coast of Mirissa are home to several species of whales, including the
-          magnificent blue whales, known to be the largest animals on the
-          planet, reaching lengths of up to 100 feet. These gentle giants
-          migrate through these waters, offering a unique opportunity for
-          spectators to observe them in their natural habitat.
-        </p>
-        <p>
-          Mirissa Beach offers a wide range of activities and attractions that
-          cater to all types of travelers. Whether you’re seeking adventure or
-          relaxation, there’s something for everyone.
-        </p>
-        <p>
-          Mirissa Beach offers a wide range of activities and attractions that
-          cater to all types of travelers. Whether you’re seeking adventure or
-          relaxation, there’s something for everyone.
-        </p>
-
-        <img
-          src="/assets/images/snorkeling-and-diving-mirissa-beach.jpg"
-          alt="Snorkeling and Diving" />
-        <h4>Snorkeling and Diving</h4>
-        <p>
-          The crystal-clear waters of Mirissa Beach provide excellent conditions
-          for
-          <a
-            href="https://www.travelmapsrilanka.com/activities/diving-sri-lanka.php"
-            >snorkeling and scuba diving</a
-          >. The coral reefs and underwater rock formations are teeming with
-          marine life, including colorful fish, sea turtles, and more.
-        </p>
-        <p>
-          There are several snorkeling spots around the beach, with the Parrot
-          Rock area being a favorite among visitors. For those interested in
-          scuba diving, local dive centers offer guided tours and certification
-          courses. Exploring the underwater world of Mirissa Beach is a must-do
-          for any marine enthusiast.
-        </p>
-
-        <h3>Dining and Nightlife</h3>
-        <img
-          src="/assets/images/seafood-mirissa-beach.jpg"
-          alt="Beachfront Dining" />
-        <h4>Seafood Delights</h4>
-        <p>
-          Being a coastal town, Mirissa is renowned for its fresh seafood, which
-          draws both locals and tourists alike to its vibrant dining scene. Many
-          restaurants, ranging from cozy beach shacks to upscale eateries, offer
-          daily catches that are expertly prepared and served with mouthwatering
-          flavors that highlight the region's culinary heritage. From succulent
-          prawns sautéed in garlic and herbs to perfectly grilled fish seasoned
-          with local spices, seafood lovers will truly feel like they are in
-          paradise.
-        </p>
-        <p>
-          One of the must-try dishes is the famous Sri Lankan crab curry, a
-          flavorful and aromatic delicacy that features tender crab meat
-          simmered in a rich blend of spices, coconut milk, and herbs, making
-          every bite an explosion of taste. To enhance your dining experience,
-          pair your meal with a refreshing coconut drink, known for its natural
-          sweetness and hydrating properties, or opt for a local beer that
-          complements the flavors of the seafood. As you indulge in these
-          delicacies, take a moment to soak in the stunning ocean views, with
-          the sound of waves crashing and the picturesque sunsets creating a
-          truly unforgettable atmosphere.
-        </p>
-
-        <img src="/assets/images/nightlife-mirissa-beach.jpg" alt="nightlife" />
-        <h4>Beachfront Dining</h4>
-        <p>
-          Dining at Mirissa Beach is truly a unique experience that captures the
-          essence of coastal living. Many restaurants offer charming al fresco
-          seating right on the soft, warm sand, allowing you to feel the gentle
-          ocean breeze as you enjoy your meal. Picture yourself savoring fresh
-          seafood, expertly prepared with local spices, while the sun sets on
-          the horizon, painting the sky in hues of orange and pink.
-        </p>
-        <p>
-          Enjoy a romantic dinner under the stars, with the soothing sound of
-          waves crashing in the background, creating a serene soundtrack to your
-          evening. The relaxed atmosphere, combined with stunning scenery and
-          the twinkling lights of nearby establishments, makes for an
-          unforgettable dining experience. Whether you’re celebrating a special
-          occasion or simply enjoying a night out, Mirissa Beach offers a
-          magical setting that will leave lasting memories.
-        </p>
-      </div>
+  <div id="beaches-container" class="container">
+    <div class="container-header">
+      <h2>Explore the Best Beaches in Sri Lanka</h2>
+      <p>
+        Discover the stunning coastlines, golden sands, and crystal-clear
+        waters of Sri Lanka’s best beaches.
+      </p>
     </div>
-
-    <!-- Modal for Arugam Bay -->
-    <div id="modal-arugam" class="modal">
-      <div class="modal-content">
-        <a href="#beaches-container" class="close-btn">&times;</a>
-        <h2>Arugam Bay</h2>
+    <div class="destination-cards">
+      <!-- Unawatuna Beach Card -->
+      <div class="destination-card">
+        <img src="/assets/images/unawatuna-beach-sri-lanka.jpg" alt="Unawatuna Beach" />
+        <div class="card-content">
+          <h2>Unawatuna Beach</h2>
+          <p>
+            Famous for its golden sands and clear turquoise waters, perfect
+            for swimming and snorkeling.
+          </p>
+          <a href="#modal-unawatuna" class="learn-more-btn">See More</a>
+        </div>
+      </div>
+      <!-- Mirissa Beach Card -->
+      <div class="destination-card">
+        <img src="/assets/images/mirissa-beach-in-sri-lanka.jpg" alt="Mirissa Beach" />
+        <div class="card-content">
+          <h2>Mirissa Beach</h2>
+          <p>
+            A tropical paradise with vibrant nightlife and whale-watching
+            tours.
+          </p>
+          <a href="#modal-mirissa" class="learn-more-btn">See More</a>
+        </div>
+      </div>
+      <!-- Arugam Bay Card -->
+      <div class="destination-card">
         <img src="/assets/images/arugam-bay.webp" alt="Arugam Bay" />
-        <p>
-          Arugam Bay is one of the most spectacular beaches on the Indian Ocean.
-          It has an excellent reputation for being an exotic and classic beach
-          in the pearl of the Indian Ocean, Sri Lanka. Among the different
-          coastal destinations in this tiny little island, Arugam Bay is well
-          known to attract tourists for its surfing culture. Located on the
-          southeast coast of Sri Lanka, Arugam Bay has turned into a popular
-          tourist destination within a short period, offering a magnificent
-          seaside with many water activities.
-        </p>
-        <h3>History and Cultural Significance</h3>
-        <p>
-          Originally inhabited by mostly Sri Lankan Tamils and Muslims, Arugam
-          Bay was called "Ullae." It is situated adjacent to a small market town
-          called Pottuvil. Apart from surfing, Arugam Bay has a lot to offer
-          such as bars, nightlife, beaches, lagoons, historical temples, and
-          also wildlife destinations.
-        </p>
-        <img
-          src="/assets/images/arugam-bay-surfing.jpg"
-          alt="arugam-bay-surfing" />
-        <h3>Surfing in Arugam Bay</h3>
-        <p>
-          Arugam Bay is one of the top three surfing spots in the world and is
-          the international surfing location for the ‘International Surfing
-          Competitions.’ Arugam Bay has great waves during the surfing seasons,
-          making it a once in a lifetime opportunity for anyone.
-        </p>
-        <h4>Main Surfing Points</h4>
-        <p>
-          There are three thrilling points in Arugam Bay: ‘The Point,’ ‘Pottuvil
-          Point,’ and ‘Crocodile Point.’ These three main points are ideal spots
-          for surfing and swimming. Notably, Arugam Bay has sectional right-hand
-          wave breaks that are long and consistent.
-        </p>
-        <p>
-          Other than these three main points, there are many other wave-breaking
-          points to have the best surfing experience in your life. With the
-          moon-shaped curly waves, soft golden sun, and fresh sea breeze, points
-          at Arugam Bay have become perfect places for surfing. You will also be
-          able to find many such breaking points for surfing by just walking 45
-          minutes along the beach to the north or south. The best time to enjoy
-          the real surfing experience in Arugam Bay is between April to October
-          each year.
-        </p>
-        <img
-          src="/assets/images/arugam-bay-surfing-lessons.jpg"
-          alt="arugam-bay-surfing-lessons" />
-        <h3>Arugam Bay Surfing Lessons</h3>
-        <p>
-          Unlike in southern coastal areas, surfing lessons in Arugam Bay are
-          slightly different. Almost all the surfing schools are conducted by
-          the local people.
-        </p>
-        <p>
-          Even though we say lessons, they provide a good surfing experience.
-          These are surfing camps with accommodation, food, transportation, and
-          other requirements for tourists. The best time to surf Arugam Bay is
-          April to October, most probably without rain during that period. If
-          you are willing to have the guidance of these surf schools in Arugam
-          Bay, July, August, or September are the perfect months to book in
-          advance.
-        </p>
-        <p>
-          Surfing guides will teach you how to be safe in the water without
-          getting hurt. If you are a beginner, the best time to take surfing
-          lessons would be the offseason to avoid the crowded months. Another
-          excellent option for beginners is to stay more weeks after the season
-          or before the season and try surfing safely.
-        </p>
-        <img
-          src="/assets/images/arugam-bay-diving.jpg"
-          alt="arugam-bay-diving" />
-        <h3>Arugam Bay Diving</h3>
-        <p>
-          Other than surfing, Arugam Bay is also famous for diving. The warm
-          tropical climate and crystal clear water provide the best diving
-          experience. Arugam Bay offers adventurous experiences of snorkeling,
-          with warm sea, clear water, seabed, and underwater life. It is famous
-          among both local and international snorkelers for its rich marine life
-          and colorful coral reefs.
-        </p>
-        <p>
-          Two enormous reef complexes off the coast of Yala National Park draw
-          snorkelers' attention. Clean and fresh water in this area allows you
-          to take underwater photographs while diving with fish, coral reefs,
-          and sandstones.
-        </p>
-        <p>
-          If you are a scuba diver, you can hire a boat to reach the Basses
-          Reefs in Arugam Bay and enjoy scuba diving. There are boats along the
-          beach available for hire.
-        </p>
-        <img
-          src="/assets/images/arugam-bay-wildlife.jpg"
-          alt="arugam-bay-wildlife" />
-        <h3>Wildlife in Arugam Bay</h3>
-        <p>
-          Wildlife in Arugam Bay plays a significant role in attracting
-          tourists. Layers of thicket mangroves are a safe haven not only for
-          many reptiles but also for other animals such as elephants and birds.
-          Clinging to the very south end of Arugam Bay, it is a paradise for
-          both native and migrant birds. This little sanctuary is called Kumana
-          National Park, the richest wildlife area in Arugam Bay, sheltering
-          crocodiles, elephants, monkeys, tigers, panthers, deer, and many bird
-          species.
-        </p>
-        <img
-          src="/assets/images/arugam-bay-nightlife.jpg"
-          alt="arugam-bay-nightlife" />
-        <h3>Nightlife in Arugam Bay</h3>
-        <p>
-          Night parties on the beach are a common and interesting activity in
-          Arugam Bay. There are some beach parties especially organized for
-          tourists, providing a chance to dance, sing, and spend a happy night.
-          These parties are arranged weekly, with details available on their
-          websites. Major hotels and popular tourist centers organize these
-          parties.
-        </p>
+        <div class="card-content">
+          <h2>Arugam Bay</h2>
+          <p>
+            A surfer's haven known for its world-class waves and laid-back
+            atmosphere.
+          </p>
+          <a href="#modal-arugam" class="learn-more-btn">See More</a>
+        </div>
       </div>
-    </div>
 
-    <!-- Modal for Hikkaduwa Bay -->
-    <div id="modal-hikkaduwa" class="modal">
-      <div class="modal-content">
-        <a href="#beaches-container" class="close-btn">&times;</a>
-        <h2>Hikkaduwa</h2>
-        <img src="/assets/images/coral-reef_658691-326.jpg" alt="Hikkaduwa" />
-        <h3>One Of the Best Coral Reefs and Abundant Marine Life</h3>
-        <p>
-          Nestled on the southwestern coast of Sri Lanka, Hikkaduwa Beach is a
-          paradise waiting to be discovered. This blog post will take you on a
-          virtual tour of Hikkaduwa Beach, highlighting its unique charm,
-          breathtaking beauty, and the myriad activities it offers. Whether
-          you're a beach lover, a travel enthusiast, or an eco-tourist,
-          Hikkaduwa Beach promises an unforgettable experience.
-        </p>
-        <img
-          src="/assets/images/discover-hikkaduwa-beach.jpg"
-          alt="Hikkaduwa" />
-        <h3>A Glimpse into Hikkaduwa Beach's History</h3>
-        <p>
-          Hikkaduwa Beach boasts a fascinating history that dates back to the
-          1960s when it first emerged as a sought-after destination for surf
-          enthusiasts drawn by its stunning waves and pristine shores. Over the
-          decades, it has transformed into a vibrant coastal town teeming with
-          life, attracting travelers from every corner of the globe who come to
-          experience its unique charm. Despite this growth and the increasing
-          number of tourists, the beach has remarkably preserved its natural
-          beauty, with golden sands and crystal-clear waters that continue to
-          captivate visitors.
-        </p>
-        <p>
-          The town of Hikkaduwa itself is a cultural tapestry woven from
-          centuries of trade and interaction with diverse civilizations,
-          including Portuguese, Dutch, and British influences. This rich
-          cultural heritage is beautifully reflected in the local cuisine, where
-          you'll find a delightful fusion of flavors and dishes that showcase
-          the region's seafood abundance and exotic spices.
-        </p>
-        <p>
-          Additionally, the traditions and festivals celebrated here, such as
-          the vibrant Hikkaduwa Coral Festival, offer a glimpse into the
-          community’s close-knit spirit and appreciation for their unique
-          environment. The architecture throughout the town, featuring colorful
-          buildings and rustic charm, further enhances the allure of Hikkaduwa,
-          making it not just a destination for relaxation but also a place of
-          cultural exploration and discovery during your visit.
-        </p>
-        <img
-          src="/assets/images/beauty-of-hikkaduwa-beach.jpg"
-          alt="beauty-of-hikkaduwa-beach" />
-        <h3>The Pristine Beauty of Hikkaduwa Beach</h3>
-        <p>
-          One of the first things that will strike you about Hikkaduwa Beach is
-          its pristine beauty, which captivates visitors from the moment they
-          arrive. The golden sands stretch for miles, gleaming under the
-          tropical sun and meeting the stunning azure waters of the Indian
-          Ocean. This idyllic beach is lined with swaying coconut palms that
-          gently rustle in the breeze, creating a picturesque setting that
-          invites relaxation and rejuvenation.
-        </p>
-        <p>
-          As you stroll along the shoreline, you’ll notice the vibrant marine
-          life just beneath the surface of the crystal-clear waters. These
-          inviting waters beckon you for a swim, while the gentle waves make it
-          an ideal spot for novice surfers looking to catch their first wave.
-          Families can be seen playing in the surf, while others lounge on the
-          beach with a good book, soaking up the sun.
-        </p>
-        <p>
-          Hikkaduwa Beach is well-maintained, thanks in part to the efforts of
-          locals and tourists alike, who regularly participate in beach clean-up
-          activities to preserve its natural beauty for future generations. The
-          sense of community and commitment to the environment is palpable,
-          making this destination not only a place of relaxation but also one of
-          shared responsibility. With charming beachside cafes offering
-          refreshing drinks and delicious local cuisine, Hikkaduwa Beach
-          promises an unforgettable experience for all who visit.
-        </p>
-        <h3>The Best Time to Visit Hikkaduwa Beach</h3>
-        <p>
-          While Hikkaduwa Beach is a year-round destination, the best time to
-          visit is during the dry season, which runs from November to April.
-          During this period, you can expect clear skies, calm seas, and ideal
-          conditions for outdoor activities.
-        </p>
-        <p>
-          The monsoon season, from May to October, brings heavier rainfall and
-          rougher seas, which may limit some activities. However, if you prefer
-          a quieter experience with fewer tourists, this can still be a good
-          time to visit.
-        </p>
-        <img
-          src="/assets/images/visit-hikkaduwa-beach (1).jpg"
-          alt="ritipanna" />
-        <h3>Getting to Hikkaduwa Beach</h3>
-        <p>
-          Hikkaduwa Beach is easily accessible from major cities in Sri Lanka.
-          The nearest airport is Bandaranaike International Airport in Colombo,
-          which is about 100 kilometers away. From there, you can take a taxi or
-          a train to Hikkaduwa.
-        </p>
-        <p>
-          Train travel is a popular option, offering scenic views of the
-          coastline along the way. The train ride from Colombo to Hikkaduwa
-          takes approximately two hours and is a memorable experience in itself.
-        </p>
-        <img
-          src="/assets/images/water-sports-hikkaduwa-beach.jpg"
-          alt="water-sports" />
-        <h3>Water Sports Hikkaduwa Beach</h3>
-        <p>
-          For those who prefer underwater adventures, Hikkaduwa Beach boasts
-          some of the best snorkeling and diving spots in Sri Lanka. The coral
-          reefs just off the shore are teeming with colorful marine life,
-          including vibrant fish, graceful sea turtles, and even the occasional
-          reef shark, which adds an exhilarating element to your underwater
-          exploration.
-        </p>
-        <p>
-          The warm, crystal-clear waters provide perfect visibility, allowing
-          divers and snorkelers to fully appreciate the intricate beauty of the
-          coral formations and the diverse ecosystems they support. Several
-          operators in the area offer guided snorkeling and diving tours,
-          complete with experienced instructors and all necessary equipment,
-          ensuring that you have a safe and enjoyable experience, whether you're
-          a beginner or an experienced diver.
-        </p>
-        <p>
-          These tours often include additional perks, such as refreshments or
-          the chance to spot unique marine species in their natural habitat.
-          Don't miss the chance to explore the enchanting underwater world and
-          witness the stunning biodiversity that Hikkaduwa Beach has to
-          offer—it’s an experience that will leave you with unforgettable
-          memories and a deeper appreciation for the ocean's wonders.
-        </p>
+      <!-- Hikkaduwa Beach Card -->
+      <div class="destination-card">
+        <img src="/assets/images/coral-reef_658691-326.jpg" alt="Hikkaduwa Beach" />
+        <div class="card-content">
+          <h2>Hikkaduwa Beach</h2>
+          <p>
+            Famous for its golden sands and clear turquoise waters, perfect
+            for swimming and snorkeling.
+          </p>
+          <a href="#modal-hikkaduwa" class="learn-more-btn">See More</a>
+        </div>
       </div>
-    </div>
 
-    <!-- Modal for  Nilaveli Beach -->
-    <div id="modal-nilaveli" class="modal">
-      <div class="modal-content">
-        <a href="#beaches-container" class="close-btn">&times;</a>
-        <h2>Nilaveli Beach</h2>
-        <img
-          src="/assets/images/discover-nilaveli-beach (1).jpg"
-          alt="Nilaveli Beach" />
-        <h3>Discover Serenity and Adventure at Nilaveli Beach Sri Lanka</h3>
-        <p>
-          Are you craving a tropical getaway where the sun kisses your skin and
-          the gentle waves lull you into tranquility? Look no further than
-          Nilaveli Beach in Sri Lanka. Nestled on the picturesque north-eastern
-          coast of this gem-like island, Nilaveli Beach is a true paradise,
-          offering a perfect blend of relaxation and adventure for travel
-          enthusiasts and beach lovers alike. With its powdery white sands and
-          crystal-clear turquoise waters, this idyllic spot invites you to
-          unwind under swaying palm trees or engage in thrilling water sports.
-        </p>
-        <p>
-          In this comprehensive guide, we’ll explore the myriad reasons why
-          Nilaveli Beach should be your next travel destination. From its
-          stunning natural beauty and vibrant marine life to the rich cultural
-          experiences awaiting you nearby, there’s something for everyone. We’ll
-          delve into what makes this beach unique, including its serene
-          atmosphere, breath-taking sunrises, and opportunities for snorkelling
-          and diving in nearby coral reefs. Additionally, we’ll provide tips on
-          how you can make the most of your visit, including the best
-          accommodations, local dining options, and must-see attractions in the
-          area. Get ready to discover the enchanting allure of Nilaveli Beach!
-        </p>
-        <img src="/assets/images/nilaweli-beach.jpg" alt="nilaweli-beach" />
-        <h3>Why Nilaveli Beach is a Must-Visit Destination</h3>
-        <p>
-          Nilaveli Beach stands out as one of Sri Lanka's most spectacular
-          coastal gems. Its pristine sands and clear blue waters create an
-          idyllic scene that seems almost unreal. Unlike the more commercialized
-          beaches, Nilaveli offers a tranquil atmosphere perfect for those
-          looking to escape the hustle and bustle of everyday life. Whether
-          you're an avid traveler or a beach lover, Nilaveli Beach promises a
-          slice of paradise.
-        </p>
-        <p>
-          The beach is not just about serenity; it’s also rich in culture and
-          history. The local community warmly welcomes tourists, making it a
-          culturally immersive experience. From ancient temples to vibrant local
-          markets, there’s so much more to Nilaveli than its stunning coastline.
-        </p>
-        <h3>The Natural Beauty of Nilaveli Beach</h3>
-        <p>
-          Nilaveli Beach is renowned for its breathtaking natural beauty and
-          tranquil atmosphere. Imagine strolling barefoot on the soft, powdery
-          white sand that stretches endlessly into the horizon while the gentle
-          turquoise waves lap soothingly at your feet, creating a rhythmic
-          symphony of sound. The beach is flanked by lush greenery and swaying
-          palm trees, adding a touch of wilderness and vibrant life to this
-          serene landscape. As the sun begins to set, the sky transforms into a
-          canvas painted in stunning hues of orange, pink, and purple, with the
-          fading sunlight reflecting off the water and creating a magical
-          ambiance that leaves visitors in awe.
-        </p>
-        <p>
-          The water at Nilaveli Beach is incredibly clear and inviting, making
-          it an ideal spot for swimming, snorkelling, and other water
-          activities. You can easily spot colorful fish darting around and
-          graceful coral reefs just a few meters from the shore, providing a
-          glimpse into the rich underwater ecosystem. The beach is also home to
-          diverse marine life, including majestic sea turtles gliding gracefully
-          through the waves and a variety of exotic fish species that thrive in
-          the vibrant coral gardens. With its unparalleled beauty and abundance
-          of recreational opportunities, Nilaveli Beach is truly a paradise for
-          nature lovers and adventure seekers alike.
-        </p>
-        <h3>Things To Do At Nilaveli Beach</h3>
-        <p>
-          Nilaveli Beach offers a plethora of activities that cater to various
-          interests. Whether you're an adrenaline junkie or someone who prefers
-          leisurely activities, there's something for everyone.
-        </p>
-        <img
-          src="/assets/images/relax-on-nilaveli-beach.jpg"
-          alt="relax-on-nilaveli-beach" />
-        <h4>Relax on the Beach</h4>
-        <p>
-          Enjoy the pristine white sands and calm waters of Nilaveli Beach,
-          which create an idyllic setting for relaxation. Whether you choose to
-          sunbathe on the soft, warm sand, dive into a good book, or simply soak
-          in the tranquil atmosphere, the beach provides the perfect backdrop
-          for unwinding. The gentle sound of waves lapping at the shore adds to
-          the serene environment, inviting you to leave your worries behind and
-          immerse yourself in the beauty of nature. With the sun casting a
-          golden glow over the landscape, every moment spent here feels like a
-          slice of paradise.
-        </p>
-        <img
-          src="/assets/images/diving-nilaveli-beach.jpg"
-          alt="diving-nilaveli-beach" />
-        <h4>Snorkelling and Diving</h4>
-        <p>
-          The waters of Nilaveli Beach are perfect for snorkelling and diving.
-          The nearby Pigeon Island Marine National Park is a popular spot where
-          you can explore vibrant coral reefs and swim alongside tropical fish.
-          Diving schools in the area offer guided tours and equipment rentals,
-          making it easy for beginners to join in.
-        </p>
-        <img
-          src="/assets/images/kayaking-and-paddle-boarding-nilaveli-beach.jpg"
-          alt="kayaking-and-paddle-boarding-nilaveli-beach" />
-        <h4>Kayaking and Paddle boarding</h4>
-        <p>
-          Renting a kayak or paddleboard is an excellent way to explore the calm
-          waters around Nilaveli Beach at your own pace. As you paddle along the
-          shoreline, you'll have the opportunity to take in the stunning coastal
-          views and the lush landscapes that frame the beach. This serene
-          activity allows you to connect with nature while providing a soothing
-          escape from the hustle and bustle of daily life. Whether you’re
-          gliding across the water alone or with friends, it’s a relaxing way to
-          enjoy the scenery and get some light exercise, all while keeping an
-          eye out for the fascinating marine life beneath the surface.
-        </p>
-        <img
-          src="/assets/images/hot-wells-of-kanniyai (1).jpg"
-          alt="hot-wells-of-kanniyai" />
-        <h4>Visit the Hot Wells of Kanniyai</h4>
-        <p>
-          Located a short drive from Nilaveli, the Hot Wells of Kanniyai are a
-          series of natural hot springs that are believed to have therapeutic
-          properties. This unique destination offers visitors the chance to soak
-          in warm mineral-rich waters, said to relieve various ailments and
-          promote relaxation. The experience is enhanced by the tranquil
-          surroundings, where lush greenery and serene landscapes create a
-          peaceful atmosphere. As you dip into the soothing waters, take a
-          moment to appreciate the historical significance of these ancient
-          wells, which have been cherished by locals for generations. Whether
-          you're seeking to unwind or simply explore the natural wonders of the
-          area, a visit to the Hot Wells of Kanniyai is an enriching addition to
-          your itinerary.
-        </p>
+      <!-- Nilaveli Beach Card -->
+      <div class="destination-card">
+        <img src="/assets/images/discover-nilaveli-beach (1).jpg" alt="Nilaveli Beach" />
+        <div class="card-content">
+          <h2>Nilaveli Beach</h2>
+          <p>
+            Pristine shores, calm turquoise waters, and a gateway to stunning
+            marine life at Pigeon Island.
+          </p>
+          <a href="#modal-nilaveli" class="learn-more-btn">See More</a>
+        </div>
       </div>
-    </div>
 
-    <!-- Modal for Bentota Beach -->
-    <div id="modal-bentota" class="modal">
-      <div class="modal-content">
-        <a href="#beaches-container" class="close-btn">&times;</a>
-        <h2>Bentota Beach</h2>
+      <!-- Bentota Beach Card -->
+      <div class="destination-card">
         <img src="/assets/images/bentota-beach.jpg.webp" alt="Bentota Beach" />
-        <p>
-          Bentota Beach, located along the southwestern coast of Sri Lanka, is
-          synonymous with water sports, river safaris, and scenic relaxation.
-          Positioned roughly 80 kilometers from Colombo, Bentota is easily
-          accessible by road or rail, making it a convenient weekend escape or a
-          longer vacation spot.
-        </p>
-        <h3>A Glimpse into the Beauty of Bentota Beach</h3>
-        <p>
-          Situated on the southwest coast of Sri Lanka, Bentota Beach boasts an
-          expansive stretch of golden sand and shimmering azure waters. This
-          serene haven offers a tranquil escape from the hustle and bustle of
-          everyday life. Whether you're looking to sunbathe, swim, or simply
-          stroll along the shore, Bentota Beach provides the perfect backdrop
-          for relaxation.
-        </p>
-        <p>
-          The lush greenery that surrounds the beach adds to its charm, creating
-          a picturesque setting that's ideal for photography enthusiasts. The
-          gentle sea breeze and the soothing sound of waves crashing against the
-          shore make Bentota Beach a true paradise on earth.
-        </p>
-        <img
-          src="/assets/images/bentota-beach-in-sri-lanka.jpg"
-          alt="bentota-beach-in-sri-lanka" />
-        <h4>The Rich History of Bentota</h4>
-        <p>
-          Bentota is more than just a beautiful beach; it’s a place steeped in
-          history and culture. The town of Bentota has roots that trace back to
-          ancient times, and its name is derived from the local Sinhala words
-          'Ben' (meaning "festoon") and 'Thota' (meaning "port" or "harbor").
-          This historical significance adds an extra layer of intrigue to your
-          visit.
-        </p>
-        <p>
-          The area is also home to several historical sites, including the
-          Galapatha Raja Maha Viharaya, an ancient Buddhist temple. Exploring
-          these sites offers a glimpse into Sri Lanka's rich cultural heritage
-          and provides a deeper connection to the land.
-        </p>
-        <img
-          src="/assets/images/water-sports-bentota-beach.jpg"
-          alt="water-sports-bentota-beach" />
-        <h3>Adventure Awaits: Water Sports at Bentota Beach</h3>
-        <p>
-          For those craving adventure, Bentota Beach does not disappoint. It’s a
-          hub for a variety of exciting watersports that cater to adrenaline
-          junkies and casual adventurers alike. Here are some must-try
-          activities:
-        </p>
-        <h4>Jet Skiing</h4>
-        <p>
-          Feel the rush of wind against your face as you zoom across the
-          glistening waters on a powerful jet ski. The thrill of speed mixes
-          with the refreshing spray of the ocean, creating an unforgettable
-          experience. Bentota's calm and clear waters, surrounded by lush
-          greenery and stunning landscapes, provide the perfect conditions for
-          this exhilarating activity. Whether you're a seasoned rider or a
-          first-timer,
-          <a href="#jet-skiing">jet skiing in Sri Lanka</a>, the scenic beauty
-          and vibrant atmosphere make every moment on the water truly special.
-        </p>
-        <h4>Windsurfing</h4>
-        <p>
-          Harness the incredible power of the wind and glide gracefully across
-          the waves with the exhilarating sport of windsurfing. This unique
-          combination of surfing and sailing allows you to feel the rush of the
-          wind as you navigate the water. Whether you’re a seasoned pro or a
-          complete beginner, there are professional instructors available to
-          guide you through the basics, ensuring you have a safe and enjoyable
-          experience. With personalized lessons, you’ll learn essential
-          techniques, gain confidence on the board, and discover the sheer joy
-          of riding the waves as you connect with nature in an entirely new way.
-          Embrace the thrill of windsurfing and make unforgettable memories on
-          the water!
-        </p>
-        <img
-          src="/assets/images/diving-bentota-beach.jpg"
-          alt="diving-bentota-beach" />
-        <h3>Snorkeling</h3>
-        <p>
-          Dive beneath the surface to discover a vibrant underwater world
-          teeming with a diverse array of marine life. The crystal-clear waters
-          of Bentota provide the perfect backdrop for snorkeling, allowing you
-          to explore the mesmerizing beauty of colorful fish darting among the
-          vibrant coral reefs. As you glide through the water, you'll encounter
-          fascinating species, from playful clownfish to graceful sea turtles,
-          all thriving in their natural habitat. This unforgettable experience
-          not only brings you up close and personal with the wonders of the
-          ocean but also fosters a deeper appreciation for the delicate
-          ecosystems that exist beneath the waves.
-        </p>
-
-        <h4>Boat Safari on the Bentota River</h4>
-        <p>
-          Take a boat tour along the Bentota River, where you can immerse
-          yourself in the serene beauty of nature. As you glide through the
-          tranquil waters, keep your eyes peeled for the unique mangrove
-          ecosystems that line the riverbanks, providing essential habitats for
-          many species. You might spot water monitors lazily basking in the sun
-          or gliding gracefully through the water. Additionally, the river is
-          home to a diverse array of birdlife, from colorful kingfishers to
-          majestic herons, making it a paradise for birdwatchers and nature
-          enthusiasts alike. This leisurely safari not only offers breathtaking
-          views but also a chance to connect with the vibrant wildlife that
-          thrives in this picturesque setting.
-        </p>
-        <img
-          src="/assets/images/bentota-beach-for-couples.jpg"
-          alt="bentota-beach-for-couples" />
-        <h3>Romantic Getaway: Perfect for Couples</h3>
-        <p>
-          Bentota Beach is an ideal destination for couples seeking a romantic
-          escape. The serene ambiance, coupled with breathtaking sunsets,
-          creates the perfect setting for romance. Take a leisurely beach walk
-          hand-in-hand or enjoy a candlelit dinner by the shore.
-        </p>
-        <p>
-          For a truly unforgettable experience, consider booking a couple's
-          massage at one of the luxurious beachfront spas. Indulging in
-          relaxation and rejuvenation together adds a special touch to your
-          romantic getaway.
-        </p>
-
-        <img
-          src="/assets/images/experience-in-bentota-beach.jpg"
-          alt="experience-in-bentota-beach" />
-        <h3>Experience the Magic of Bentota Beach</h3>
-        <p>
-          Bentota Beach is a destination that offers something for everyone.
-          Whether you’re seeking relaxation, adventure, or cultural immersion,
-          this coastal paradise has it all. From the pristine sands and
-          thrilling watersports to the rich history and luxurious
-          accommodations, Bentota Beach promises an unforgettable experience.
-        </p>
-        <p>
-          Ready to start planning your trip to Bentota Beach? Explore our
-          curated travel guides and connect with fellow travelers to make the
-          most of your adventure. Discover the magic of Bentota Beach and create
-          memories that will last a lifetime.
-        </p>
-        <p>
-          With its natural beauty, diverse activities, and warm hospitality,
-          Bentota Beach is a must-visit destination for any beach lover, travel
-          enthusiast, or adventure seeker. Book your trip today and experience
-          the enchantment of this Sri Lankan gem for yourself!
-        </p>
+        <div class="card-content">
+          <h2>Bentota Beach</h2>
+          <p>
+            Golden sands, tranquil waters, and a perfect blend of relaxation
+            and water sports adventures.
+          </p>
+          <a href="#modal-bentota" class="learn-more-btn">See More</a>
+        </div>
       </div>
     </div>
+  </div>
 
-    <footer>
-      <div class="content">
-        <div class="footer-top">
-          <nav class="footer-nav-link">
-            <h4>Destinations</h4>
-            <ul>
-              <li>
-                <a href="/pages/beaches.html">Beaches</a>
-              </li>
-              <li>
-                <a href="/pages/cultural-sites.html">Cultural Sites</a>
-              </li>
-              <li>
-                <a href="/pages/nature-and-wildlife.html">Nature & Wildlife</a>
-              </li>
-              <li>
-                <a href="/pages/adventure-and-trekking.html">Adventure & Trekking</a>
-              </li>
-            </ul>
-          </nav>
-          <nav class="footer-nav-link">
-            <h4>Quick Links</h4>
-            <ul>
-              <li>
-                <a href="/index.html#home">Home</a>
-              </li>
-              <li>
-                <a href="/index.html#destinations">Destinations</a>
-              </li>
-              <li>
-                <a href="/index.html#travel-tips">Travel Tips</a>
-              </li>
-              <li>
-                <a href="/index.html#blogs">Blogs</a>
-              </li>
-              <li>
-                <a href="/index.html#faq">FAQ</a>
-              </li>
-            </ul>
-          </nav>
-          <nav class="footer-nav-link">
-            <h4>Have a Questions ?</h4>
-            <ul>
-              <li>
-                <a href="http://www.linkedin.com/in/lithira-jayanaka"
-                  >Lithira Jayanaka/Linkedin</a
-                >
-              </li>
-              <li><a href="tel:+94 769270053">+94 769270053</a></li>
-              <li>
-                <a href="mailto:kariyawasamlithira2@gmail.com"
-                  >kariyawasamlithira2@gmail.com</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 CeylonXplorer. All rights reserved.</p>
-        </div>
+  <!-- Modal for Unawatuna Beach -->
+  <div id="modal-unawatuna" class="modal">
+    <div class="modal-content">
+      <a href="#beaches-container" class="modal-close-btn">&times;</a>
+      <h2>Unawatuna Beach</h2>
+      <img src="/assets/images/unawatuna-beach-sri-lanka.jpg" alt="Unawatuna Beach" />
+      <h3>Discover Paradise at Unawatuna Beach Your Ultimate Guide</h3>
+      <p>
+        If you're dreaming of a tropical escape, look no further than
+        Unawatuna Beach. Nestled on the southern coast of Sri Lanka, this
+        hidden gem offers everything a traveler could desire—a blend of
+        relaxation, adventure, and stunning natural beauty. Whether you're a
+        beach lover yearning for soft sands, a travel enthusiast seeking new
+        destinations, or an adventure seeker looking for your next thrill,
+        Unawatuna Beach is the perfect spot for you. In this blog post, we'll
+        take you on a journey through the wonders of Unawatuna, providing all
+        the information you need to plan the ultimate beach getaway.
+      </p>
+      <img src="/assets/images/unawatuna-beach-in-sri-lanka.jpg" alt="unawatuna" />
+      <h3>A Glimpse into Unawatuna Beach</h3>
+      <p>
+        Unawatuna Beach is a stunning crescent-shaped haven, renowned for its
+        soft golden sands and crystal-clear turquoise waters that shimmer
+        under the sun. Nestled just 5 kilometers south of the historic city of
+        Galle, this picturesque destination is easily accessible, making it an
+        ideal spot for a relaxing day trip or a longer, rejuvenating holiday
+      </p>
+
+      <p>
+        The beach offers more than just a place to lounge in the sun; it’s a
+        vibrant locale brimming with activities that cater to every type of
+        traveler. From thrilling water sports like snorkeling and diving to
+        exploring the nearby coral reefs, visitors can immerse themselves in
+        the natural beauty of the area. Additionally, beachside cafes and
+        restaurants serve delicious local cuisine, ensuring that you can savor
+        the flavors of Sri Lanka while enjoying the breathtaking views.
+        Whether you seek adventure or relaxation, Unawatuna Beach promises an
+        unforgettable experience.
+      </p>
+
+      <h4>Why Unawatuna Beach is a Must-Visit</h4>
+
+      <p>
+        One of the top reasons to visit Unawatuna Beach is its diverse appeal,
+        making it an ideal destination for all types of travelers. Picture
+        serene mornings spent soaking up the sun on soft golden sands, where
+        the gentle sound of waves creates a tranquil atmosphere perfect for
+        relaxation and meditation. As the day unfolds, adventure seekers can
+        dive into <a href="#">exhilarating water sports</a>, ranging from
+        snorkeling and scuba diving to thrilling jet skiing and surfing,
+        ensuring that there's something to get the adrenaline pumping for
+        everyone.
+      </p>
+
+      <p>
+        The beach's natural beauty, with its lush palm trees swaying in the
+        breeze and stunning turquoise waters, is complemented by a lively town
+        just a stone's throw away. Here, visitors can indulge in fantastic
+        local cuisine at charming seaside cafés and restaurants, explore
+        unique shops filled with handmade crafts, and immerse themselves in
+        cultural experiences that showcase the rich heritage of the area.
+        Whether you’re seeking relaxation or adventure, Unawatuna Beach offers
+        an unforgettable experience for all.
+      </p>
+
+      <img src="/assets/images/visit-unawatuna-beach.jpg" alt="unawatuna-beach" />
+      <h4>Best Time to Visit Unawatuna Beach</h4>
+      <p>
+        To make the most of your trip, plan your visit between November and
+        April. During these months, the weather is ideal—warm and dry, with
+        calm seas perfect for swimming and other activities. Avoid the monsoon
+        season from May to October when heavy rains can disrupt your plans.
+      </p>
+
+      <img src="/assets/images/water-sports-unawatuna-beach.jpg" alt="water-sports" />
+
+      <h4>Water Sports and Activities</h4>
+
+      <p>
+        For those craving adventure, Unawatuna Beach offers plenty of water
+        sports. Try your hand at jet skiing, windsurfing, or paddleboarding.
+        If you prefer a more relaxed experience, opt for a guided snorkeling
+        or scuba diving tour to explore the underwater world. The Jungle Beach
+        and Wijaya Beach are nearby spots perfect for these activities.
+      </p>
+
+      <p>
+        Unawatuna Beach is a paradise for thrill-seekers eager to engage in
+        various water sports. You can rent equipment and take lessons for
+        exhilarating activities like jet skiing, kayaking, and stand-up
+        paddleboarding. The beach is lined with several operators who are
+        ready to help you get started, ensuring a fun and safe experience.
+        Whether you're a novice keen to learn the basics or an experienced
+        water sports enthusiast looking for a new challenge, you're sure to
+        find the perfect adventure awaiting you in the waves of Unawatuna.
+      </p>
+
+      <img src="/assets/images/visit-jungle-beach-unawatuna.jpg" alt="sama-chaitthya" />
+      <h4>Visit Jungle Beach</h4>
+      <p>
+        A short hike from Unawatuna takes you to Jungle Beach, a secluded and
+        serene spot surrounded by lush greenery. This hidden gem is perfect
+        for those looking to escape the crowds and enjoy a tranquil beach
+        experience. The calm waters are ideal for swimming and snorkeling,
+        allowing visitors to immerse themselves in the vibrant marine life
+        without the hustle and bustle typically found at busier beaches. With
+        its stunning natural surroundings and peaceful atmospheres, Jungle
+        Beach is a fantastic destination for relaxation and exploration. Don't
+        forget to bring along your camera to capture the breathtaking views
+        and unique landscape!
+      </p>
+
+      <h4>Explore the Japanese Peace Pagoda</h4>
+      <p>
+        Nestled on a hill overlooking Unawatuna, the Japanese Peace Pagoda is
+        a serene retreat that offers breathtaking panoramic views of the
+        coastline and the vast ocean beyond. This impressive structure, built
+        as a symbol of peace and harmony, beckons visitors for moments of
+        reflection and meditation. The tranquil atmosphere makes it an ideal
+        spot to unwind, particularly during sunset when the sky transforms
+        into a canvas of vibrant hues. As you take in the scenery, the gentle
+        sounds of nature provide a harmonious backdrop, enhancing the overall
+        sense of serenity. Whether you're seeking a place for quiet
+        contemplation or simply wish to enjoy the incredible views, the
+        Japanese Peace Pagoda is a must-visit destination while in Unawatuna.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal for Mirissa Beach -->
+  <div id="modal-mirissa" class="modal">
+    <div class="modal-content">
+      <a href="#beaches-container" class="modal-close-btn">&times;</a>
+      <h2>Mirissa Beach</h2>
+      <img src="/assets/images/mirissa-beach-in-sri-lanka.jpg" alt="Mirissa Beach" />
+      <h3>Discover the Magic of Mirissa Beach</h3>
+      <p>
+        Nestled on the southern coast of Sri Lanka, Mirissa Beach is an
+        enchanting paradise that calls out to beach lovers and travel
+        enthusiasts alike. With its golden sands, azure waves, and vibrant
+        marine life, it’s no wonder this tropical haven has captured the
+        hearts of travelers from around the world.
+      </p>
+      <p>
+        We’ll explore the many facets of Mirissa Beach and why it should be at
+        the top of your travel bucket list. From must-see attractions to
+        hidden gems, this guide will help you uncover the magic of Mirissa
+        Beach.
+      </p>
+
+      <img src="/assets/images/visit-mirissa-beach.jpg" alt="coconut-hill" />
+      <h3>Best Time to Visit Mirissa Beach</h3>
+      <p>
+        Timing your visit to Mirissa Beach can make all the difference in your
+        experience. The best time to visit is during the dry season, which
+        runs from November to April. During these months, you can expect warm
+        temperatures, clear skies, and calm seas.
+      </p>
+      <p>
+        The monsoon season, which occurs from May to October, brings heavy
+        rainfall and rough seas. While the beach is still beautiful during
+        this time, activities such as swimming and snorkeling may be limited
+        due to weather conditions.
+      </p>
+      <p>
+        If you’re looking to avoid the crowds, consider visiting Mirissa Beach
+        during the shoulder seasons of November and April. These months offer
+        pleasant weather and fewer tourists, allowing you to enjoy the beach’s
+        beauty in a more peaceful setting.
+      </p>
+
+      <img src="/assets/images/whale-watching-mirissa-beach.jpg" alt="whale-watching" />
+      <h3>Activities and Attractions</h3>
+      <p>
+        Mirissa Beach offers a wide range of activities and attractions that
+        cater to all types of travelers. Whether you’re seeking adventure or
+        relaxation, there’s something for everyone.
+      </p>
+
+      <h4>Whale Watching</h4>
+      <p>
+        One of the most popular activities in Mirissa Beach is
+        <a href="#whale-watching">whale watching</a>, which attracts nature
+        enthusiasts from around the globe. The crystal-clear waters off the
+        coast of Mirissa are home to several species of whales, including the
+        magnificent blue whales, known to be the largest animals on the
+        planet, reaching lengths of up to 100 feet. These gentle giants
+        migrate through these waters, offering a unique opportunity for
+        spectators to observe them in their natural habitat.
+      </p>
+      <p>
+        Mirissa Beach offers a wide range of activities and attractions that
+        cater to all types of travelers. Whether you’re seeking adventure or
+        relaxation, there’s something for everyone.
+      </p>
+      <p>
+        Mirissa Beach offers a wide range of activities and attractions that
+        cater to all types of travelers. Whether you’re seeking adventure or
+        relaxation, there’s something for everyone.
+      </p>
+
+      <img src="/assets/images/snorkeling-and-diving-mirissa-beach.jpg" alt="Snorkeling and Diving" />
+      <h4>Snorkeling and Diving</h4>
+      <p>
+        The crystal-clear waters of Mirissa Beach provide excellent conditions
+        for
+        <a href="https://www.travelmapsrilanka.com/activities/diving-sri-lanka.php">snorkeling and scuba diving</a>. The
+        coral reefs and underwater rock formations are teeming with
+        marine life, including colorful fish, sea turtles, and more.
+      </p>
+      <p>
+        There are several snorkeling spots around the beach, with the Parrot
+        Rock area being a favorite among visitors. For those interested in
+        scuba diving, local dive centers offer guided tours and certification
+        courses. Exploring the underwater world of Mirissa Beach is a must-do
+        for any marine enthusiast.
+      </p>
+
+      <h3>Dining and Nightlife</h3>
+      <img src="/assets/images/seafood-mirissa-beach.jpg" alt="Beachfront Dining" />
+      <h4>Seafood Delights</h4>
+      <p>
+        Being a coastal town, Mirissa is renowned for its fresh seafood, which
+        draws both locals and tourists alike to its vibrant dining scene. Many
+        restaurants, ranging from cozy beach shacks to upscale eateries, offer
+        daily catches that are expertly prepared and served with mouthwatering
+        flavors that highlight the region's culinary heritage. From succulent
+        prawns sautéed in garlic and herbs to perfectly grilled fish seasoned
+        with local spices, seafood lovers will truly feel like they are in
+        paradise.
+      </p>
+      <p>
+        One of the must-try dishes is the famous Sri Lankan crab curry, a
+        flavorful and aromatic delicacy that features tender crab meat
+        simmered in a rich blend of spices, coconut milk, and herbs, making
+        every bite an explosion of taste. To enhance your dining experience,
+        pair your meal with a refreshing coconut drink, known for its natural
+        sweetness and hydrating properties, or opt for a local beer that
+        complements the flavors of the seafood. As you indulge in these
+        delicacies, take a moment to soak in the stunning ocean views, with
+        the sound of waves crashing and the picturesque sunsets creating a
+        truly unforgettable atmosphere.
+      </p>
+
+      <img src="/assets/images/nightlife-mirissa-beach.jpg" alt="nightlife" />
+      <h4>Beachfront Dining</h4>
+      <p>
+        Dining at Mirissa Beach is truly a unique experience that captures the
+        essence of coastal living. Many restaurants offer charming al fresco
+        seating right on the soft, warm sand, allowing you to feel the gentle
+        ocean breeze as you enjoy your meal. Picture yourself savoring fresh
+        seafood, expertly prepared with local spices, while the sun sets on
+        the horizon, painting the sky in hues of orange and pink.
+      </p>
+      <p>
+        Enjoy a romantic dinner under the stars, with the soothing sound of
+        waves crashing in the background, creating a serene soundtrack to your
+        evening. The relaxed atmosphere, combined with stunning scenery and
+        the twinkling lights of nearby establishments, makes for an
+        unforgettable dining experience. Whether you’re celebrating a special
+        occasion or simply enjoying a night out, Mirissa Beach offers a
+        magical setting that will leave lasting memories.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal for Arugam Bay -->
+  <div id="modal-arugam" class="modal">
+    <div class="modal-content">
+      <a href="#beaches-container" class="modal-close-btn">&times;</a>
+      <h2>Arugam Bay</h2>
+      <img src="/assets/images/arugam-bay.webp" alt="Arugam Bay" />
+      <p>
+        Arugam Bay is one of the most spectacular beaches on the Indian Ocean.
+        It has an excellent reputation for being an exotic and classic beach
+        in the pearl of the Indian Ocean, Sri Lanka. Among the different
+        coastal destinations in this tiny little island, Arugam Bay is well
+        known to attract tourists for its surfing culture. Located on the
+        southeast coast of Sri Lanka, Arugam Bay has turned into a popular
+        tourist destination within a short period, offering a magnificent
+        seaside with many water activities.
+      </p>
+      <h3>History and Cultural Significance</h3>
+      <p>
+        Originally inhabited by mostly Sri Lankan Tamils and Muslims, Arugam
+        Bay was called "Ullae." It is situated adjacent to a small market town
+        called Pottuvil. Apart from surfing, Arugam Bay has a lot to offer
+        such as bars, nightlife, beaches, lagoons, historical temples, and
+        also wildlife destinations.
+      </p>
+      <img src="/assets/images/arugam-bay-surfing.jpg" alt="arugam-bay-surfing" />
+      <h3>Surfing in Arugam Bay</h3>
+      <p>
+        Arugam Bay is one of the top three surfing spots in the world and is
+        the international surfing location for the ‘International Surfing
+        Competitions.’ Arugam Bay has great waves during the surfing seasons,
+        making it a once in a lifetime opportunity for anyone.
+      </p>
+      <h4>Main Surfing Points</h4>
+      <p>
+        There are three thrilling points in Arugam Bay: ‘The Point,’ ‘Pottuvil
+        Point,’ and ‘Crocodile Point.’ These three main points are ideal spots
+        for surfing and swimming. Notably, Arugam Bay has sectional right-hand
+        wave breaks that are long and consistent.
+      </p>
+      <p>
+        Other than these three main points, there are many other wave-breaking
+        points to have the best surfing experience in your life. With the
+        moon-shaped curly waves, soft golden sun, and fresh sea breeze, points
+        at Arugam Bay have become perfect places for surfing. You will also be
+        able to find many such breaking points for surfing by just walking 45
+        minutes along the beach to the north or south. The best time to enjoy
+        the real surfing experience in Arugam Bay is between April to October
+        each year.
+      </p>
+      <img src="/assets/images/arugam-bay-surfing-lessons.jpg" alt="arugam-bay-surfing-lessons" />
+      <h3>Arugam Bay Surfing Lessons</h3>
+      <p>
+        Unlike in southern coastal areas, surfing lessons in Arugam Bay are
+        slightly different. Almost all the surfing schools are conducted by
+        the local people.
+      </p>
+      <p>
+        Even though we say lessons, they provide a good surfing experience.
+        These are surfing camps with accommodation, food, transportation, and
+        other requirements for tourists. The best time to surf Arugam Bay is
+        April to October, most probably without rain during that period. If
+        you are willing to have the guidance of these surf schools in Arugam
+        Bay, July, August, or September are the perfect months to book in
+        advance.
+      </p>
+      <p>
+        Surfing guides will teach you how to be safe in the water without
+        getting hurt. If you are a beginner, the best time to take surfing
+        lessons would be the offseason to avoid the crowded months. Another
+        excellent option for beginners is to stay more weeks after the season
+        or before the season and try surfing safely.
+      </p>
+      <img src="/assets/images/arugam-bay-diving.jpg" alt="arugam-bay-diving" />
+      <h3>Arugam Bay Diving</h3>
+      <p>
+        Other than surfing, Arugam Bay is also famous for diving. The warm
+        tropical climate and crystal clear water provide the best diving
+        experience. Arugam Bay offers adventurous experiences of snorkeling,
+        with warm sea, clear water, seabed, and underwater life. It is famous
+        among both local and international snorkelers for its rich marine life
+        and colorful coral reefs.
+      </p>
+      <p>
+        Two enormous reef complexes off the coast of Yala National Park draw
+        snorkelers' attention. Clean and fresh water in this area allows you
+        to take underwater photographs while diving with fish, coral reefs,
+        and sandstones.
+      </p>
+      <p>
+        If you are a scuba diver, you can hire a boat to reach the Basses
+        Reefs in Arugam Bay and enjoy scuba diving. There are boats along the
+        beach available for hire.
+      </p>
+      <img src="/assets/images/arugam-bay-wildlife.jpg" alt="arugam-bay-wildlife" />
+      <h3>Wildlife in Arugam Bay</h3>
+      <p>
+        Wildlife in Arugam Bay plays a significant role in attracting
+        tourists. Layers of thicket mangroves are a safe haven not only for
+        many reptiles but also for other animals such as elephants and birds.
+        Clinging to the very south end of Arugam Bay, it is a paradise for
+        both native and migrant birds. This little sanctuary is called Kumana
+        National Park, the richest wildlife area in Arugam Bay, sheltering
+        crocodiles, elephants, monkeys, tigers, panthers, deer, and many bird
+        species.
+      </p>
+      <img src="/assets/images/arugam-bay-nightlife.jpg" alt="arugam-bay-nightlife" />
+      <h3>Nightlife in Arugam Bay</h3>
+      <p>
+        Night parties on the beach are a common and interesting activity in
+        Arugam Bay. There are some beach parties especially organized for
+        tourists, providing a chance to dance, sing, and spend a happy night.
+        These parties are arranged weekly, with details available on their
+        websites. Major hotels and popular tourist centers organize these
+        parties.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal for Hikkaduwa Bay -->
+  <div id="modal-hikkaduwa" class="modal">
+    <div class="modal-content">
+      <a href="#beaches-container" class="modal-close-btn">&times;</a>
+      <h2>Hikkaduwa</h2>
+      <img src="/assets/images/coral-reef_658691-326.jpg" alt="Hikkaduwa" />
+      <h3>One Of the Best Coral Reefs and Abundant Marine Life</h3>
+      <p>
+        Nestled on the southwestern coast of Sri Lanka, Hikkaduwa Beach is a
+        paradise waiting to be discovered. This blog post will take you on a
+        virtual tour of Hikkaduwa Beach, highlighting its unique charm,
+        breathtaking beauty, and the myriad activities it offers. Whether
+        you're a beach lover, a travel enthusiast, or an eco-tourist,
+        Hikkaduwa Beach promises an unforgettable experience.
+      </p>
+      <img src="/assets/images/discover-hikkaduwa-beach.jpg" alt="Hikkaduwa" />
+      <h3>A Glimpse into Hikkaduwa Beach's History</h3>
+      <p>
+        Hikkaduwa Beach boasts a fascinating history that dates back to the
+        1960s when it first emerged as a sought-after destination for surf
+        enthusiasts drawn by its stunning waves and pristine shores. Over the
+        decades, it has transformed into a vibrant coastal town teeming with
+        life, attracting travelers from every corner of the globe who come to
+        experience its unique charm. Despite this growth and the increasing
+        number of tourists, the beach has remarkably preserved its natural
+        beauty, with golden sands and crystal-clear waters that continue to
+        captivate visitors.
+      </p>
+      <p>
+        The town of Hikkaduwa itself is a cultural tapestry woven from
+        centuries of trade and interaction with diverse civilizations,
+        including Portuguese, Dutch, and British influences. This rich
+        cultural heritage is beautifully reflected in the local cuisine, where
+        you'll find a delightful fusion of flavors and dishes that showcase
+        the region's seafood abundance and exotic spices.
+      </p>
+      <p>
+        Additionally, the traditions and festivals celebrated here, such as
+        the vibrant Hikkaduwa Coral Festival, offer a glimpse into the
+        community’s close-knit spirit and appreciation for their unique
+        environment. The architecture throughout the town, featuring colorful
+        buildings and rustic charm, further enhances the allure of Hikkaduwa,
+        making it not just a destination for relaxation but also a place of
+        cultural exploration and discovery during your visit.
+      </p>
+      <img src="/assets/images/beauty-of-hikkaduwa-beach.jpg" alt="beauty-of-hikkaduwa-beach" />
+      <h3>The Pristine Beauty of Hikkaduwa Beach</h3>
+      <p>
+        One of the first things that will strike you about Hikkaduwa Beach is
+        its pristine beauty, which captivates visitors from the moment they
+        arrive. The golden sands stretch for miles, gleaming under the
+        tropical sun and meeting the stunning azure waters of the Indian
+        Ocean. This idyllic beach is lined with swaying coconut palms that
+        gently rustle in the breeze, creating a picturesque setting that
+        invites relaxation and rejuvenation.
+      </p>
+      <p>
+        As you stroll along the shoreline, you’ll notice the vibrant marine
+        life just beneath the surface of the crystal-clear waters. These
+        inviting waters beckon you for a swim, while the gentle waves make it
+        an ideal spot for novice surfers looking to catch their first wave.
+        Families can be seen playing in the surf, while others lounge on the
+        beach with a good book, soaking up the sun.
+      </p>
+      <p>
+        Hikkaduwa Beach is well-maintained, thanks in part to the efforts of
+        locals and tourists alike, who regularly participate in beach clean-up
+        activities to preserve its natural beauty for future generations. The
+        sense of community and commitment to the environment is palpable,
+        making this destination not only a place of relaxation but also one of
+        shared responsibility. With charming beachside cafes offering
+        refreshing drinks and delicious local cuisine, Hikkaduwa Beach
+        promises an unforgettable experience for all who visit.
+      </p>
+      <h3>The Best Time to Visit Hikkaduwa Beach</h3>
+      <p>
+        While Hikkaduwa Beach is a year-round destination, the best time to
+        visit is during the dry season, which runs from November to April.
+        During this period, you can expect clear skies, calm seas, and ideal
+        conditions for outdoor activities.
+      </p>
+      <p>
+        The monsoon season, from May to October, brings heavier rainfall and
+        rougher seas, which may limit some activities. However, if you prefer
+        a quieter experience with fewer tourists, this can still be a good
+        time to visit.
+      </p>
+      <img src="/assets/images/visit-hikkaduwa-beach (1).jpg" alt="ritipanna" />
+      <h3>Getting to Hikkaduwa Beach</h3>
+      <p>
+        Hikkaduwa Beach is easily accessible from major cities in Sri Lanka.
+        The nearest airport is Bandaranaike International Airport in Colombo,
+        which is about 100 kilometers away. From there, you can take a taxi or
+        a train to Hikkaduwa.
+      </p>
+      <p>
+        Train travel is a popular option, offering scenic views of the
+        coastline along the way. The train ride from Colombo to Hikkaduwa
+        takes approximately two hours and is a memorable experience in itself.
+      </p>
+      <img src="/assets/images/water-sports-hikkaduwa-beach.jpg" alt="water-sports" />
+      <h3>Water Sports Hikkaduwa Beach</h3>
+      <p>
+        For those who prefer underwater adventures, Hikkaduwa Beach boasts
+        some of the best snorkeling and diving spots in Sri Lanka. The coral
+        reefs just off the shore are teeming with colorful marine life,
+        including vibrant fish, graceful sea turtles, and even the occasional
+        reef shark, which adds an exhilarating element to your underwater
+        exploration.
+      </p>
+      <p>
+        The warm, crystal-clear waters provide perfect visibility, allowing
+        divers and snorkelers to fully appreciate the intricate beauty of the
+        coral formations and the diverse ecosystems they support. Several
+        operators in the area offer guided snorkeling and diving tours,
+        complete with experienced instructors and all necessary equipment,
+        ensuring that you have a safe and enjoyable experience, whether you're
+        a beginner or an experienced diver.
+      </p>
+      <p>
+        These tours often include additional perks, such as refreshments or
+        the chance to spot unique marine species in their natural habitat.
+        Don't miss the chance to explore the enchanting underwater world and
+        witness the stunning biodiversity that Hikkaduwa Beach has to
+        offer—it’s an experience that will leave you with unforgettable
+        memories and a deeper appreciation for the ocean's wonders.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal for  Nilaveli Beach -->
+  <div id="modal-nilaveli" class="modal">
+    <div class="modal-content">
+      <a href="#beaches-container" class="modal-close-btn">&times;</a>
+      <h2>Nilaveli Beach</h2>
+      <img src="/assets/images/discover-nilaveli-beach (1).jpg" alt="Nilaveli Beach" />
+      <h3>Discover Serenity and Adventure at Nilaveli Beach Sri Lanka</h3>
+      <p>
+        Are you craving a tropical getaway where the sun kisses your skin and
+        the gentle waves lull you into tranquility? Look no further than
+        Nilaveli Beach in Sri Lanka. Nestled on the picturesque north-eastern
+        coast of this gem-like island, Nilaveli Beach is a true paradise,
+        offering a perfect blend of relaxation and adventure for travel
+        enthusiasts and beach lovers alike. With its powdery white sands and
+        crystal-clear turquoise waters, this idyllic spot invites you to
+        unwind under swaying palm trees or engage in thrilling water sports.
+      </p>
+      <p>
+        In this comprehensive guide, we’ll explore the myriad reasons why
+        Nilaveli Beach should be your next travel destination. From its
+        stunning natural beauty and vibrant marine life to the rich cultural
+        experiences awaiting you nearby, there’s something for everyone. We’ll
+        delve into what makes this beach unique, including its serene
+        atmosphere, breath-taking sunrises, and opportunities for snorkelling
+        and diving in nearby coral reefs. Additionally, we’ll provide tips on
+        how you can make the most of your visit, including the best
+        accommodations, local dining options, and must-see attractions in the
+        area. Get ready to discover the enchanting allure of Nilaveli Beach!
+      </p>
+      <img src="/assets/images/nilaweli-beach.jpg" alt="nilaweli-beach" />
+      <h3>Why Nilaveli Beach is a Must-Visit Destination</h3>
+      <p>
+        Nilaveli Beach stands out as one of Sri Lanka's most spectacular
+        coastal gems. Its pristine sands and clear blue waters create an
+        idyllic scene that seems almost unreal. Unlike the more commercialized
+        beaches, Nilaveli offers a tranquil atmosphere perfect for those
+        looking to escape the hustle and bustle of everyday life. Whether
+        you're an avid traveler or a beach lover, Nilaveli Beach promises a
+        slice of paradise.
+      </p>
+      <p>
+        The beach is not just about serenity; it’s also rich in culture and
+        history. The local community warmly welcomes tourists, making it a
+        culturally immersive experience. From ancient temples to vibrant local
+        markets, there’s so much more to Nilaveli than its stunning coastline.
+      </p>
+      <h3>The Natural Beauty of Nilaveli Beach</h3>
+      <p>
+        Nilaveli Beach is renowned for its breathtaking natural beauty and
+        tranquil atmosphere. Imagine strolling barefoot on the soft, powdery
+        white sand that stretches endlessly into the horizon while the gentle
+        turquoise waves lap soothingly at your feet, creating a rhythmic
+        symphony of sound. The beach is flanked by lush greenery and swaying
+        palm trees, adding a touch of wilderness and vibrant life to this
+        serene landscape. As the sun begins to set, the sky transforms into a
+        canvas painted in stunning hues of orange, pink, and purple, with the
+        fading sunlight reflecting off the water and creating a magical
+        ambiance that leaves visitors in awe.
+      </p>
+      <p>
+        The water at Nilaveli Beach is incredibly clear and inviting, making
+        it an ideal spot for swimming, snorkelling, and other water
+        activities. You can easily spot colorful fish darting around and
+        graceful coral reefs just a few meters from the shore, providing a
+        glimpse into the rich underwater ecosystem. The beach is also home to
+        diverse marine life, including majestic sea turtles gliding gracefully
+        through the waves and a variety of exotic fish species that thrive in
+        the vibrant coral gardens. With its unparalleled beauty and abundance
+        of recreational opportunities, Nilaveli Beach is truly a paradise for
+        nature lovers and adventure seekers alike.
+      </p>
+      <h3>Things To Do At Nilaveli Beach</h3>
+      <p>
+        Nilaveli Beach offers a plethora of activities that cater to various
+        interests. Whether you're an adrenaline junkie or someone who prefers
+        leisurely activities, there's something for everyone.
+      </p>
+      <img src="/assets/images/relax-on-nilaveli-beach.jpg" alt="relax-on-nilaveli-beach" />
+      <h4>Relax on the Beach</h4>
+      <p>
+        Enjoy the pristine white sands and calm waters of Nilaveli Beach,
+        which create an idyllic setting for relaxation. Whether you choose to
+        sunbathe on the soft, warm sand, dive into a good book, or simply soak
+        in the tranquil atmosphere, the beach provides the perfect backdrop
+        for unwinding. The gentle sound of waves lapping at the shore adds to
+        the serene environment, inviting you to leave your worries behind and
+        immerse yourself in the beauty of nature. With the sun casting a
+        golden glow over the landscape, every moment spent here feels like a
+        slice of paradise.
+      </p>
+      <img src="/assets/images/diving-nilaveli-beach.jpg" alt="diving-nilaveli-beach" />
+      <h4>Snorkelling and Diving</h4>
+      <p>
+        The waters of Nilaveli Beach are perfect for snorkelling and diving.
+        The nearby Pigeon Island Marine National Park is a popular spot where
+        you can explore vibrant coral reefs and swim alongside tropical fish.
+        Diving schools in the area offer guided tours and equipment rentals,
+        making it easy for beginners to join in.
+      </p>
+      <img src="/assets/images/kayaking-and-paddle-boarding-nilaveli-beach.jpg"
+        alt="kayaking-and-paddle-boarding-nilaveli-beach" />
+      <h4>Kayaking and Paddle boarding</h4>
+      <p>
+        Renting a kayak or paddleboard is an excellent way to explore the calm
+        waters around Nilaveli Beach at your own pace. As you paddle along the
+        shoreline, you'll have the opportunity to take in the stunning coastal
+        views and the lush landscapes that frame the beach. This serene
+        activity allows you to connect with nature while providing a soothing
+        escape from the hustle and bustle of daily life. Whether you’re
+        gliding across the water alone or with friends, it’s a relaxing way to
+        enjoy the scenery and get some light exercise, all while keeping an
+        eye out for the fascinating marine life beneath the surface.
+      </p>
+      <img src="/assets/images/hot-wells-of-kanniyai (1).jpg" alt="hot-wells-of-kanniyai" />
+      <h4>Visit the Hot Wells of Kanniyai</h4>
+      <p>
+        Located a short drive from Nilaveli, the Hot Wells of Kanniyai are a
+        series of natural hot springs that are believed to have therapeutic
+        properties. This unique destination offers visitors the chance to soak
+        in warm mineral-rich waters, said to relieve various ailments and
+        promote relaxation. The experience is enhanced by the tranquil
+        surroundings, where lush greenery and serene landscapes create a
+        peaceful atmosphere. As you dip into the soothing waters, take a
+        moment to appreciate the historical significance of these ancient
+        wells, which have been cherished by locals for generations. Whether
+        you're seeking to unwind or simply explore the natural wonders of the
+        area, a visit to the Hot Wells of Kanniyai is an enriching addition to
+        your itinerary.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal for Bentota Beach -->
+  <div id="modal-bentota" class="modal">
+    <div class="modal-content">
+      <a href="#beaches-container" class="modal-close-btn">&times;</a>
+      <h2>Bentota Beach</h2>
+      <img src="/assets/images/bentota-beach.jpg.webp" alt="Bentota Beach" />
+      <p>
+        Bentota Beach, located along the southwestern coast of Sri Lanka, is
+        synonymous with water sports, river safaris, and scenic relaxation.
+        Positioned roughly 80 kilometers from Colombo, Bentota is easily
+        accessible by road or rail, making it a convenient weekend escape or a
+        longer vacation spot.
+      </p>
+      <h3>A Glimpse into the Beauty of Bentota Beach</h3>
+      <p>
+        Situated on the southwest coast of Sri Lanka, Bentota Beach boasts an
+        expansive stretch of golden sand and shimmering azure waters. This
+        serene haven offers a tranquil escape from the hustle and bustle of
+        everyday life. Whether you're looking to sunbathe, swim, or simply
+        stroll along the shore, Bentota Beach provides the perfect backdrop
+        for relaxation.
+      </p>
+      <p>
+        The lush greenery that surrounds the beach adds to its charm, creating
+        a picturesque setting that's ideal for photography enthusiasts. The
+        gentle sea breeze and the soothing sound of waves crashing against the
+        shore make Bentota Beach a true paradise on earth.
+      </p>
+      <img src="/assets/images/bentota-beach-in-sri-lanka.jpg" alt="bentota-beach-in-sri-lanka" />
+      <h4>The Rich History of Bentota</h4>
+      <p>
+        Bentota is more than just a beautiful beach; it’s a place steeped in
+        history and culture. The town of Bentota has roots that trace back to
+        ancient times, and its name is derived from the local Sinhala words
+        'Ben' (meaning "festoon") and 'Thota' (meaning "port" or "harbor").
+        This historical significance adds an extra layer of intrigue to your
+        visit.
+      </p>
+      <p>
+        The area is also home to several historical sites, including the
+        Galapatha Raja Maha Viharaya, an ancient Buddhist temple. Exploring
+        these sites offers a glimpse into Sri Lanka's rich cultural heritage
+        and provides a deeper connection to the land.
+      </p>
+      <img src="/assets/images/water-sports-bentota-beach.jpg" alt="water-sports-bentota-beach" />
+      <h3>Adventure Awaits: Water Sports at Bentota Beach</h3>
+      <p>
+        For those craving adventure, Bentota Beach does not disappoint. It’s a
+        hub for a variety of exciting watersports that cater to adrenaline
+        junkies and casual adventurers alike. Here are some must-try
+        activities:
+      </p>
+      <h4>Jet Skiing</h4>
+      <p>
+        Feel the rush of wind against your face as you zoom across the
+        glistening waters on a powerful jet ski. The thrill of speed mixes
+        with the refreshing spray of the ocean, creating an unforgettable
+        experience. Bentota's calm and clear waters, surrounded by lush
+        greenery and stunning landscapes, provide the perfect conditions for
+        this exhilarating activity. Whether you're a seasoned rider or a
+        first-timer,
+        <a href="#jet-skiing">jet skiing in Sri Lanka</a>, the scenic beauty
+        and vibrant atmosphere make every moment on the water truly special.
+      </p>
+      <h4>Windsurfing</h4>
+      <p>
+        Harness the incredible power of the wind and glide gracefully across
+        the waves with the exhilarating sport of windsurfing. This unique
+        combination of surfing and sailing allows you to feel the rush of the
+        wind as you navigate the water. Whether you’re a seasoned pro or a
+        complete beginner, there are professional instructors available to
+        guide you through the basics, ensuring you have a safe and enjoyable
+        experience. With personalized lessons, you’ll learn essential
+        techniques, gain confidence on the board, and discover the sheer joy
+        of riding the waves as you connect with nature in an entirely new way.
+        Embrace the thrill of windsurfing and make unforgettable memories on
+        the water!
+      </p>
+      <img src="/assets/images/diving-bentota-beach.jpg" alt="diving-bentota-beach" />
+      <h3>Snorkeling</h3>
+      <p>
+        Dive beneath the surface to discover a vibrant underwater world
+        teeming with a diverse array of marine life. The crystal-clear waters
+        of Bentota provide the perfect backdrop for snorkeling, allowing you
+        to explore the mesmerizing beauty of colorful fish darting among the
+        vibrant coral reefs. As you glide through the water, you'll encounter
+        fascinating species, from playful clownfish to graceful sea turtles,
+        all thriving in their natural habitat. This unforgettable experience
+        not only brings you up close and personal with the wonders of the
+        ocean but also fosters a deeper appreciation for the delicate
+        ecosystems that exist beneath the waves.
+      </p>
+
+      <h4>Boat Safari on the Bentota River</h4>
+      <p>
+        Take a boat tour along the Bentota River, where you can immerse
+        yourself in the serene beauty of nature. As you glide through the
+        tranquil waters, keep your eyes peeled for the unique mangrove
+        ecosystems that line the riverbanks, providing essential habitats for
+        many species. You might spot water monitors lazily basking in the sun
+        or gliding gracefully through the water. Additionally, the river is
+        home to a diverse array of birdlife, from colorful kingfishers to
+        majestic herons, making it a paradise for birdwatchers and nature
+        enthusiasts alike. This leisurely safari not only offers breathtaking
+        views but also a chance to connect with the vibrant wildlife that
+        thrives in this picturesque setting.
+      </p>
+      <img src="/assets/images/bentota-beach-for-couples.jpg" alt="bentota-beach-for-couples" />
+      <h3>Romantic Getaway: Perfect for Couples</h3>
+      <p>
+        Bentota Beach is an ideal destination for couples seeking a romantic
+        escape. The serene ambiance, coupled with breathtaking sunsets,
+        creates the perfect setting for romance. Take a leisurely beach walk
+        hand-in-hand or enjoy a candlelit dinner by the shore.
+      </p>
+      <p>
+        For a truly unforgettable experience, consider booking a couple's
+        massage at one of the luxurious beachfront spas. Indulging in
+        relaxation and rejuvenation together adds a special touch to your
+        romantic getaway.
+      </p>
+
+      <img src="/assets/images/experience-in-bentota-beach.jpg" alt="experience-in-bentota-beach" />
+      <h3>Experience the Magic of Bentota Beach</h3>
+      <p>
+        Bentota Beach is a destination that offers something for everyone.
+        Whether you’re seeking relaxation, adventure, or cultural immersion,
+        this coastal paradise has it all. From the pristine sands and
+        thrilling watersports to the rich history and luxurious
+        accommodations, Bentota Beach promises an unforgettable experience.
+      </p>
+      <p>
+        Ready to start planning your trip to Bentota Beach? Explore our
+        curated travel guides and connect with fellow travelers to make the
+        most of your adventure. Discover the magic of Bentota Beach and create
+        memories that will last a lifetime.
+      </p>
+      <p>
+        With its natural beauty, diverse activities, and warm hospitality,
+        Bentota Beach is a must-visit destination for any beach lover, travel
+        enthusiast, or adventure seeker. Book your trip today and experience
+        the enchantment of this Sri Lankan gem for yourself!
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="content">
+      <div class="footer-top">
+        <nav class="footer-nav-link">
+          <h4>Destinations</h4>
+          <ul>
+            <li>
+              <a href="/pages/beaches.html">Beaches</a>
+            </li>
+            <li>
+              <a href="/pages/cultural-sites.html">Cultural Sites</a>
+            </li>
+            <li>
+              <a href="/pages/nature-and-wildlife.html">Nature & Wildlife</a>
+            </li>
+            <li>
+              <a href="/pages/adventure-and-trekking.html">Adventure & Trekking</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-link">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>
+              <a href="/index.html#home">Home</a>
+            </li>
+            <li>
+              <a href="/index.html#destinations">Destinations</a>
+            </li>
+            <li>
+              <a href="/index.html#travel-tips">Travel Tips</a>
+            </li>
+            <li>
+              <a href="/index.html#blogs">Blogs</a>
+            </li>
+            <li>
+              <a href="/index.html#faq">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-link">
+          <h4>Have a Questions ?</h4>
+          <ul>
+            <li>
+              <a href="http://www.linkedin.com/in/lithira-jayanaka">Lithira Jayanaka/Linkedin</a>
+            </li>
+            <li><a href="tel:+94 769270053">+94 769270053</a></li>
+            <li>
+              <a href="mailto:kariyawasamlithira2@gmail.com">kariyawasamlithira2@gmail.com</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </footer>
-    <script src="/js/MenuPanel.js"></script>
-  </body>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CeylonXplorer. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/MenuPanel.js"></script>
+</body>
+
 </html>

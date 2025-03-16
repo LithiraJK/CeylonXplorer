@@ -1,16 +1,21 @@
-/* Navigation Bar */
-* {
+*,
+*::before,
+*::after{
   margin: 0;
   padding: 0;
 }
-header{
+body{
+  overflow-x: hidden;
+}
+header {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 5;
 }
 header nav {
   width: 100vw;
-  background-color:transparent;
+  background-color: transparent;
   padding: 15px 20px;
   position: absolute;
   top: 0;
@@ -33,7 +38,6 @@ header nav {
   gap: 20px;
 }
 
-
 .nav-links a {
   text-decoration: none;
   color: white;
@@ -43,7 +47,7 @@ header nav {
   font-weight: bold;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
   color: rgb(89, 203, 241);
   cursor: pointer;
 }
@@ -56,8 +60,7 @@ header nav {
   cursor: pointer;
   display: none;
   padding: 8px;
-  z-index: 5;
-
+  z-index: 10;
 }
 
 .menu-panel {
@@ -70,6 +73,7 @@ header nav {
   top: 0;
   right: -100%;
   transition: right 0.5s ease-in-out;
+  z-index: 10;
 }
 .menu-panel ul {
   list-style: none;
@@ -84,7 +88,7 @@ header nav {
   font-size: 1.2rem;
 }
 
-.menu-panel ul li a:hover{
+.menu-panel ul li a:hover {
   color: rgb(89, 203, 241);
   cursor: pointer;
 }
@@ -107,32 +111,32 @@ footer {
   color: white;
   position: absolute;
   width: 100vw;
-  z-index: 2;  
+  z-index: 2;
+  overflow: hidden;
 }
 
-footer .content{
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    padding: 20px 25px;
+footer .content {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px 25px;
 }
 
-footer ul{
-    list-style: none;
+footer ul {
+  list-style: none;
 }
 
-footer li{
-    margin-bottom: 10px;
-    margin-left: 5px;
-    
+footer li {
+  margin-bottom: 10px;
+  margin-left: 5px;
 }
 
-footer a{
-    color: #fff;
-    text-decoration: none;
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
 
 footer a:hover {
@@ -154,11 +158,11 @@ footer a:hover {
   text-align: left;
 }
 
-.footer-nav-link h4{
-    margin-bottom: 10px;
+.footer-nav-link h4 {
+  margin-bottom: 10px;
 }
 
-.footer-bottom p{
+.footer-bottom p {
   margin-top: 10px;
 }
 
@@ -168,107 +172,100 @@ footer a:hover {
 
   .nav-links {
     display: none;
-}
-header nav{
-  align-items: flex-start;
-  max-width: 90vw;
-  margin: auto;
-}
-
-/* menu panel  */
-#burger {
-    display: block;
-    
-}
-.nav-links {
-    display: none;
-}
-.logo-container > h3 {
-    display: none;
-}
-.menu-panel.active {
-    right: 0;
-}
-
-footer .content {
-  max-width: 400px;
-  margin: 0 auto;
-  width: 90vw;
-}
-
-.footer-top {
-  grid-template-columns: repeat(1, 1fr);
-  gap: 10px;
-}
-
-
   }
-  
-  @media screen and (min-width: 375px) and (max-width: 424px) {
-      /* CSS rules for Mobile Medium Devices */
-
-    .nav-links {
-        display: none;
-    }
-    header nav{
-      align-items: flex-start;
-      max-width: 90vw;
-      margin: auto;
-    }
-  
-    /* menu panel  */
-    #burger {
-        display: block;
-        
-    }
-    .navigation {
-        display: none;
-    }
-    .logo-container > h3 {
-        display: none;
-    }
-    .menu-panel.active {
-        right: 0;
-    }
-  
-    footer .content {
-      max-width: 400px;
-      margin: 0 auto;
-      width: 90vw;
-    }
-  
-    .footer-top {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 10px;
-    }
-  }
-  
-  @media screen and (min-width: 425px) and (max-width: 767px) {
-      /* CSS rules for Mobile Large Devices */
-
-
-    .nav-links {
-      display: none;
-  }
-  header nav{
+  header nav {
     align-items: flex-start;
-    max-width: 90vw;
+    max-width: 90%;
     margin: auto;
   }
 
   /* menu panel  */
   #burger {
-      display: block;
-      
+    display: block;
   }
-  .navigation {
-      display: none;
+  .nav-links {
+    display: none;
   }
   .logo-container > h3 {
-      display: none;
+    display: none;
   }
   .menu-panel.active {
-      right: 0;
+    right: 0;
+  }
+
+  footer .content {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  /* CSS rules for Mobile Medium Devices */
+
+  .nav-links {
+    display: none;
+  }
+  header nav {
+    align-items: flex-start;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  /* menu panel  */
+  #burger {
+    display: block;
+  }
+  .navigation {
+    display: none;
+  }
+  .logo-container > h3 {
+    display: none;
+  }
+  .menu-panel.active {
+    right: 0;
+  }
+
+  footer .content {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  /* CSS rules for Mobile Large Devices */
+
+  .nav-links {
+    display: none;
+  }
+  header nav {
+    align-items: flex-start;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  /* menu panel  */
+  #burger {
+    display: block;
+  }
+  .navigation {
+    display: none;
+  }
+  .logo-container > h3 {
+    display: none;
+  }
+  .menu-panel.active {
+    right: 0;
   }
 
   footer .content {
@@ -280,55 +277,52 @@ footer .content {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* CSS rules for Tablet Devices */
+
+  .nav-links {
+    display: none;
   }
-  
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-      /* CSS rules for Tablet Devices */
-
-    .nav-links {
-        display: none;
-    }
-    header nav{
-      align-items: flex-start;
-      max-width: 90vw;
-      margin: auto;
-    }
-
-    /* menu panel  */
-    #burger {
-        display: block;
-        
-    }
-    .navigation {
-        display: none;
-    }
-    .logo-container > h3 {
-        display: none;
-    }
-    .menu-panel.active {
-        right: 0;
-    }
- 
-    footer .content {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
+  header nav {
+    align-items: flex-start;
+    max-width: 90%;
+    margin: auto;
   }
-  
-  @media screen and (min-width: 1024px) and (max-width: 1439px) {
-      /* CSS rules for Laptop Devices */
-      header nav{
-        max-width: 1200px;
-        width: 90vw;
-      }
-      
-      footer .content {
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-    }
-  @media screen and (max-width: 1440px) {
-      /* CSS rules for Laptop Large Devices */
+
+  /* menu panel  */
+  #burger {
+    display: block;
   }
+  .navigation {
+    display: none;
+  }
+  .logo-container > h3 {
+    display: none;
+  }
+  .menu-panel.active {
+    right: 0;
+  }
+
+  footer .content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  /* CSS rules for Laptop Devices */
+  header nav {
+    max-width: 1200px;
+    width: 90%;
+  }
+
+  footer .content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1440px) {
+  /* CSS rules for Laptop Large Devices */
+}
